@@ -6,6 +6,10 @@ FORM removes the friction between what a physiotherapist recommends and what a p
 
 > FORM is a prototype. It does not diagnose, and it does not replace a clinician.
 
+## ▶ Try it: **[nweinberg97.github.io/Form](https://nweinberg97.github.io/Form/)**
+
+The live demo runs entirely in your browser — no sign-up, no server, nothing to install. Pick **"See the patient app"** to do a session as Jordan, or **"See the clinician app"** to see it land on Marina's dashboard. Use the **Clinician view / Patient view** button at the top to switch between them. Your sample clinic is private to your browser; "Reset demo data" on the demo page starts fresh.
+
 ## What's in the box
 
 - **Patient app** (`/app`, mobile first) — Today, guided sessions with embedded demonstrations, one-tap feedback (Easy / Good / Hard / Painful), progress, the full program, and a single message thread with the care team.
@@ -28,12 +32,11 @@ Requirements: Node.js 20.9+, Docker (or any PostgreSQL 14+).
 docker compose up -d          # Postgres on localhost:5432 (user/password/db: form)
 cp .env.example .env          # set DATABASE_URL if you're not using the compose database
 npm install
-npm run db:generate           # generate SQL migrations from the Drizzle schema
-npm run db:migrate            # apply them
+npm run db:migrate            # apply migrations (in drizzle/) and load the exercise library
 npm run dev                   # http://localhost:3000
 ```
 
-Migrations are generated from the Drizzle schema in `src/server/db/schema.ts`. The server also applies any pending migrations and syncs the exercise library on boot (`src/instrumentation.ts` → `src/server/db/bootstrap.ts`), so a fresh database becomes usable on first start.
+Migrations live in `drizzle/` and are generated from the Drizzle schema in `src/server/db/schema.ts` (`npm run db:generate` after a schema change). The server also applies any pending migrations and syncs the exercise library on boot (`src/instrumentation.ts` → `src/server/db/bootstrap.ts`), so a fresh database becomes usable on first start.
 
 Other scripts: `npm run typecheck`, `npm run test`, `npm run db:studio`.
 
@@ -54,6 +57,20 @@ Other scripts: `npm run typecheck`, `npm run test`, `npm run db:studio`.
 - Demo accounts can't be signed into with a password.
 - Set `FORM_DEMO_ENABLED=false` to turn the demo off for a real deployment.
 
+### Browser demo (no backend)
+
+The demo at the link above is the same app — the same pages, components and server logic — compiled to run in the browser. Only the server plumbing is swapped (see `demo/`):
+
+- **Postgres → PGlite**: real Postgres compiled to WebAssembly, stored in the browser's IndexedDB, using the same schema and migrations.
+- **Cookie session → localStorage**, and **Next.js routing → a small hash router** that renders the real `src/app` pages.
+
+```bash
+npm run demo:dev              # local dev server for the browser demo
+npm run demo:build            # static site in dist-demo/ — host it anywhere
+```
+
+Every push to `main` builds it, runs an end-to-end walkthrough (`scripts/e2e-demo.mjs`) and publishes it to GitHub Pages.
+
 ## Accounts
 
 - **Clinic sign-up** (`/signup`) creates a new organization and makes the person signing up its **admin**.
@@ -63,8 +80,9 @@ Other scripts: `npm run typecheck`, `npm run test`, `npm run db:studio`.
 ## Exercise library and video
 
 - The approved library is curated content in `src/content/exercises.ts`: plain-language summaries, steps, form cues, what it should feel like, common mistakes, a generic safety note, progressions and regressions.
-- Every exercise ships with a **generated movement guide**: keyframe poses for a simple articulated figure (`src/lib/rig.ts`) rendered as an animated, captioned, replayable, speed-adjustable SVG. No external hosting, works offline.
-- Where available, exercises also carry a **curated YouTube demonstration** from physiotherapy and clinical sources (`src/content/videos.ts`). Videos are embedded through `youtube-nocookie.com` with **click-to-load**: nothing is requested from YouTube until the viewer presses play. The movement guide is always one tap away and is the fallback when offline or if a video fails.
+- FORM's library is joined by an **open library of 85 exercises with real photos** — a curated, rehab-relevant subset of [free-exercise-db](https://github.com/yuhonas/free-exercise-db) (public domain). Stretches, mobility and light bodyweight/band work only; heavy gym lifts are left out. Clinicians can filter by library. Re-import with `npm run library:import -- <path-to-free-exercise-db>` (allowlist in `scripts/open-library/allowlist.json`).
+- Every FORM exercise ships with a **generated movement guide**: keyframe poses for a simple articulated figure (`src/lib/rig.ts`) rendered as an animated, captioned, replayable, speed-adjustable SVG. No external hosting, works offline.
+- Where available, exercises also carry a **curated YouTube demonstration** from physiotherapy and clinical sources (`src/content/videos.ts`). Candidates are listed in `src/content/video-candidates.ts`; `npm run videos:verify` checks each one against YouTube and writes only the ones that exist and allow embedding — a clinician should still watch them before patients do. Videos are embedded through `youtube-nocookie.com` with **click-to-load**: nothing is requested from YouTube until the viewer presses play. The movement guide is always one tap away and is the fallback when offline or if a video fails.
 - **Clinics can override** the video for any exercise with their own YouTube link, which then takes precedence for their patients.
 - The media model (`exercise_media`) is provider-agnostic, so a licensed exercise-video library could be plugged in without changing the player.
 
@@ -114,11 +132,13 @@ FORM is a prototype. It treats patient data as sensitive and is architected towa
 
 ## Deployment
 
-FORM runs on any Node.js host with a PostgreSQL database — for example Vercel with Neon or Supabase Postgres.
+**Browser demo:** already handled by GitHub Pages (Settings → Pages → Source: "Deploy from a branch" → `gh-pages`, or "GitHub Actions"). It's free.
+
+**Full app:** FORM runs on any Node.js host with a PostgreSQL database — for example Vercel with Neon or Supabase Postgres.
 
 1. Provision Postgres and set `DATABASE_URL` in the host's environment.
 2. Set `FORM_DEMO_ENABLED=false` unless you want the public demo.
-3. Commit the generated `drizzle/` migrations folder; pending migrations are applied and the exercise library is synced on server start. You can also run `npm run db:migrate` as a release step.
+3. Pending migrations in `drizzle/` are applied and the exercise library is synced on server start. You can also run `npm run db:migrate` as a release step.
 4. `npm run build && npm run start` (or let your platform build it).
 
 Serve over HTTPS so session cookies are marked `Secure`.
