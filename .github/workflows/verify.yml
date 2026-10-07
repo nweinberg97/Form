@@ -7,8 +7,6 @@ on:
 
 permissions:
   contents: write
-  pages: write
-  id-token: write
 
 concurrency:
   group: verify
@@ -18,8 +16,6 @@ jobs:
   verify:
     runs-on: ubuntu-latest
     timeout-minutes: 45
-    environment:
-      name: github-pages
     services:
       postgres:
         image: postgres:16
@@ -106,17 +102,7 @@ jobs:
             echo "$path $code" | tee -a ci-out/logs/server-smoke.txt
           done
           ! grep -E " 5[0-9][0-9]$" ci-out/logs/server-smoke.txt
-      - name: Upload Pages artifact
-        if: steps.demo_build.outcome == 'success' && github.ref == 'refs/heads/main'
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: dist-demo
-      - name: Deploy to GitHub Pages
-        id: pages
-        if: steps.demo_build.outcome == 'success' && github.ref == 'refs/heads/main'
-        continue-on-error: true
-        uses: actions/deploy-pages@v4
-      - name: Also publish demo to gh-pages branch
+      - name: Publish demo to gh-pages branch (served by GitHub Pages)
         if: steps.demo_build.outcome == 'success' && github.ref == 'refs/heads/main'
         continue-on-error: true
         run: |
@@ -142,7 +128,6 @@ jobs:
           demo_typecheck: ${{ steps.demo_typecheck.outcome }}
           e2e: ${{ steps.e2e.outcome }}
           server_smoke: ${{ steps.server_smoke.outcome }}
-          pages: ${{ steps.pages.outcome }} ${{ steps.pages.outputs.page_url }}
           SUM
           cp package-lock.json ci-out/ 2>/dev/null || true
           cp -r drizzle ci-out/drizzle 2>/dev/null || true
