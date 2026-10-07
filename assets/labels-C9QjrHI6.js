@@ -1,0 +1,1 @@
+const e={unwell:"Didn't feel well",no_time:"Didn't have time",symptoms:"Symptoms",forgot:"Forgot",other:"Other"},o={easy:"Easy",good:"Good",hard:"Hard",painful:"Painful"},a={easy:"neutral",good:"success",hard:"warning",painful:"danger"},s=["Neck","Shoulder","Upper back","Lower back","Hip","Knee","Ankle or foot","Somewhere else"];export{s as P,o as R,e as S,a};

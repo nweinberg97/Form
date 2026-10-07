@@ -1,0 +1,1 @@
+import{j as n}from"./index-Dh_awkXp.js";function e(){return n.jsx("div",{role:"status","aria-label":"Loading",className:"flex min-h-dvh items-center justify-center bg-night",children:n.jsx("span",{className:"sr-only",children:"Loading…"})})}export{e as default};
