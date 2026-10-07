@@ -1,0 +1,178 @@
+
+> form@0.1.0 demo:build
+> vite build --config demo/vite.config.ts
+
+[36mvite v7.3.7 [32mbuilding client environment for production...[36m[39m
+transforming...
+[33mnode_modules/zod/v4/core/util.js (400:0): A comment
+
+"// Wrapped in a `@__PURE__` IIFE: esbuild never tree-shakes a top-level initializer that contains a member access on `Number`, so the bare object literal survived into every bundle."
+
+in "node_modules/zod/v4/core/util.js" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.[39m
+[33mnode_modules/zod/v4/core/regexes.js (74:0): A comment
+
+"/** Anchors a pattern source. The interpolation lives here rather than at the call site because
+ * esbuild will not drop a `@__PURE__` call whose own argument interpolates a variable, but it
+ * will drop `anchor(dateSource)`. Keeping it inline pinned `date` into every bundle. */"
+
+in "node_modules/zod/v4/core/regexes.js" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.[39m
+[33mnode_modules/@electric-sql/pglite/dist/fs/nodefs.js (1:198): "resolve" is not exported by "__vite-browser-external", imported by "node_modules/@electric-sql/pglite/dist/fs/nodefs.js".[39m
+[33mnode_modules/@electric-sql/pglite/dist/fs/nodefs.js (1:211): "existsSync" is not exported by "__vite-browser-external", imported by "node_modules/@electric-sql/pglite/dist/fs/nodefs.js".[39m
+[33mnode_modules/@electric-sql/pglite/dist/fs/nodefs.js (1:224): "join" is not exported by "__vite-browser-external", imported by "node_modules/@electric-sql/pglite/dist/fs/nodefs.js".[39m
+[33mnode_modules/@electric-sql/pglite/dist/fs/nodefs.js (1:247): "mkdirSync" is not exported by "__vite-browser-external", imported by "node_modules/@electric-sql/pglite/dist/fs/nodefs.js".[39m
+[32m✓[39m 2074 modules transformed.
+[33mnode_modules/@electric-sql/pglite/dist/index.js (1:91137): Use of eval in "node_modules/@electric-sql/pglite/dist/index.js" is strongly discouraged as it poses security risks and may cause issues with minification.[39m
+[33mnode_modules/@electric-sql/pglite/dist/index.js (1:91615): Use of eval in "node_modules/@electric-sql/pglite/dist/index.js" is strongly discouraged as it poses security risks and may cause issues with minification.[39m
+rendering chunks...
+computing gzip size...
+[2m../dist-demo/[22m[32mindex.html                                        [39m[1m[2m    0.86 kB[22m[1m[22m[2m │ gzip:     0.45 kB[22m
+[2m../dist-demo/[22m[2massets/[22m[32mGeistPixel-Line-Bn2EgCYP.woff2             [39m[1m[2m   18.12 kB[22m[1m[22m
+[2m../dist-demo/[22m[2massets/[22m[32mGeistPixel-Circle-oRhtFUcQ.woff2           [39m[1m[2m   28.04 kB[22m[1m[22m
+[2m../dist-demo/[22m[2massets/[22m[32mGeistPixel-Grid-CHCHJWPp.woff2             [39m[1m[2m   28.37 kB[22m[1m[22m
+[2m../dist-demo/[22m[2massets/[22m[32mGeistPixel-Square-B0mEoKr8.woff2           [39m[1m[2m   28.54 kB[22m[1m[22m
+[2m../dist-demo/[22m[2massets/[22m[32mGeistPixel-Triangle-D7IC7Eqm.woff2         [39m[1m[2m   28.76 kB[22m[1m[22m
+[2m../dist-demo/[22m[2massets/[22m[32mGeist-Thin-Bet8l0bn.woff2                  [39m[1m[2m   44.75 kB[22m[1m[22m
+[2m../dist-demo/[22m[2massets/[22m[32mGeist-Regular-rEkwi4hp.woff2               [39m[1m[2m   45.24 kB[22m[1m[22m
+[2m../dist-demo/[22m[2massets/[22m[32mGeist-Light-D451PpDZ.woff2                 [39m[1m[2m   45.53 kB[22m[1m[22m
+[2m../dist-demo/[22m[2massets/[22m[32mGeist-UltraLight-CTg7xuim.woff2            [39m[1m[2m   45.53 kB[22m[1m[22m
+[2m../dist-demo/[22m[2massets/[22m[32mGeist-Medium-DdmPy8f2.woff2                [39m[1m[2m   46.37 kB[22m[1m[22m
+[2m../dist-demo/[22m[2massets/[22m[32mGeist-ThinItalic-JJafe51N.woff2            [39m[1m[2m   46.46 kB[22m[1m[22m
+[2m../dist-demo/[22m[2massets/[22m[32mGeist-Black-SXXbtrNj.woff2                 [39m[1m[2m   46.48 kB[22m[1m[22m
+[2m../dist-demo/[22m[2massets/[22m[32mGeist-Bold-COtuY0uS.woff2                  [39m[1m[2m   46.50 kB[22m[1m[22m
+[2m../dist-demo/[22m[2massets/[22m[32mGeist-SemiBold-Dgivxjvs.woff2              [39m[1m[2m   46.60 kB[22m[1m[22m
+[2m../dist-demo/[22m[2massets/[22m[32mGeist-UltraBlack-D6mpfCva.woff2            [39m[1m[2m   46.82 kB[22m[1m[22m
+[2m../dist-demo/[22m[2massets/[22m[32mGeist-Italic-DD5nuCwS.woff2                [39m[1m[2m   46.96 kB[22m[1m[22m
+[2m../dist-demo/[22m[2massets/[22m[32mGeist-ExtraLightItalic-O6eoRMS3.woff2      [39m[1m[2m   47.01 kB[22m[1m[22m
+[2m../dist-demo/[22m[2massets/[22m[32mGeist-LightItalic-C_fJJPUy.woff2           [39m[1m[2m   47.15 kB[22m[1m[22m
+[2m../dist-demo/[22m[2massets/[22m[32mGeist-MediumItalic-C-URTJLG.woff2          [39m[1m[2m   47.94 kB[22m[1m[22m
+[2m../dist-demo/[22m[2massets/[22m[32mGeist-SemiBoldItalic-aWruMuXh.woff2        [39m[1m[2m   47.94 kB[22m[1m[22m
+[2m../dist-demo/[22m[2massets/[22m[32mGeist-BlackItalic-Dr2agEFZ.woff2           [39m[1m[2m   47.98 kB[22m[1m[22m
+[2m../dist-demo/[22m[2massets/[22m[32mGeist-BoldItalic-DVZOXJo4.woff2            [39m[1m[2m   48.10 kB[22m[1m[22m
+[2m../dist-demo/[22m[2massets/[22m[32mGeist-ExtraBoldItalic-9YBGFuCD.woff2       [39m[1m[2m   48.32 kB[22m[1m[22m
+[2m../dist-demo/[22m[2massets/[22m[32mGeistMono-Thin-Ct6fN4_J.woff2              [39m[1m[2m   49.24 kB[22m[1m[22m
+[2m../dist-demo/[22m[2massets/[22m[32mGeistMono-UltraLight-D1oz-aB5.woff2        [39m[1m[2m   50.28 kB[22m[1m[22m
+[2m../dist-demo/[22m[2massets/[22m[32mGeistMono-Regular-DHEw6VMZ.woff2           [39m[1m[2m   50.36 kB[22m[1m[22m
+[2m../dist-demo/[22m[2massets/[22m[32mGeistMono-Light-B4-IZ0-J.woff2             [39m[1m[2m   50.86 kB[22m[1m[22m
+[2m../dist-demo/[22m[2massets/[22m[32mGeistMono-Medium-DceA7jXG.woff2            [39m[1m[2m   51.50 kB[22m[1m[22m
+[2m../dist-demo/[22m[2massets/[22m[32mGeistMono-SemiBold-BjOn4zvQ.woff2          [39m[1m[2m   51.60 kB[22m[1m[22m
+[2m../dist-demo/[22m[2massets/[22m[32mGeistMono-Bold-DQLjO9Ny.woff2              [39m[1m[2m   51.84 kB[22m[1m[22m
+[2m../dist-demo/[22m[2massets/[22m[32mGeistMono-UltraBlack-DRw-I7cn.woff2        [39m[1m[2m   51.84 kB[22m[1m[22m
+[2m../dist-demo/[22m[2massets/[22m[32mGeistMono-Black-CXcnk8-V.woff2             [39m[1m[2m   52.08 kB[22m[1m[22m
+[2m../dist-demo/[22m[2massets/[22m[32mGeistMono-ThinItalic-DDMgdMB0.woff2        [39m[1m[2m   52.55 kB[22m[1m[22m
+[2m../dist-demo/[22m[2massets/[22m[32mGeistMono-ExtraLightItalic-OI3aOiun.woff2  [39m[1m[2m   53.55 kB[22m[1m[22m
+[2m../dist-demo/[22m[2massets/[22m[32mGeistMono-Italic-CpJT2qZB.woff2            [39m[1m[2m   53.94 kB[22m[1m[22m
+[2m../dist-demo/[22m[2massets/[22m[32mGeistMono-LightItalic-CRREcHCl.woff2       [39m[1m[2m   54.00 kB[22m[1m[22m
+[2m../dist-demo/[22m[2massets/[22m[32mGeistMono-MediumItalic-rXz9giiR.woff2      [39m[1m[2m   55.15 kB[22m[1m[22m
+[2m../dist-demo/[22m[2massets/[22m[32mGeistMono-SemiBoldItalic-BSfA0zva.woff2    [39m[1m[2m   55.33 kB[22m[1m[22m
+[2m../dist-demo/[22m[2massets/[22m[32mGeistMono-BoldItalic-Br6o8-EX.woff2        [39m[1m[2m   55.48 kB[22m[1m[22m
+[2m../dist-demo/[22m[2massets/[22m[32mGeistMono-ExtraBoldItalic-BySctPQq.woff2   [39m[1m[2m   55.87 kB[22m[1m[22m
+[2m../dist-demo/[22m[2massets/[22m[32mGeistMono-BlackItalic-HRsBOpup.woff2       [39m[1m[2m   55.88 kB[22m[1m[22m
+[2m../dist-demo/[22m[2massets/[22m[32mGeist-Variable-Bj2R_7yk.woff2              [39m[1m[2m   69.65 kB[22m[1m[22m
+[2m../dist-demo/[22m[2massets/[22m[32mGeistMono-Variable-Dispecij.woff2          [39m[1m[2m   71.37 kB[22m[1m[22m
+[2m../dist-demo/[22m[2massets/[22m[32mGeist-Italic_wght_-B73BBqMU.woff2          [39m[1m[2m   73.12 kB[22m[1m[22m
+[2m../dist-demo/[22m[2massets/[22m[32mGeistMono-Italic_wght_-mwDa1Tu8.woff2      [39m[1m[2m   78.78 kB[22m[1m[22m
+[2m../dist-demo/[22m[2massets/[22m[32mpglite-COscPi1Y.data                       [39m[1m[2m4,939.17 kB[22m[1m[22m
+[2m../dist-demo/[22m[2massets/[22m[32mpglite-BdRI_ZYT.wasm                       [39m[1m[2m8,867.51 kB[22m[1m[22m[2m │ gzip: 2,991.45 kB[22m
+[2m../dist-demo/[22m[2massets/[22m[35mindex-67pU1yoc.css                         [39m[1m[2m   61.48 kB[22m[1m[22m[2m │ gzip:    12.08 kB[22m
+[2m../dist-demo/[22m[2massets/[22m[36m__vite-browser-external-BIHI7g3E.js        [39m[1m[2m    0.03 kB[22m[1m[22m[2m │ gzip:     0.05 kB[22m
+[2m../dist-demo/[22m[2massets/[22m[36mindex-Dj00qpgG.js                          [39m[1m[2m    0.07 kB[22m[1m[22m[2m │ gzip:     0.08 kB[22m
+[2m../dist-demo/[22m[2massets/[22m[36mtoday-CVgga8Hz.js                          [39m[1m[2m    0.08 kB[22m[1m[22m[2m │ gzip:     0.10 kB[22m
+[2m../dist-demo/[22m[2massets/[22m[36mredirect-to-demo-Dxd3dJ3t.js               [39m[1m[2m    0.12 kB[22m[1m[22m[2m │ gzip:     0.13 kB[22m
+[2m../dist-demo/[22m[2massets/[22m[36mchevron-down-0Sh0lc6d.js                   [39m[1m[2m    0.13 kB[22m[1m[22m[2m │ gzip:     0.14 kB[22m
+[2m../dist-demo/[22m[2massets/[22m[36mplus-CeI1B-H6.js                           [39m[1m[2m    0.15 kB[22m[1m[22m[2m │ gzip:     0.15 kB[22m
+[2m../dist-demo/[22m[2massets/[22m[36mx-RnIdMbf7.js                              [39m[1m[2m    0.16 kB[22m[1m[22m[2m │ gzip:     0.15 kB[22m
+[2m../dist-demo/[22m[2massets/[22m[36marrow-up-DnNB7_sV.js                       [39m[1m[2m    0.16 kB[22m[1m[22m[2m │ gzip:     0.16 kB[22m
+[2m../dist-demo/[22m[2massets/[22m[36marrow-right-J65md-jJ.js                    [39m[1m[2m    0.17 kB[22m[1m[22m[2m │ gzip:     0.16 kB[22m
+[2m../dist-demo/[22m[2massets/[22m[36marrow-left-BX_vNWzf.js                     [39m[1m[2m    0.17 kB[22m[1m[22m[2m │ gzip:     0.16 kB[22m
+[2m../dist-demo/[22m[2massets/[22m[36marrow-up-right-CzMcT1si.js                 [39m[1m[2m    0.17 kB[22m[1m[22m[2m │ gzip:     0.16 kB[22m
+[2m../dist-demo/[22m[2massets/[22m[36mlock-BYv6TjH4.js                           [39m[1m[2m    0.20 kB[22m[1m[22m[2m │ gzip:     0.19 kB[22m
+[2m../dist-demo/[22m[2massets/[22m[36mellipsis-k6-F9OqT.js                       [39m[1m[2m    0.22 kB[22m[1m[22m[2m │ gzip:     0.16 kB[22m
+[2m../dist-demo/[22m[2massets/[22m[36mlog-out-BH4a51F0.js                        [39m[1m[2m    0.23 kB[22m[1m[22m[2m │ gzip:     0.19 kB[22m
+[2m../dist-demo/[22m[2massets/[22m[36mcopy-B_7oeNH2.js                           [39m[1m[2m    0.23 kB[22m[1m[22m[2m │ gzip:     0.21 kB[22m
+[2m../dist-demo/[22m[2massets/[22m[36mmessage-square-CpOBbSYV.js                 [39m[1m[2m    0.23 kB[22m[1m[22m[2m │ gzip:     0.20 kB[22m
+[2m../dist-demo/[22m[2massets/[22m[36marrow-left-right-BjPtKoOh.js               [39m[1m[2m    0.25 kB[22m[1m[22m[2m │ gzip:     0.20 kB[22m
+[2m../dist-demo/[22m[2massets/[22m[36meye-CsPLcuX9.js                            [39m[1m[2m    0.25 kB[22m[1m[22m[2m │ gzip:     0.20 kB[22m
+[2m../dist-demo/[22m[2massets/[22m[36mloading-CFBvY5St.js                        [39m[1m[2m    0.27 kB[22m[1m[22m[2m │ gzip:     0.22 kB[22m
+[2m../dist-demo/[22m[2massets/[22m[36mlist-plus-D9Q0Mo-R.js                      [39m[1m[2m    0.27 kB[22m[1m[22m[2m │ gzip:     0.19 kB[22m
+[2m../dist-demo/[22m[2massets/[22m[36mlayout-template-BV-_A04j.js                [39m[1m[2m    0.29 kB[22m[1m[22m[2m │ gzip:     0.19 kB[22m
+[2m../dist-demo/[22m[2massets/[22m[36mcalendar-check-DZoMyOt4.js                 [39m[1m[2m    0.31 kB[22m[1m[22m[2m │ gzip:     0.23 kB[22m
+[2m../dist-demo/[22m[2massets/[22m[36muser-plus-BXN-ba2C.js                      [39m[1m[2m    0.31 kB[22m[1m[22m[2m │ gzip:     0.24 kB[22m
+[2m../dist-demo/[22m[2massets/[22m[36mtrash-2-B0f2rbAK.js                        [39m[1m[2m    0.33 kB[22m[1m[22m[2m │ gzip:     0.21 kB[22m
+[2m../dist-demo/[22m[2massets/[22m[36mmessage-square-text-7bwJQdEV.js            [39m[1m[2m    0.35 kB[22m[1m[22m[2m │ gzip:     0.25 kB[22m
+[2m../dist-demo/[22m[2massets/[22m[36mlabels-C9QjrHI6.js                         [39m[1m[2m    0.36 kB[22m[1m[22m[2m │ gzip:     0.26 kB[22m
+[2m../dist-demo/[22m[2massets/[22m[36mnodefs-BeaTOYUQ.js                         [39m[1m[2m    0.42 kB[22m[1m[22m[2m │ gzip:     0.29 kB[22m
+[2m../dist-demo/[22m[2massets/[22m[36mnext-navigation-DVYk0cx8.js                [39m[1m[2m    0.48 kB[22m[1m[22m[2m │ gzip:     0.31 kB[22m
+[2m../dist-demo/[22m[2massets/[22m[36mlayout-CTo6zibb.js                         [39m[1m[2m    0.49 kB[22m[1m[22m[2m │ gzip:     0.37 kB[22m
+[2m../dist-demo/[22m[2massets/[22m[36mdemo-form-7lGnsMAT.js                      [39m[1m[2m    0.53 kB[22m[1m[22m[2m │ gzip:     0.35 kB[22m
+[2m../dist-demo/[22m[2massets/[22m[36mbadge-DCGgKl6C.js                          [39m[1m[2m    0.57 kB[22m[1m[22m[2m │ gzip:     0.35 kB[22m
+[2m../dist-demo/[22m[2massets/[22m[36mnext-link-EyQ2uJgU.js                      [39m[1m[2m    0.57 kB[22m[1m[22m[2m │ gzip:     0.40 kB[22m
+[2m../dist-demo/[22m[2massets/[22m[36mattention-DKk5A5Xs.js                      [39m[1m[2m    0.59 kB[22m[1m[22m[2m │ gzip:     0.33 kB[22m
+[2m../dist-demo/[22m[2massets/[22m[36mloading-DZ288CDI.js                        [39m[1m[2m    0.59 kB[22m[1m[22m[2m │ gzip:     0.33 kB[22m
+[2m../dist-demo/[22m[2massets/[22m[36mavatar-Dca_Jt_A.js                         [39m[1m[2m    0.65 kB[22m[1m[22m[2m │ gzip:     0.43 kB[22m
+[2m../dist-demo/[22m[2massets/[22m[36mwordmark-DjNzrn4q.js                       [39m[1m[2m    0.69 kB[22m[1m[22m[2m │ gzip:     0.39 kB[22m
+[2m../dist-demo/[22m[2massets/[22m[36mloading-DaAOMNcE.js                        [39m[1m[2m    0.69 kB[22m[1m[22m[2m │ gzip:     0.37 kB[22m
+[2m../dist-demo/[22m[2massets/[22m[36mruler-BmSM_9os.js                          [39m[1m[2m    0.76 kB[22m[1m[22m[2m │ gzip:     0.45 kB[22m
+[2m../dist-demo/[22m[2massets/[22m[36myoutube-DLJrwycS.js                        [39m[1m[2m    0.78 kB[22m[1m[22m[2m │ gzip:     0.45 kB[22m
+[2m../dist-demo/[22m[2massets/[22m[36mlayout-DcRPMrBZ.js                         [39m[1m[2m    0.79 kB[22m[1m[22m[2m │ gzip:     0.48 kB[22m
+[2m../dist-demo/[22m[2massets/[22m[36mloading-BJ3gxfyM.js                        [39m[1m[2m    0.79 kB[22m[1m[22m[2m │ gzip:     0.39 kB[22m
+[2m../dist-demo/[22m[2massets/[22m[36mconfirm-BX1D3f3K.js                        [39m[1m[2m    0.80 kB[22m[1m[22m[2m │ gzip:     0.50 kB[22m
+[2m../dist-demo/[22m[2massets/[22m[36mloading-DAWyLYDi.js                        [39m[1m[2m    0.86 kB[22m[1m[22m[2m │ gzip:     0.41 kB[22m
+[2m../dist-demo/[22m[2massets/[22m[36mloading-ChXMypPG.js                        [39m[1m[2m    0.89 kB[22m[1m[22m[2m │ gzip:     0.51 kB[22m
+[2m../dist-demo/[22m[2massets/[22m[36mloading-B4vWGyia.js                        [39m[1m[2m    0.93 kB[22m[1m[22m[2m │ gzip:     0.45 kB[22m
+[2m../dist-demo/[22m[2massets/[22m[36mevents-HvsCg8RN.js                         [39m[1m[2m    1.00 kB[22m[1m[22m[2m │ gzip:     0.56 kB[22m
+[2m../dist-demo/[22m[2massets/[22m[36mloading-D1hy0fF6.js                        [39m[1m[2m    1.01 kB[22m[1m[22m[2m │ gzip:     0.47 kB[22m
+[2m../dist-demo/[22m[2massets/[22m[36mcopy-link-c8HNJM-i.js                      [39m[1m[2m    1.02 kB[22m[1m[22m[2m │ gzip:     0.63 kB[22m
+[2m../dist-demo/[22m[2massets/[22m[36merror--HX1wvgt.js                          [39m[1m[2m    1.03 kB[22m[1m[22m[2m │ gzip:     0.59 kB[22m
+[2m../dist-demo/[22m[2massets/[22m[36mnot-found-B2vSO4Gl.js                      [39m[1m[2m    1.06 kB[22m[1m[22m[2m │ gzip:     0.58 kB[22m
+[2m../dist-demo/[22m[2massets/[22m[36mloading-BJ4nZQ9g.js                        [39m[1m[2m    1.12 kB[22m[1m[22m[2m │ gzip:     0.53 kB[22m
+[2m../dist-demo/[22m[2massets/[22m[36mdemo-bar-DBEgy2Hj.js                       [39m[1m[2m    1.13 kB[22m[1m[22m[2m │ gzip:     0.63 kB[22m
+[2m../dist-demo/[22m[2massets/[22m[36mloading-CjQRFE51.js                        [39m[1m[2m    1.15 kB[22m[1m[22m[2m │ gzip:     0.53 kB[22m
+[2m../dist-demo/[22m[2massets/[22m[36mloading-BWQXPaaM.js                        [39m[1m[2m    1.20 kB[22m[1m[22m[2m │ gzip:     0.52 kB[22m
+[2m../dist-demo/[22m[2massets/[22m[36mloading-CTtT3sj9.js                        [39m[1m[2m    1.20 kB[22m[1m[22m[2m │ gzip:     0.52 kB[22m
+[2m../dist-demo/[22m[2massets/[22m[36mloading-BWzUA6j6.js                        [39m[1m[2m    1.20 kB[22m[1m[22m[2m │ gzip:     0.52 kB[22m
+[2m../dist-demo/[22m[2massets/[22m[36mpage-DsRoc56y.js                           [39m[1m[2m    1.31 kB[22m[1m[22m[2m │ gzip:     0.70 kB[22m
+[2m../dist-demo/[22m[2massets/[22m[36merror-CbiogkBq.js                          [39m[1m[2m    1.31 kB[22m[1m[22m[2m │ gzip:     0.74 kB[22m
+[2m../dist-demo/[22m[2massets/[22m[36mhooks-BQwQLMCQ.js                          [39m[1m[2m    1.32 kB[22m[1m[22m[2m │ gzip:     0.75 kB[22m
+[2m../dist-demo/[22m[2massets/[22m[36mnot-found-CNnLJPRg.js                      [39m[1m[2m    1.40 kB[22m[1m[22m[2m │ gzip:     0.73 kB[22m
+[2m../dist-demo/[22m[2massets/[22m[36mguards-CMPBLz0X.js                         [39m[1m[2m    1.47 kB[22m[1m[22m[2m │ gzip:     0.62 kB[22m
+[2m../dist-demo/[22m[2massets/[22m[36merror-IgtHW93J.js                          [39m[1m[2m    1.53 kB[22m[1m[22m[2m │ gzip:     0.78 kB[22m
+[2m../dist-demo/[22m[2massets/[22m[36mpage-BA86SNNN.js                           [39m[1m[2m    1.69 kB[22m[1m[22m[2m │ gzip:     0.89 kB[22m
+[2m../dist-demo/[22m[2massets/[22m[36mmovement-figure-BDWPvgEt.js                [39m[1m[2m    1.71 kB[22m[1m[22m[2m │ gzip:     0.83 kB[22m
+[2m../dist-demo/[22m[2massets/[22m[36mpage-DMeQjuHM.js                           [39m[1m[2m    1.73 kB[22m[1m[22m[2m │ gzip:     0.91 kB[22m
+[2m../dist-demo/[22m[2massets/[22m[36mweek-strip-DfXzeUVP.js                     [39m[1m[2m    1.99 kB[22m[1m[22m[2m │ gzip:     0.78 kB[22m
+[2m../dist-demo/[22m[2massets/[22m[36msheet-Cx2RcLRs.js                          [39m[1m[2m    2.09 kB[22m[1m[22m[2m │ gzip:     0.94 kB[22m
+[2m../dist-demo/[22m[2massets/[22m[36mbutton-CER9aMU_.js                         [39m[1m[2m    2.13 kB[22m[1m[22m[2m │ gzip:     0.96 kB[22m
+[2m../dist-demo/[22m[2massets/[22m[36mfeedback-BSrmhYEC.js                       [39m[1m[2m    2.26 kB[22m[1m[22m[2m │ gzip:     0.98 kB[22m
+[2m../dist-demo/[22m[2massets/[22m[36mexercise-details-uZEUpAki.js               [39m[1m[2m    2.39 kB[22m[1m[22m[2m │ gzip:     0.93 kB[22m
+[2m../dist-demo/[22m[2massets/[22m[36mauth-shell-BhDY85EQ.js                     [39m[1m[2m    2.50 kB[22m[1m[22m[2m │ gzip:     1.06 kB[22m
+[2m../dist-demo/[22m[2massets/[22m[36mpage-DdDndClg.js                           [39m[1m[2m    2.55 kB[22m[1m[22m[2m │ gzip:     1.26 kB[22m
+[2m../dist-demo/[22m[2massets/[22m[36mpage-DG9yoRFD.js                           [39m[1m[2m    3.05 kB[22m[1m[22m[2m │ gzip:     1.43 kB[22m
+[2m../dist-demo/[22m[2massets/[22m[36mfield-NqE1sJyi.js                          [39m[1m[2m    3.52 kB[22m[1m[22m[2m │ gzip:     1.52 kB[22m
+[2m../dist-demo/[22m[2massets/[22m[36mpage-BL8INk6b.js                           [39m[1m[2m    3.77 kB[22m[1m[22m[2m │ gzip:     1.82 kB[22m
+[2m../dist-demo/[22m[2massets/[22m[36mpage-BNO5WYW2.js                           [39m[1m[2m    3.77 kB[22m[1m[22m[2m │ gzip:     1.69 kB[22m
+[2m../dist-demo/[22m[2massets/[22m[36mlayout-jki9u2g0.js                         [39m[1m[2m    4.27 kB[22m[1m[22m[2m │ gzip:     1.69 kB[22m
+[2m../dist-demo/[22m[2massets/[22m[36mpage-DwTJBsBx.js                           [39m[1m[2m    4.56 kB[22m[1m[22m[2m │ gzip:     1.87 kB[22m
+[2m../dist-demo/[22m[2massets/[22m[36mpatient-table-B_Om45Xg.js                  [39m[1m[2m    4.61 kB[22m[1m[22m[2m │ gzip:     1.79 kB[22m
+[2m../dist-demo/[22m[2massets/[22m[36mpage-qbaNYlso.js                           [39m[1m[2m    4.87 kB[22m[1m[22m[2m │ gzip:     1.82 kB[22m
+[2m../dist-demo/[22m[2massets/[22m[36mpage-DVL2lf0C.js                           [39m[1m[2m    5.30 kB[22m[1m[22m[2m │ gzip:     2.22 kB[22m
+[2m../dist-demo/[22m[2massets/[22m[36mpatient-MJPlg3O5.js                        [39m[1m[2m    5.72 kB[22m[1m[22m[2m │ gzip:     2.39 kB[22m
+[2m../dist-demo/[22m[2massets/[22m[36mpage-BkjsGCm-.js                           [39m[1m[2m    6.14 kB[22m[1m[22m[2m │ gzip:     2.27 kB[22m
+[2m../dist-demo/[22m[2massets/[22m[36mpage-BN_wN2Sn.js                           [39m[1m[2m    6.61 kB[22m[1m[22m[2m │ gzip:     2.54 kB[22m
+[2m../dist-demo/[22m[2massets/[22m[36mshell-DBi8KucV.js                          [39m[1m[2m    6.78 kB[22m[1m[22m[2m │ gzip:     2.39 kB[22m
+[2m../dist-demo/[22m[2massets/[22m[36mpage-CeSMK0hi.js                           [39m[1m[2m    7.24 kB[22m[1m[22m[2m │ gzip:     3.03 kB[22m
+[2m../dist-demo/[22m[2massets/[22m[36mpage-BPurEl3d.js                           [39m[1m[2m    7.40 kB[22m[1m[22m[2m │ gzip:     3.14 kB[22m
+[2m../dist-demo/[22m[2massets/[22m[36mexercise-preview-DfY3NWH-.js               [39m[1m[2m    8.47 kB[22m[1m[22m[2m │ gzip:     3.08 kB[22m
+[2m../dist-demo/[22m[2massets/[22m[36mpatient-BzWlBcpK.js                        [39m[1m[2m    8.86 kB[22m[1m[22m[2m │ gzip:     2.81 kB[22m
+[2m../dist-demo/[22m[2massets/[22m[36mpage-CuFI4ZdE.js                           [39m[1m[2m    8.86 kB[22m[1m[22m[2m │ gzip:     2.94 kB[22m
+[2m../dist-demo/[22m[2massets/[22m[36mpage-C_Tc-wMh.js                           [39m[1m[2m    9.61 kB[22m[1m[22m[2m │ gzip:     3.84 kB[22m
+[2m../dist-demo/[22m[2massets/[22m[36mopfs-ahp-BrQD_xI1.js                       [39m[1m[2m   10.02 kB[22m[1m[22m[2m │ gzip:     3.05 kB[22m
+[2m../dist-demo/[22m[2massets/[22m[36mclinician-DCCdGLDb.js                      [39m[1m[2m   10.29 kB[22m[1m[22m[2m │ gzip:     3.72 kB[22m
+[2m../dist-demo/[22m[2massets/[22m[36mexercise-demo-iQi5t7UC.js                  [39m[1m[2m   11.09 kB[22m[1m[22m[2m │ gzip:     4.19 kB[22m
+[2m../dist-demo/[22m[2massets/[22m[36mclinician-yAgyy8K3.js                      [39m[1m[2m   12.00 kB[22m[1m[22m[2m │ gzip:     3.46 kB[22m
+[2m../dist-demo/[22m[2massets/[22m[36mpage-CkvfgspJ.js                           [39m[1m[2m   15.80 kB[22m[1m[22m[2m │ gzip:     4.78 kB[22m
+[2m../dist-demo/[22m[2massets/[22m[36mpage-C4_3Ffv0.js                           [39m[1m[2m   23.73 kB[22m[1m[22m[2m │ gzip:     6.38 kB[22m
+[2m../dist-demo/[22m[2massets/[22m[36mpage-DhFjt_tM.js                           [39m[1m[2m   28.00 kB[22m[1m[22m[2m │ gzip:     9.13 kB[22m
+[2m../dist-demo/[22m[2massets/[22m[36mpage-BLU33ZN0.js                           [39m[1m[2m   33.48 kB[22m[1m[22m[2m │ gzip:    10.12 kB[22m
+[2m../dist-demo/[22m[2massets/[22m[36mprogram-builder-D7ZIL6H_.js                [39m[1m[2m   84.44 kB[22m[1m[22m[2m │ gzip:    27.39 kB[22m
+[2m../dist-demo/[22m[2massets/[22m[36mindex-Dh_awkXp.js                          [39m[1m[2m1,109.27 kB[22m[1m[22m[2m │ gzip:   273.65 kB[22m
+[32m✓ built in 6.38s[39m

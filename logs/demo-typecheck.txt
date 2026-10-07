@@ -1,0 +1,4 @@
+
+> form@0.1.0 demo:typecheck
+> tsc --noEmit -p demo
+

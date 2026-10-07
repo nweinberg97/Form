@@ -1,0 +1,10 @@
+
+> form@0.1.0 start
+> next start
+
+▲ Next.js 16.4.0
+- Local:         http://localhost:3000
+- Network:       http://10.1.0.182:3000
+✓ Ready in 149ms
+✓ Running next.config.ts took 36ms
+[form] database ready

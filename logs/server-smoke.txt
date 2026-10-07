@@ -1,0 +1,6 @@
+/ 200
+/login 200
+/signup 200
+/demo 200
+/app 307
+/clinic 307

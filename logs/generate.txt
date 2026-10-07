@@ -1,0 +1,28 @@
+No config path provided, using default 'drizzle.config.ts'
+Reading config file '/home/runner/work/Form/Form/drizzle.config.ts'
+23 tables
+analytics_events 5 columns 1 indexes 1 fks
+attention_items 10 columns 2 indexes 4 fks
+audit_events 9 columns 2 indexes 2 fks
+auth_sessions 4 columns 1 indexes 1 fks
+care_relationships 5 columns 1 indexes 2 fks
+clinician_notes 5 columns 1 indexes 2 fks
+exercise_completions 7 columns 1 indexes 3 fks
+exercise_media 15 columns 1 indexes 2 fks
+exercise_relations 3 columns 0 indexes 2 fks
+exercises 26 columns 1 indexes 1 fks
+feedback 10 columns 2 indexes 3 fks
+invitations 8 columns 1 indexes 3 fks
+messages 9 columns 2 indexes 4 fks
+notifications 7 columns 1 indexes 1 fks
+organizations 5 columns 0 indexes 0 fks
+program_exercises 12 columns 1 indexes 2 fks
+program_versions 10 columns 1 indexes 2 fks
+programs 11 columns 2 indexes 3 fks
+session_items 4 columns 1 indexes 2 fks
+sessions 10 columns 1 indexes 1 fks
+template_exercises 11 columns 1 indexes 2 fks
+templates 8 columns 0 indexes 2 fks
+users 15 columns 2 indexes 1 fks
+
+No schema changes, nothing to migrate 😴

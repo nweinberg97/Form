@@ -1,0 +1,25 @@
+PASS  landing page renders
+PASS  favicon and tab title
+PASS  demo chooser
+PASS  start demo as patient → Today
+PASS  start session
+PASS  complete exercise 1 and report pain with a note
+PASS  complete the remaining exercises
+PASS  back to Today shows complete
+PASS  patient progress page
+PASS  patient program page
+PASS  patient messages page
+PASS  patient profile page
+PASS  switch to clinician view
+PASS  clinician sees Jordan's pain report in context
+PASS  clinician replies to the feedback
+PASS  clinician edits the program (adds Calf Raise) → new version
+PASS  clinician library page
+PASS  clinician templates page
+PASS  clinician settings page
+PASS  library: open-library exercise with photos
+PASS  create a patient and get an invite link
+PASS  switch back to patient: sees reply and plan update
+PASS  mobile: Today and a session screen
+
+Console/page errors (0):
