@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Wordmark } from "@/components/brand/wordmark";
+import { accountsEnabled } from "./demo-form";
 import { ButtonLink } from "@/components/ui/button";
 import type { CurrentUser } from "@/server/auth/session";
 
@@ -29,12 +30,14 @@ export function SiteHeader({ user, demo }: { user: CurrentUser | null; demo: boo
                 Demo
               </Link>
             ) : null}
+            {accountsEnabled() ? (
             <Link
               href="/login"
               className="inline-flex h-9 items-center rounded-md px-3 text-sm font-semibold text-paper transition-colors hover:bg-night-line"
             >
               Sign in
             </Link>
+            ) : null}
           </>
         )}
       </nav>

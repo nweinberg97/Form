@@ -282,7 +282,11 @@ function SortableRow({ item, index, total, exercise, programDays, selected, erro
       <div
         className={cn(
           "flex shrink-0 items-center gap-0.5 transition-opacity",
-          selected ? "opacity-100" : "opacity-100 lg:opacity-0 lg:group-hover:opacity-100 lg:group-focus-within:opacity-100",
+          // On desktop the row actions float over the row instead of taking width from the name.
+          "lg:absolute lg:top-1/2 lg:right-1.5 lg:-translate-y-1/2 lg:rounded-md lg:bg-surface lg:pl-1 lg:shadow-[-12px_0_12px_-4px_var(--color-surface)]",
+          selected
+            ? "lg:opacity-0 lg:group-hover:opacity-100 lg:group-focus-within:opacity-100"
+            : "opacity-100 lg:pointer-events-none lg:opacity-0 lg:group-hover:pointer-events-auto lg:group-hover:opacity-100 lg:group-focus-within:pointer-events-auto lg:group-focus-within:opacity-100",
         )}
       >
         <RowButton label={`Move ${name} up`} onClick={onUp} disabled={index === 0}>

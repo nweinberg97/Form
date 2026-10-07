@@ -103,6 +103,8 @@ export async function seedDemoClinic(db: Queryable, opts: { timezone: string }) 
           timezone: tz,
           onboardedAt: new Date(),
           credentials: role === "patient" ? null : "PT",
+          // Sample people have accounts (they just can't sign in with a password). Noah is still invited.
+          passwordHash: "!demo-account",
           ...extra,
         })
         .returning({ id: users.id });

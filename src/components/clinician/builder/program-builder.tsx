@@ -419,14 +419,14 @@ export function ProgramBuilder(props: ProgramBuilderProps) {
       ) : null}
 
       {/* Panes */}
-      <div className="grid flex-1 lg:grid-cols-[minmax(300px,360px)_minmax(0,1fr)_minmax(300px,360px)]">
+      <div className="grid flex-1 lg:grid-cols-[minmax(250px,290px)_minmax(0,1fr)_minmax(260px,300px)] 2xl:grid-cols-[340px_minmax(0,1fr)_360px]">
         {isDesktop ? (
           <aside aria-label="Exercise library" className="sticky top-14 h-[calc(100dvh-3.5rem)] border-r border-line bg-surface">
             {library_}
           </aside>
         ) : null}
 
-        <section aria-label="Program" className="min-w-0 px-4 py-6 sm:px-6 lg:px-10 lg:py-8">
+        <section aria-label="Program" className="min-w-0 px-4 py-6 sm:px-6 lg:px-6 lg:py-8 xl:px-10">
           <div className="mx-auto max-w-2xl">
             <ProgramCanvas
               state={state}

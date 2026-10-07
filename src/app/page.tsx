@@ -9,7 +9,7 @@ import { SiteFooter } from "@/components/marketing/site-footer";
 import { MovementFigure } from "@/components/marketing/movement-figure";
 import { Ticker } from "@/components/marketing/ticker";
 import { Ruler } from "@/components/marketing/ruler";
-import { DemoForm, demoEnabled } from "@/components/marketing/demo-form";
+import { DemoForm, accountsEnabled, demoEnabled } from "@/components/marketing/demo-form";
 import {
   AttentionVignette,
   ExerciseVignette,
@@ -103,12 +103,14 @@ function Hero({ user, demo }: { user: CurrentUser | null; demo: boolean }) {
                       Try the demo
                     </ButtonLink>
                   ) : null}
+{accountsEnabled() ? (
                   <Link
                     href="/login"
                     className="inline-flex h-13 items-center justify-center rounded-[10px] border border-night-line px-6 text-base font-semibold text-paper transition-colors duration-150 hover:border-paper hover:bg-night-raised"
                   >
                     Sign in
                   </Link>
+                  ) : null}
                 </>
               )}
             </div>

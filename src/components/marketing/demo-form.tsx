@@ -9,6 +9,11 @@ export function demoEnabled() {
   return process.env.FORM_DEMO_ENABLED !== "false";
 }
 
+/** False in the browser-only demo build, where there are no real accounts. */
+export function accountsEnabled() {
+  return process.env.FORM_STATIC_DEMO !== "true";
+}
+
 /**
  * One button that creates (or re-enters) the visitor's private demo clinic
  * as either the patient or the clinician.

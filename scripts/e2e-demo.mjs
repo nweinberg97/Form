@@ -85,7 +85,7 @@ await step("complete exercise 1 and report pain with a note", async () => {
 
 await step("complete the remaining exercises", async () => {
   for (let i = 0; i < 8; i++) {
-    if (await text("You're done").isVisible().catch(() => false)) break;
+    if (await page.getByRole("button", { name: /^Done$/ }).or(page.getByRole("link", { name: /^Done$/ })).first().isVisible().catch(() => false)) break;
     const next = page.getByRole("button", { name: /^(Next exercise|Continue|Next)/i });
     if (await next.first().isVisible().catch(() => false)) {
       await next.first().click();
@@ -102,7 +102,7 @@ await step("complete the remaining exercises", async () => {
     }
     await page.waitForTimeout(700);
   }
-  await text("You're done").waitFor();
+  await page.getByRole("button", { name: /^Done$/ }).or(page.getByRole("link", { name: /^Done$/ })).first().waitFor();
   await snap("session-complete");
 });
 
@@ -195,7 +195,7 @@ await step("create a patient and get an invite link", async () => {
   await go("/clinic/patients/new");
   await page.getByLabel(/name/i).first().fill("Riley Morgan");
   await page.getByRole("button", { name: /Add patient|Create/i }).first().click();
-  await text("/invite/").waitFor({ timeout: 15000 });
+  await page.locator('input[value*="/invite/"]').first().waitFor({ timeout: 15000 });
   await snap("patient-created");
 });
 
@@ -217,17 +217,23 @@ await step("mobile: Today and a session screen", async () => {
     isMobile: true,
     hasTouch: true,
     timezoneId: "America/Vancouver",
-    storageState: await context.storageState(),
   });
   const m = await mobile.newPage();
   m.on("pageerror", (e) => problems.push(`mobile pageerror: ${e.message}`));
-  await m.goto(`${BASE}#/app`);
-  await m.getByRole("heading").first().waitFor({ timeout: 60000 });
+  await m.goto(`${BASE}#/demo`);
+  await m.getByRole("button", { name: /See the patient app/i }).click({ timeout: 60000 });
+  await m.waitForURL(/#\/app/, { timeout: 90000 });
+  await m.getByText("Start today").first().waitFor({ timeout: 60000 });
   await m.waitForTimeout(1500);
   await snap("mobile-today", m);
   await m.goto(`${BASE}#/app/program`);
   await m.waitForTimeout(1500);
   await snap("mobile-program", m);
+  await m.goto(`${BASE}#/app`);
+  await m.getByRole("button", { name: /Start today/i }).first().click();
+  await m.waitForURL(/#\/app\/session/);
+  await m.waitForTimeout(1500);
+  await m.screenshot({ path: `${OUT}/${String(++shot).padStart(2, "0")}-mobile-session.png` });
   await m.goto(`${BASE}#/`);
   await m.waitForTimeout(1500);
   await snap("mobile-landing", m);

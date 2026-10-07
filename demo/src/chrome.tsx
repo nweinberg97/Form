@@ -12,7 +12,7 @@ export function DemoChrome() {
   const [busy, setBusy] = useState(false);
   if (pathname !== "/demo") return null;
   return (
-    <div className="fixed right-4 bottom-4 z-[var(--z-toast)]">
+    <div className="flex justify-center px-4 pt-2 pb-12">
       <button
         type="button"
         disabled={busy}
@@ -21,7 +21,7 @@ export function DemoChrome() {
           setBusy(true);
           await resetDemo();
         }}
-        className="inline-flex h-10 items-center gap-2 rounded-md border border-line-strong bg-paper px-3 text-sm font-medium text-ink shadow-[var(--shadow-lift)] hover:bg-white disabled:opacity-50"
+        className="inline-flex h-10 items-center gap-2 rounded-md border border-line-strong bg-paper px-3 text-sm font-medium text-ink hover:bg-white disabled:opacity-50"
       >
         <RotateCcw aria-hidden className="size-4" />
         {busy ? "Resetting…" : "Reset demo data"}

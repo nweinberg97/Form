@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Wordmark } from "@/components/brand/wordmark";
+import { accountsEnabled } from "./demo-form";
 
 export function SiteFooter({ demo }: { demo: boolean }) {
   return (
@@ -18,12 +19,16 @@ export function SiteFooter({ demo }: { demo: boolean }) {
               Try the demo
             </Link>
           ) : null}
+          {accountsEnabled() ? (
+            <>
           <Link href="/login" className="text-paper/85 underline-offset-4 hover:text-paper hover:underline">
             Sign in
           </Link>
           <Link href="/signup" className="text-paper/85 underline-offset-4 hover:text-paper hover:underline">
             Create a clinic account
           </Link>
+            </>
+          ) : null}
         </nav>
       </div>
       <div className="mx-auto flex max-w-[1440px] items-center justify-between gap-4 border-t border-night-line px-5 py-5 sm:px-8 lg:px-12">
