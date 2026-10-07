@@ -75,7 +75,9 @@ jobs:
         continue-on-error: true
         run: |
           npm run demo:build 2>&1 | tee ci-out/logs/demo-build.txt
-          exit ${PIPESTATUS[0]}
+          code=${PIPESTATUS[0]}
+          echo "${{ github.sha }}" > dist-demo/version.txt
+          exit $code
       - name: Typecheck browser demo
         id: demo_typecheck
         continue-on-error: true
@@ -152,3 +154,57 @@ jobs:
           git add -A
           git commit -qm "CI results for ${{ github.sha }}"
           git push -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" ci-results
+
+  live:
+    # Opens the public GitHub Pages site (once it has picked up this commit)
+    # and runs the same end-to-end walkthrough against it.
+    needs: verify
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Install Playwright
+        run: |
+          npm install --no-save playwright@1 > /dev/null 2>&1
+          npx playwright install --with-deps chromium > /dev/null 2>&1
+      - name: Wait for the live site to serve this commit
+        id: wait
+        continue-on-error: true
+        run: |
+          mkdir -p live-out
+          owner="${GITHUB_REPOSITORY%%/*}"; repo="${GITHUB_REPOSITORY##*/}"
+          for url in "https://$owner.github.io/$repo/" "https://$owner.github.io/$(echo $repo | tr 'A-Z' 'a-z')/"; do
+            for i in $(seq 1 36); do
+              got=$(curl -fsSL "${url}version.txt?t=$(date +%s)" 2>/dev/null | tr -d '[:space:]')
+              if [ "$got" = "${{ github.sha }}" ]; then echo "url=$url" >> "$GITHUB_OUTPUT"; echo "LIVE $url" | tee live-out/status.txt; exit 0; fi
+              echo "$url -> ${got:-not available yet} (attempt $i)"
+              sleep 10
+            done
+          done
+          echo "NOT LIVE: GitHub Pages is not serving this commit. Is Pages enabled (Settings -> Pages -> Deploy from branch gh-pages)?" | tee live-out/status.txt
+          curl -sI "https://$owner.github.io/$repo/" | head -1 | tee -a live-out/status.txt
+          exit 1
+      - name: Walk through the live demo
+        id: e2e
+        if: steps.wait.outcome == 'success'
+        continue-on-error: true
+        run: |
+          node scripts/e2e-demo.mjs "${{ steps.wait.outputs.url }}" live-out/screens 2>&1 | tee live-out/e2e.txt
+          exit ${PIPESTATUS[0]}
+      - name: Publish live-check results
+        if: always()
+        run: |
+          echo "commit: ${{ github.sha }}" > live-out/SUMMARY.txt
+          echo "live: ${{ steps.wait.outcome }} ${{ steps.wait.outputs.url }}" >> live-out/SUMMARY.txt
+          echo "e2e: ${{ steps.e2e.outcome }}" >> live-out/SUMMARY.txt
+          cd live-out
+          git init -q -b ci-live
+          git config user.name "ci"
+          git config user.email "ci@users.noreply.github.com"
+          git add -A
+          git commit -qm "Live check for ${{ github.sha }}"
+          git push -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" ci-live
