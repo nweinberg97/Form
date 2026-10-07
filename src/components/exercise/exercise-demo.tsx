@@ -12,6 +12,9 @@ type Props = {
   demo: Demo | null;
   /** Real video (clinic's own or FORM's curated YouTube demonstration). */
   video?: ExerciseVideo | null;
+  /** Start/end photos (open library). */
+  images?: string[];
+  attribution?: string | null;
   /** Fallback content if no media can be shown. */
   instructions?: string[];
   tone?: "paper" | "dark";
@@ -37,21 +40,28 @@ function usePrefersReducedMotion() {
 }
 
 /**
- * The exercise demonstration. Plays a real video when the clinic has one,
- * otherwise FORM's generated movement demonstration. Never a dead block:
- * if media fails, the cues and instructions are shown instead.
+ * The exercise demonstration. Offers whatever media the exercise has:
+ * a real video (the clinic's own or FORM's curated one), FORM's generated
+ * movement guide, or start/end photos from the open library. Never a dead
+ * block: if media fails or the patient is offline, it falls back gracefully.
  */
 export function ExerciseDemo(props: Props) {
   const [videoFailed, setVideoFailed] = useState(false);
   const online = useOnline();
   const hasVideo = Boolean(props.video) && !videoFailed && online;
-  const [mode, setMode] = useState<"video" | "guide">("video");
-  const showVideo = hasVideo && (mode === "video" || !props.demo);
+  const images = props.images ?? [];
+  const modes = [
+    ...(hasVideo ? (["video"] as const) : []),
+    ...(props.demo ? (["guide"] as const) : []),
+    ...(images.length ? (["photos"] as const) : []),
+  ];
+  const [chosen, setChosen] = useState<Mode | null>(null);
+  const mode: Mode | null = chosen && modes.includes(chosen as never) ? chosen : (modes[0] ?? null);
 
   let media: React.ReactNode;
-  if (showVideo && props.video?.provider === "youtube") {
+  if (mode === "video" && props.video?.provider === "youtube") {
     media = <YouTubeDemo name={props.name} id={props.video.id} className={props.className} />;
-  } else if (showVideo && props.video?.provider === "file") {
+  } else if (mode === "video" && props.video?.provider === "file") {
     media = (
       <VideoDemo
         {...props}
@@ -61,53 +71,109 @@ export function ExerciseDemo(props: Props) {
         onFail={() => setVideoFailed(true)}
       />
     );
-  } else if (props.demo) {
+  } else if (mode === "guide" && props.demo) {
     media = <AnimatedDemo {...props} demo={props.demo} />;
+  } else if (mode === "photos") {
+    media = <PhotoDemo name={props.name} images={images} className={props.className} bare={props.bare} />;
   } else {
     media = <MediaFallback name={props.name} instructions={props.instructions} className={props.className} />;
   }
 
-  if (props.bare || !(hasVideo && props.demo)) {
-    return (
-      <div>
-        {media}
-        {props.video && !hasVideo && !props.bare ? (
-          <p className="mt-2 text-xs text-muted">
-            {online ? "The video couldn't load, so here's the movement guide." : "You're offline — showing the movement guide."}
-          </p>
-        ) : null}
-      </div>
-    );
-  }
+  const credit =
+    mode === "video" && props.video
+      ? props.video.clinicChoice
+        ? "Chosen by your clinic"
+        : props.video.source
+          ? `Video: ${props.video.source}`
+          : null
+      : mode === "photos" && props.attribution
+        ? `Photos: ${props.attribution}`
+        : null;
 
   return (
     <div>
       {media}
-      <div className="mt-2 flex items-center justify-between gap-3">
-        <div role="radiogroup" aria-label="Demonstration type" className="inline-flex rounded-md bg-sunken p-0.5">
-          {(["video", "guide"] as const).map((value) => (
-            <button
-              key={value}
-              type="button"
-              role="radio"
-              aria-checked={mode === value}
-              onClick={() => setMode(value)}
-              className={cn(
-                "h-8 rounded-[7px] px-3 text-[13px] font-medium transition-colors",
-                mode === value ? "bg-white text-ink shadow-[0_1px_2px_rgb(17_17_17/0.08)]" : "text-muted hover:text-ink",
-              )}
-            >
-              {value === "video" ? "Video" : "Movement guide"}
-            </button>
-          ))}
+      {!props.bare && (modes.length > 1 || credit || (props.video && !hasVideo)) ? (
+        <div className="mt-2 flex items-center justify-between gap-3">
+          {modes.length > 1 ? (
+            <div role="radiogroup" aria-label="Demonstration type" className="inline-flex rounded-md bg-sunken p-0.5">
+              {modes.map((value) => (
+                <button
+                  key={value}
+                  type="button"
+                  role="radio"
+                  aria-checked={mode === value}
+                  onClick={() => setChosen(value)}
+                  className={cn(
+                    "h-8 rounded-[7px] px-3 text-[13px] font-medium transition-colors",
+                    mode === value ? "bg-white text-ink shadow-[0_1px_2px_rgb(17_17_17/0.08)]" : "text-muted hover:text-ink",
+                  )}
+                >
+                  {MODE_LABEL[value]}
+                </button>
+              ))}
+            </div>
+          ) : props.video && !hasVideo ? (
+            <p className="text-xs text-muted">
+              {online ? "The video couldn't load, so here's another demonstration." : "You're offline — the video will be back when you are."}
+            </p>
+          ) : (
+            <span />
+          )}
+          {credit ? <p className="truncate text-xs text-muted">{credit}</p> : null}
         </div>
-        {mode === "video" && props.video?.source ? (
-          <p className="truncate text-xs text-muted">
-            {props.video.clinicChoice ? "Chosen by your clinic" : `Video: ${props.video.source}`}
-          </p>
-        ) : null}
-      </div>
+      ) : null}
     </div>
+  );
+}
+
+type Mode = "video" | "guide" | "photos";
+const MODE_LABEL: Record<Mode, string> = { video: "Video", guide: "Movement guide", photos: "Photos" };
+
+/** Resolves a site-relative asset path (works under a sub-path such as GitHub Pages). */
+export function assetUrl(path: string) {
+  if (/^https?:/.test(path)) return path;
+  const base = (globalThis as { __FORM_BASE__?: string }).__FORM_BASE__ ?? "/";
+  return base.replace(/\/$/, "") + "/" + path.replace(/^\//, "");
+}
+
+/** Start and end photos, gently alternating — a simple, honest demonstration. */
+function PhotoDemo({ name, images, className, bare }: { name: string; images: string[]; className?: string; bare?: boolean }) {
+  const reducedMotion = usePrefersReducedMotion();
+  const [index, setIndex] = useState(0);
+  const [playing, setPlaying] = useState(true);
+  useEffect(() => {
+    if (!playing || reducedMotion || images.length < 2) return;
+    const timer = window.setInterval(() => setIndex((i) => (i + 1) % images.length), 1800);
+    return () => window.clearInterval(timer);
+  }, [playing, reducedMotion, images.length]);
+  return (
+    <figure className={cn("relative aspect-[16/10] overflow-hidden rounded-[14px] bg-sunken", className)}>
+      {images.map((src, i) => (
+        // eslint-disable-next-line @next/next/no-img-element
+        <img
+          key={src}
+          src={assetUrl(src)}
+          alt={i === index ? `${name} — ${i === 0 ? "start" : "end"} position` : ""}
+          aria-hidden={i !== index}
+          loading="lazy"
+          className={cn(
+            "absolute inset-0 size-full object-cover transition-opacity duration-500 ease-[var(--ease-form)]",
+            i === index ? "opacity-100" : "opacity-0",
+          )}
+        />
+      ))}
+      {!bare && images.length > 1 ? (
+        <div className="absolute inset-x-2 bottom-2 flex items-center gap-1">
+          <DemoButton label={playing ? "Pause photos" : "Play photos"} onClick={() => setPlaying((p) => !p)} tone="paper">
+            {playing ? <Pause className="size-4" /> : <Play className="size-4" />}
+          </DemoButton>
+          <span className="rounded-md bg-paper/85 px-2 py-1 font-mono text-[11px] font-medium text-ink">
+            {index === 0 ? "START" : "END"}
+          </span>
+        </div>
+      ) : null}
+    </figure>
   );
 }
 
@@ -395,8 +461,29 @@ function VideoDemo({
   );
 }
 
-/** Static poster frame — for lists and thumbnails. Server-renderable. */
-export function DemoThumb({ demo, className, label }: { demo: Demo | null; className?: string; label: string }) {
+/** Static poster frame — for lists and thumbnails. No external requests. */
+export function DemoThumb({
+  demo,
+  images,
+  className,
+  label,
+}: {
+  demo: Demo | null;
+  images?: string[];
+  className?: string;
+  label: string;
+}) {
+  if (!demo && images?.length) {
+    return (
+      // eslint-disable-next-line @next/next/no-img-element
+      <img
+        src={assetUrl(images[images.length > 1 ? 1 : 0])}
+        alt={label}
+        loading="lazy"
+        className={cn("block aspect-[16/10] rounded-[10px] bg-sunken object-cover", className)}
+      />
+    );
+  }
   if (!demo) {
     return <div aria-hidden className={cn("aspect-[16/10] rounded-[10px] bg-sunken", className)} />;
   }

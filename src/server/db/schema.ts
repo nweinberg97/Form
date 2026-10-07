@@ -170,6 +170,9 @@ export const exercises = pgTable(
     commonMistakes: text("common_mistakes").array().notNull(),
     safetyNotes: text("safety_notes").notNull(),
     tags: text("tags").array().notNull(),
+    /** "form" = FORM's curated rehab library; "open" = imported public-domain library. */
+    source: text("source", { enum: ["form", "open"] }).notNull().default("form"),
+    attribution: text("attribution"),
     isActive: boolean("is_active").notNull().default(true),
     createdAt: createdAt(),
   },

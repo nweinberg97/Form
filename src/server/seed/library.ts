@@ -3,6 +3,14 @@ import type { Queryable } from "../db";
 import { exerciseMedia, exerciseRelations, exercises } from "../db/schema";
 import { EXERCISES } from "@/content/exercises";
 import { EXERCISE_VIDEOS } from "@/content/videos";
+import OPEN_LIBRARY from "@/content/open-library.json";
+import { OPEN_LIBRARY_ATTRIBUTION, type ExerciseSeed, type OpenExerciseSeed } from "@/content/types";
+
+type AnySeed = (ExerciseSeed & { source: "form" }) | (OpenExerciseSeed & { source: "open" });
+const ALL: AnySeed[] = [
+  ...EXERCISES.map((e) => ({ ...e, source: "form" as const })),
+  ...(OPEN_LIBRARY as OpenExerciseSeed[]).map((e) => ({ ...e, source: "open" as const })),
+];
 
 /**
  * Upserts FORM's approved exercise library (org_id = null) from source.
@@ -13,10 +21,10 @@ export async function syncExerciseLibrary(db: Queryable) {
   const existing = await db
     .select({ id: exercises.id, slug: exercises.slug })
     .from(exercises)
-    .where(inArray(exercises.slug, EXERCISES.map((e) => e.slug)));
+    .where(inArray(exercises.slug, ALL.map((e) => e.slug)));
   const idBySlug = new Map(existing.map((row) => [row.slug, row.id]));
 
-  for (const seed of EXERCISES) {
+  for (const seed of ALL) {
     const values = {
       orgId: null,
       slug: seed.slug,
@@ -39,6 +47,8 @@ export async function syncExerciseLibrary(db: Queryable) {
       commonMistakes: seed.commonMistakes,
       safetyNotes: seed.safetyNotes,
       tags: seed.tags,
+      source: seed.source,
+      attribution: seed.source === "open" ? OPEN_LIBRARY_ATTRIBUTION : null,
       isActive: true,
     };
     const currentId = idBySlug.get(seed.slug);
@@ -62,6 +72,17 @@ export async function syncExerciseLibrary(db: Queryable) {
       demo: seed.demo,
       position: 1,
     })),
+    ...(OPEN_LIBRARY as OpenExerciseSeed[]).flatMap((seed) =>
+      seed.images.map((url, i) => ({
+        exerciseId: idBySlug.get(seed.slug)!,
+        type: "image" as const,
+        provider: "file" as const,
+        url,
+        source: OPEN_LIBRARY_ATTRIBUTION,
+        altText: `${seed.name} — ${i === 0 ? "start" : "end"} position`,
+        position: 10 + i,
+      })),
+    ),
     ...EXERCISE_VIDEOS.filter((v) => idBySlug.has(v.slug)).map((v) => ({
       exerciseId: idBySlug.get(v.slug)!,
       type: "video" as const,

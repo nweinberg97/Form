@@ -44,8 +44,11 @@ function prng(seed: number) {
 }
 
 
-type ItemSpec = Omit<DraftItem, "exerciseId" | "lineageId" | "days" | "note" | "side" | "perSide"> & {
+type ItemSpec = {
   slug: string;
+  sets: number;
+  reps?: number | null;
+  durationSec?: number | null;
   note?: string;
   perSide?: boolean;
   side?: DraftItem["side"];
@@ -73,7 +76,7 @@ export async function seedDemoClinic(db: Queryable, opts: { timezone: string }) 
       lineageId: lineages?.get(item.slug) ?? null,
       exerciseId: need(item.slug),
       sets: item.sets,
-      reps: item.durationSec ? null : item.reps,
+      reps: item.durationSec ? null : item.reps ?? null,
       durationSec: item.durationSec ?? null,
       perSide: item.perSide ?? false,
       side: item.side ?? "both",
@@ -537,7 +540,7 @@ export async function seedDemoClinic(db: Queryable, opts: { timezone: string }) 
           exerciseId: need(item.slug),
           position,
           sets: item.sets,
-          reps: item.durationSec ? null : item.reps,
+          reps: item.durationSec ? null : item.reps ?? null,
           durationSec: item.durationSec ?? null,
           perSide: item.perSide ?? false,
           side: item.side ?? "both",

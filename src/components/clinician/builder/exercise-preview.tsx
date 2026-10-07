@@ -47,6 +47,8 @@ export function ExercisePreview({
         name={exercise.name}
         demo={exercise.demo}
         video={exercise.video}
+        images={exercise.images}
+        attribution={exercise.attribution}
         instructions={exercise.instructions}
       />
       <div>

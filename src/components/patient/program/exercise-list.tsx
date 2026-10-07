@@ -40,7 +40,7 @@ export function ProgramExerciseList({
                   {String(i + 1).padStart(2, "0")}
                 </span>
                 <span aria-hidden className="w-16 shrink-0">
-                  <DemoThumb demo={item.exercise.demo} label={`${item.exercise.name} demonstration`} />
+                  <DemoThumb demo={item.exercise.demo} images={item.exercise.images} label={`${item.exercise.name} demonstration`} />
                 </span>
                 <span className="min-w-0 flex-1">
                   <span className="block truncate text-[17px] font-semibold tracking-[-0.015em]">{item.exercise.name}</span>
@@ -77,6 +77,8 @@ export function ProgramExerciseList({
               name={open.exercise.name}
               demo={open.exercise.demo}
               video={open.exercise.video}
+              images={open.exercise.images}
+              attribution={open.exercise.attribution}
               instructions={open.exercise.instructions}
             />
             <ExerciseDetails

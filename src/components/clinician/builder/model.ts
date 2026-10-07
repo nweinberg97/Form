@@ -169,7 +169,7 @@ export function buildIndex(library: LibraryExercise[]): SearchIndex[] {
 export function searchLibrary(
   index: SearchIndex[],
   query: string,
-  filters: { area?: string | null; equipment?: string | null; category?: string | null } = {},
+  filters: { area?: string | null; equipment?: string | null; category?: string | null; source?: string | null } = {},
 ) {
   const words = query
     .toLowerCase()
@@ -182,8 +182,11 @@ export function searchLibrary(
     if (filters.area && !e.bodyAreas.includes(filters.area)) continue;
     if (filters.equipment && !e.equipment.includes(filters.equipment)) continue;
     if (filters.category && !e.categories.includes(filters.category)) continue;
+    if (filters.source && e.source !== filters.source) continue;
+    // FORM's rehab library ranks above the open library on ties.
+    const sourceBoost = e.source === "form" ? 0.5 : 0;
     if (!words.length) {
-      out.push({ exercise: e, score: 0 });
+      out.push({ exercise: e, score: sourceBoost });
       continue;
     }
     let score = 0;
@@ -198,7 +201,7 @@ export function searchLibrary(
         break;
       }
     }
-    if (ok) out.push({ exercise: e, score });
+    if (ok) out.push({ exercise: e, score: score + sourceBoost });
   }
   return out.sort((a, b) => b.score - a.score || a.exercise.name.localeCompare(b.exercise.name)).map((r) => r.exercise);
 }

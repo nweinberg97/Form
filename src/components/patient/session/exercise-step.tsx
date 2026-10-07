@@ -64,7 +64,7 @@ export function ExerciseStep({
         ) : null}
       </header>
 
-      <ExerciseDemo name={ex.name} demo={ex.demo} video={ex.video} instructions={ex.instructions} size="lg" />
+      <ExerciseDemo name={ex.name} demo={ex.demo} video={ex.video} images={ex.images} attribution={ex.attribution} instructions={ex.instructions} size="lg" />
 
       {item.durationSec ? (
         <HoldTimer

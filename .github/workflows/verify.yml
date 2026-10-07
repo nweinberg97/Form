@@ -7,6 +7,8 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 concurrency:
   group: verify
@@ -15,7 +17,9 @@ concurrency:
 jobs:
   verify:
     runs-on: ubuntu-latest
-    timeout-minutes: 40
+    timeout-minutes: 45
+    environment:
+      name: github-pages
     services:
       postgres:
         image: postgres:16
@@ -66,16 +70,62 @@ jobs:
         run: |
           npm run build 2>&1 | tee ci-out/logs/build.txt
           exit ${PIPESTATUS[0]}
-      - name: End-to-end
+      - name: Build browser demo
+        id: demo_build
+        continue-on-error: true
+        run: |
+          npm run demo:build 2>&1 | tee ci-out/logs/demo-build.txt
+          exit ${PIPESTATUS[0]}
+      - name: Typecheck browser demo
+        id: demo_typecheck
+        continue-on-error: true
+        run: |
+          npm run demo:typecheck 2>&1 | tee ci-out/logs/demo-typecheck.txt
+          exit ${PIPESTATUS[0]}
+      - name: End-to-end (browser demo)
         id: e2e
-        if: steps.build.outcome == 'success'
+        if: steps.demo_build.outcome == 'success'
         continue-on-error: true
         run: |
           npx playwright install --with-deps chromium > ci-out/logs/playwright-install.txt 2>&1
-          (npm run start > ci-out/logs/server.txt 2>&1 &)
-          npx wait-on -t 90000 http://localhost:3000 || true
-          node scripts/e2e.mjs 2>&1 | tee ci-out/logs/e2e.txt
+          (npx vite preview --config demo/vite.config.ts --port 4173 --strictPort > ci-out/logs/preview.txt 2>&1 &)
+          npx wait-on -t 60000 http://localhost:4173/
+          node scripts/e2e-demo.mjs http://localhost:4173/ ci-out/screens 2>&1 | tee ci-out/logs/e2e.txt
           exit ${PIPESTATUS[0]}
+      - name: Smoke test (full server app)
+        id: server_smoke
+        if: steps.build.outcome == 'success'
+        continue-on-error: true
+        run: |
+          (npm run start > ci-out/logs/server.txt 2>&1 &)
+          npx wait-on -t 90000 http://localhost:3000
+          for path in / /login /signup /demo /app /clinic; do
+            code=$(curl -s -o /dev/null -w "%{http_code}" "http://localhost:3000$path")
+            echo "$path $code" | tee -a ci-out/logs/server-smoke.txt
+          done
+          ! grep -E " 5[0-9][0-9]$" ci-out/logs/server-smoke.txt
+      - name: Upload Pages artifact
+        if: steps.demo_build.outcome == 'success' && github.ref == 'refs/heads/main'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist-demo
+      - name: Deploy to GitHub Pages
+        id: pages
+        if: steps.demo_build.outcome == 'success' && github.ref == 'refs/heads/main'
+        continue-on-error: true
+        uses: actions/deploy-pages@v4
+      - name: Also publish demo to gh-pages branch
+        if: steps.demo_build.outcome == 'success' && github.ref == 'refs/heads/main'
+        continue-on-error: true
+        run: |
+          cd dist-demo
+          touch .nojekyll
+          git init -q -b gh-pages
+          git config user.name "ci"
+          git config user.email "ci@users.noreply.github.com"
+          git add -A
+          git commit -qm "Browser demo for ${{ github.sha }}"
+          git push -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" gh-pages
       - name: Publish results to ci-results branch
         if: always()
         run: |
@@ -86,10 +136,15 @@ jobs:
           typecheck: ${{ steps.typecheck.outcome }}
           migrate: ${{ steps.migrate.outcome }}
           build: ${{ steps.build.outcome }}
+          demo_build: ${{ steps.demo_build.outcome }}
+          demo_typecheck: ${{ steps.demo_typecheck.outcome }}
           e2e: ${{ steps.e2e.outcome }}
+          server_smoke: ${{ steps.server_smoke.outcome }}
+          pages: ${{ steps.pages.outcome }} ${{ steps.pages.outputs.page_url }}
           SUM
           cp package-lock.json ci-out/ 2>/dev/null || true
           cp -r drizzle ci-out/drizzle 2>/dev/null || true
+          cp ci-out/screens/../e2e-report.txt ci-out/ 2>/dev/null || true
           cd ci-out
           git init -q -b ci-results
           git config user.name "ci"

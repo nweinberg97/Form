@@ -24,16 +24,17 @@ export function LibraryBrowser({ library }: { library: LibraryExercise[] }) {
   const [area, setArea] = useState("");
   const [equipment, setEquipment] = useState("");
   const [category, setCategory] = useState("");
+  const [source, setSource] = useState("");
   const [openId, setOpenId] = useState<string | null>(null);
   const searchRef = useRef<HTMLInputElement>(null);
   useSlashFocus(searchRef);
 
   const results = useMemo(
-    () => searchLibrary(index, query, { area: area || null, equipment: equipment || null, category: category || null }),
-    [index, query, area, equipment, category],
+    () => searchLibrary(index, query, { area: area || null, equipment: equipment || null, category: category || null, source: source || null }),
+    [index, query, area, equipment, category, source],
   );
   const open = openId ? byId.get(openId) : null;
-  const filtered = Boolean(query || area || equipment || category);
+  const filtered = Boolean(query || area || equipment || category || source);
 
   return (
     <>
@@ -52,7 +53,11 @@ export function LibraryBrowser({ library }: { library: LibraryExercise[] }) {
           }}
           className="w-full lg:max-w-md"
         />
-        <div className="grid grid-cols-3 gap-2 lg:flex">
+        <div className="grid grid-cols-2 gap-2 sm:grid-cols-4 lg:flex">
+          <FilterSelect id="f-source" label="Library" value={source} onChange={setSource} any="All libraries">
+            <option value="form">FORM rehab library</option>
+            <option value="open">Open library (photos)</option>
+          </FilterSelect>
           <FilterSelect id="f-area" label="Body area" value={area} onChange={setArea} any="Any area">
             {BODY_AREAS.map((a) => (
               <option key={a} value={a}>
@@ -85,6 +90,7 @@ export function LibraryBrowser({ library }: { library: LibraryExercise[] }) {
                 setArea("");
                 setEquipment("");
                 setCategory("");
+                setSource("");
               }}
               className="ml-3 font-medium text-ink underline underline-offset-2"
             >
@@ -106,7 +112,7 @@ export function LibraryBrowser({ library }: { library: LibraryExercise[] }) {
                 className="group flex h-full w-full flex-col overflow-hidden rounded-[14px] border border-line bg-surface text-left transition-colors hover:border-ink"
               >
                 <span className="block p-1.5 pb-0">
-                  <DemoThumb demo={e.demo} label={`${e.name} movement guide`} className="w-full" />
+                  <DemoThumb demo={e.demo} images={e.images} label={`${e.name} movement guide`} className="w-full" />
                 </span>
                 <span className="flex flex-1 flex-col gap-1 p-3.5">
                   <span className="flex items-start justify-between gap-2">

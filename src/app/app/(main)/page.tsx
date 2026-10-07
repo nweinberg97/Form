@@ -341,7 +341,7 @@ function ExerciseList({
             </span>
           ) : compact ? null : (
             <span aria-hidden className="w-[72px] shrink-0">
-              <DemoThumb demo={item.exercise.demo} label={`${item.exercise.name} demonstration`} />
+              <DemoThumb demo={item.exercise.demo} images={item.exercise.images} label={`${item.exercise.name} demonstration`} />
             </span>
           )}
         </li>

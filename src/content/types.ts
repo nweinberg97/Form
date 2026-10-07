@@ -1,6 +1,6 @@
 import type { Demo } from "@/lib/rig";
 
-export const BODY_AREAS = ["neck", "shoulder", "upper-back", "lower-back", "core", "hip", "knee", "ankle"] as const;
+export const BODY_AREAS = ["neck", "shoulder", "upper-back", "lower-back", "core", "hip", "knee", "ankle", "arm"] as const;
 export type BodyArea = (typeof BODY_AREAS)[number];
 
 export const BODY_AREA_LABEL: Record<BodyArea, string> = {
@@ -12,12 +12,13 @@ export const BODY_AREA_LABEL: Record<BodyArea, string> = {
   hip: "Hip",
   knee: "Knee",
   ankle: "Ankle & foot",
+  arm: "Elbow & wrist",
 };
 
 export const CATEGORIES = ["mobility", "strength", "stretch", "stability", "balance", "control"] as const;
 export type Category = (typeof CATEGORIES)[number];
 
-export const EQUIPMENT = ["none", "band", "wall", "chair", "mat", "step", "towel", "doorway"] as const;
+export const EQUIPMENT = ["none", "band", "wall", "chair", "mat", "step", "towel", "doorway", "ball", "foam-roller"] as const;
 export type Equipment = (typeof EQUIPMENT)[number];
 
 export const EQUIPMENT_LABEL: Record<Equipment, string> = {
@@ -29,6 +30,8 @@ export const EQUIPMENT_LABEL: Record<Equipment, string> = {
   step: "Step",
   towel: "Towel",
   doorway: "Doorway",
+  ball: "Exercise ball",
+  "foam-roller": "Foam roller",
 };
 
 export type ExerciseSeed = {
@@ -66,3 +69,11 @@ export type ExerciseSeed = {
   regressions: string[];
   demo: Demo;
 };
+
+/** An exercise imported from the open (public-domain) library: photos instead of a movement guide. */
+export type OpenExerciseSeed = Omit<ExerciseSeed, "demo" | "progressions" | "regressions"> & {
+  images: string[];
+  sourceId: string;
+};
+
+export const OPEN_LIBRARY_ATTRIBUTION = "free-exercise-db (public domain)";

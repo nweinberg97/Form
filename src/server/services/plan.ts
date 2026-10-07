@@ -41,6 +41,10 @@ export type ExerciseSummary = {
   isActive: boolean;
   demo: Demo | null;
   video: ExerciseVideo | null;
+  /** Start/end photos (open library). Paths are relative to the site root. */
+  images: string[];
+  source: "form" | "open";
+  attribution: string | null;
 };
 
 export type ExerciseVideo =
@@ -146,6 +150,9 @@ export async function loadExerciseSummaries(db: Queryable, ids: string[], orgId:
       isActive: row.isActive,
       demo: animation?.demo ?? null,
       video,
+      images: mine.filter((m) => m.type === "image" && m.url).map((m) => m.url!),
+      source: row.source,
+      attribution: row.attribution,
     });
   }
   return map;

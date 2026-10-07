@@ -1,0 +1,4259 @@
+[
+ {
+  "slug": "open-90-90-hamstring",
+  "name": "90/90 Hamstring",
+  "summary": "A stretch for the hamstrings.",
+  "bodyAreas": [
+   "hip",
+   "knee"
+  ],
+  "movementPatterns": [
+   "push",
+   "isolation"
+  ],
+  "categories": [
+   "stretch"
+  ],
+  "equipment": [
+   "none"
+  ],
+  "difficulty": 1,
+  "lateralitySupported": false,
+  "defaultDosage": {
+   "sets": 2,
+   "durationSec": 30
+  },
+  "secondsPerSet": 45,
+  "instructions": [
+   "Lie on your back, with one leg extended straight out.",
+   "With the other leg, bend the hip and knee to 90 degrees. You may brace your leg with your hands if necessary. This will be your starting position.",
+   "Extend your leg straight into the air, pausing briefly at the top. Return the leg to the starting position.",
+   "Repeat for 10-20 repetitions, and then switch to the other leg."
+  ],
+  "formCues": [
+   "Breathe slowly and stay relaxed",
+   "Ease off if anything feels sharp"
+  ],
+  "feel": "A steady, comfortable stretch — never sharp pain.",
+  "commonMistakes": [
+   "Rushing the movement",
+   "Holding your breath"
+  ],
+  "safetyNotes": "Stop if you feel sharp or increasing pain, numbness or tingling, and check with your physio before continuing.",
+  "tags": [
+   "hamstrings",
+   "open library",
+   "stretch"
+  ],
+  "images": [
+   "library/open-90-90-hamstring/0.webp",
+   "library/open-90-90-hamstring/1.webp"
+  ],
+  "sourceId": "90_90_Hamstring"
+ },
+ {
+  "slug": "open-ankle-circles",
+  "name": "Ankle Circles",
+  "summary": "Gentle mobility for the calves.",
+  "bodyAreas": [
+   "ankle"
+  ],
+  "movementPatterns": [
+   "pull",
+   "isolation"
+  ],
+  "categories": [
+   "mobility"
+  ],
+  "equipment": [
+   "none"
+  ],
+  "difficulty": 1,
+  "lateralitySupported": false,
+  "defaultDosage": {
+   "sets": 2,
+   "reps": 10
+  },
+  "secondsPerSet": 45,
+  "instructions": [
+   "Use a sturdy object like a squat rack to hold yourself.",
+   "Lift the right leg in the air (just around 2 inches from the floor) and perform a circular motion with the big toe. Pretend that you are drawing a big circle with it. Tip: One circle equals 1 repetition. Breathe normally as you perform the movement.",
+   "When you are done with the right foot, then repeat with the left leg."
+  ],
+  "formCues": [
+   "Breathe slowly and stay relaxed",
+   "Ease off if anything feels sharp"
+  ],
+  "feel": "Easy, smooth movement through a comfortable range.",
+  "commonMistakes": [
+   "Rushing the movement",
+   "Holding your breath"
+  ],
+  "safetyNotes": "Stop if you feel sharp or increasing pain, numbness or tingling, and check with your physio before continuing.",
+  "tags": [
+   "calves",
+   "mobility",
+   "open library"
+  ],
+  "images": [
+   "library/open-ankle-circles/0.webp",
+   "library/open-ankle-circles/1.webp"
+  ],
+  "sourceId": "Ankle_Circles"
+ },
+ {
+  "slug": "open-ankle-on-the-knee",
+  "name": "Ankle On The Knee",
+  "summary": "A stretch for the glutes.",
+  "bodyAreas": [
+   "hip"
+  ],
+  "movementPatterns": [
+   "static",
+   "isolation"
+  ],
+  "categories": [
+   "stretch"
+  ],
+  "equipment": [
+   "none"
+  ],
+  "difficulty": 1,
+  "lateralitySupported": true,
+  "defaultDosage": {
+   "sets": 2,
+   "durationSec": 30
+  },
+  "secondsPerSet": 45,
+  "instructions": [
+   "From a lying position, bend your knees and keep your feet on the floor.",
+   "Place your ankle of one foot on your opposite knee.",
+   "Grasp the thigh or knee of the bottom leg and pull both of your legs into the chest. Relax your neck and shoulders. Hold for 10-20 seconds and then switch sides."
+  ],
+  "formCues": [
+   "Breathe slowly and stay relaxed",
+   "Ease off if anything feels sharp"
+  ],
+  "feel": "A steady, comfortable stretch — never sharp pain.",
+  "commonMistakes": [
+   "Rushing the movement",
+   "Holding your breath"
+  ],
+  "safetyNotes": "Stop if you feel sharp or increasing pain, numbness or tingling, and check with your physio before continuing.",
+  "tags": [
+   "glutes",
+   "open library",
+   "stretch"
+  ],
+  "images": [
+   "library/open-ankle-on-the-knee/0.webp",
+   "library/open-ankle-on-the-knee/1.webp"
+  ],
+  "sourceId": "Ankle_On_The_Knee"
+ },
+ {
+  "slug": "open-arm-circles",
+  "name": "Arm Circles",
+  "summary": "Gentle mobility for the shoulders.",
+  "bodyAreas": [
+   "shoulder"
+  ],
+  "movementPatterns": [
+   "push",
+   "isolation"
+  ],
+  "categories": [
+   "mobility"
+  ],
+  "equipment": [
+   "none"
+  ],
+  "difficulty": 1,
+  "lateralitySupported": false,
+  "defaultDosage": {
+   "sets": 2,
+   "reps": 10
+  },
+  "secondsPerSet": 45,
+  "instructions": [
+   "Stand up and extend your arms straight out by the sides. The arms should be parallel to the floor and perpendicular (90-degree angle) to your torso. This will be your starting position.",
+   "Slowly start to make circles of about 1 foot in diameter with each outstretched arm. Breathe normally as you perform the movement.",
+   "Continue the circular motion of the outstretched arms for about ten seconds. Then reverse the movement, going the opposite direction."
+  ],
+  "formCues": [
+   "Breathe slowly and stay relaxed",
+   "Ease off if anything feels sharp"
+  ],
+  "feel": "Easy, smooth movement through a comfortable range.",
+  "commonMistakes": [
+   "Rushing the movement",
+   "Holding your breath"
+  ],
+  "safetyNotes": "Stop if you feel sharp or increasing pain, numbness or tingling, and check with your physio before continuing.",
+  "tags": [
+   "mobility",
+   "open library",
+   "shoulders"
+  ],
+  "images": [
+   "library/open-arm-circles/0.webp",
+   "library/open-arm-circles/1.webp"
+  ],
+  "sourceId": "Arm_Circles"
+ },
+ {
+  "slug": "open-back-flyes-with-bands",
+  "name": "Back Flyes with Band",
+  "summary": "Strength work for the shoulders.",
+  "bodyAreas": [
+   "shoulder"
+  ],
+  "movementPatterns": [
+   "pull",
+   "compound"
+  ],
+  "categories": [
+   "strength"
+  ],
+  "equipment": [
+   "band"
+  ],
+  "difficulty": 1,
+  "lateralitySupported": false,
+  "defaultDosage": {
+   "sets": 2,
+   "reps": 10
+  },
+  "secondsPerSet": 45,
+  "instructions": [
+   "Run a band around a stationary post like that of a squat rack.",
+   "Grab the band by the handles and stand back so that the tension in the band rises.",
+   "Extend and lift the arms straight in front of you. Tip: Your arms should be straight and parallel to the floor while perpendicular to your torso. Your feet should be firmly planted on the floor spread at shoulder width. This will be your starting position.",
+   "As you exhale, move your arms to the sides and back. Keep your arms extended and parallel to the floor. Continue the movement until the arms are extended to your sides.",
+   "After a pause, go back to the original position as you inhale.",
+   "Repeat for the recommended amount of repetitions."
+  ],
+  "formCues": [
+   "Move slowly and with control",
+   "Stop a rep or two before your form fades"
+  ],
+  "feel": "The working muscles should feel challenged, not painful.",
+  "commonMistakes": [
+   "Rushing the movement",
+   "Holding your breath"
+  ],
+  "safetyNotes": "Stop if you feel sharp or increasing pain, numbness or tingling, and check with your physio before continuing.",
+  "tags": [
+   "open library",
+   "shoulders",
+   "strength"
+  ],
+  "images": [
+   "library/open-back-flyes-with-bands/0.webp",
+   "library/open-back-flyes-with-bands/1.webp"
+  ],
+  "sourceId": "Back_Flyes_-_With_Bands"
+ },
+ {
+  "slug": "open-band-hip-adductions",
+  "name": "Band Hip Adductions",
+  "summary": "Strength work for the adductors.",
+  "bodyAreas": [
+   "hip"
+  ],
+  "movementPatterns": [
+   "pull",
+   "isolation"
+  ],
+  "categories": [
+   "strength"
+  ],
+  "equipment": [
+   "band"
+  ],
+  "difficulty": 1,
+  "lateralitySupported": false,
+  "defaultDosage": {
+   "sets": 2,
+   "reps": 10
+  },
+  "secondsPerSet": 45,
+  "instructions": [
+   "Anchor a band around a solid post or other object.",
+   "Stand with your left side to the post, and put your right foot through the band, getting it around the ankle.",
+   "Stand up straight and hold onto the post if needed. This will be your starting position.",
+   "Keeping the knee straight, raise your right legs out to the side as far as you can.",
+   "Return to the starting position and repeat for the desired rep count.",
+   "Switch sides."
+  ],
+  "formCues": [
+   "Move slowly and with control",
+   "Stop a rep or two before your form fades"
+  ],
+  "feel": "The working muscles should feel challenged, not painful.",
+  "commonMistakes": [
+   "Rushing the movement",
+   "Holding your breath"
+  ],
+  "safetyNotes": "Stop if you feel sharp or increasing pain, numbness or tingling, and check with your physio before continuing.",
+  "tags": [
+   "adductors",
+   "open library",
+   "strength"
+  ],
+  "images": [
+   "library/open-band-hip-adductions/0.webp",
+   "library/open-band-hip-adductions/1.webp"
+  ],
+  "sourceId": "Band_Hip_Adductions"
+ },
+ {
+  "slug": "open-bent-knee-hip-raise",
+  "name": "Bent-Knee Hip Raise",
+  "summary": "Strength work for the abdominals.",
+  "bodyAreas": [
+   "core"
+  ],
+  "movementPatterns": [
+   "pull",
+   "compound"
+  ],
+  "categories": [
+   "strength"
+  ],
+  "equipment": [
+   "none"
+  ],
+  "difficulty": 1,
+  "lateralitySupported": false,
+  "defaultDosage": {
+   "sets": 2,
+   "reps": 10
+  },
+  "secondsPerSet": 45,
+  "instructions": [
+   "Lay flat on the floor with your arms next to your sides.",
+   "Now bend your knees at around a 75 degree angle and lift your feet off the floor by around 2 inches.",
+   "Using your lower abs, bring your knees in towards you as you maintain the 75 degree angle bend in your legs. Continue this movement until you raise your hips off of the floor by rolling your pelvis backward. Breathe out as you perform this portion of the movement. Tip: At the end of the movement your knees will be over your chest.",
+   "Squeeze your abs at the top of the movement for a second and then return to the starting position slowly as you breathe in. Tip: Maintain a controlled motion at all times.",
+   "Repeat for the recommended amount of repetitions."
+  ],
+  "formCues": [
+   "Move slowly and with control",
+   "Stop a rep or two before your form fades"
+  ],
+  "feel": "The working muscles should feel challenged, not painful.",
+  "commonMistakes": [
+   "Rushing the movement",
+   "Holding your breath"
+  ],
+  "safetyNotes": "Stop if you feel sharp or increasing pain, numbness or tingling, and check with your physio before continuing.",
+  "tags": [
+   "abdominals",
+   "open library",
+   "strength"
+  ],
+  "images": [
+   "library/open-bent-knee-hip-raise/0.webp",
+   "library/open-bent-knee-hip-raise/1.webp"
+  ],
+  "sourceId": "Bent-Knee_Hip_Raise"
+ },
+ {
+  "slug": "open-bodyweight-squat",
+  "name": "Bodyweight Squat",
+  "summary": "Strength work for the quadriceps.",
+  "bodyAreas": [
+   "knee"
+  ],
+  "movementPatterns": [
+   "push",
+   "compound"
+  ],
+  "categories": [
+   "strength"
+  ],
+  "equipment": [
+   "none"
+  ],
+  "difficulty": 1,
+  "lateralitySupported": false,
+  "defaultDosage": {
+   "sets": 2,
+   "reps": 10
+  },
+  "secondsPerSet": 45,
+  "instructions": [
+   "Stand with your feet shoulder width apart. You can place your hands behind your head. This will be your starting position.",
+   "Begin the movement by flexing your knees and hips, sitting back with your hips.",
+   "Continue down to full depth if you are able,and quickly reverse the motion until you return to the starting position. As you squat, keep your head and chest up and push your knees out."
+  ],
+  "formCues": [
+   "Move slowly and with control",
+   "Stop a rep or two before your form fades"
+  ],
+  "feel": "The working muscles should feel challenged, not painful.",
+  "commonMistakes": [
+   "Rushing the movement",
+   "Holding your breath"
+  ],
+  "safetyNotes": "Stop if you feel sharp or increasing pain, numbness or tingling, and check with your physio before continuing.",
+  "tags": [
+   "open library",
+   "quadriceps",
+   "strength"
+  ],
+  "images": [
+   "library/open-bodyweight-squat/0.webp",
+   "library/open-bodyweight-squat/1.webp"
+  ],
+  "sourceId": "Bodyweight_Squat"
+ },
+ {
+  "slug": "open-butt-lift-bridge",
+  "name": "Butt Lift (Bridge)",
+  "summary": "Strength work for the glutes.",
+  "bodyAreas": [
+   "hip"
+  ],
+  "movementPatterns": [
+   "push",
+   "isolation"
+  ],
+  "categories": [
+   "strength"
+  ],
+  "equipment": [
+   "none"
+  ],
+  "difficulty": 1,
+  "lateralitySupported": false,
+  "defaultDosage": {
+   "sets": 2,
+   "reps": 10
+  },
+  "secondsPerSet": 45,
+  "instructions": [
+   "Lie flat on the floor on your back with the hands by your side and your knees bent. Your feet should be placed around shoulder width. This will be your starting position.",
+   "Pushing mainly with your heels, lift your hips off the floor while keeping your back straight. Breathe out as you perform this part of the motion and hold at the top for a second.",
+   "Slowly go back to the starting position as you breathe in."
+  ],
+  "formCues": [
+   "Move slowly and with control",
+   "Stop a rep or two before your form fades"
+  ],
+  "feel": "The working muscles should feel challenged, not painful.",
+  "commonMistakes": [
+   "Rushing the movement",
+   "Holding your breath"
+  ],
+  "safetyNotes": "Stop if you feel sharp or increasing pain, numbness or tingling, and check with your physio before continuing.",
+  "tags": [
+   "glutes",
+   "open library",
+   "strength"
+  ],
+  "images": [
+   "library/open-butt-lift-bridge/0.webp",
+   "library/open-butt-lift-bridge/1.webp"
+  ],
+  "sourceId": "Butt_Lift_Bridge"
+ },
+ {
+  "slug": "open-calf-raises-with-bands",
+  "name": "Calf Raises with Band",
+  "summary": "Strength work for the calves.",
+  "bodyAreas": [
+   "ankle"
+  ],
+  "movementPatterns": [
+   "push",
+   "isolation"
+  ],
+  "categories": [
+   "strength"
+  ],
+  "equipment": [
+   "band"
+  ],
+  "difficulty": 1,
+  "lateralitySupported": false,
+  "defaultDosage": {
+   "sets": 2,
+   "reps": 10
+  },
+  "secondsPerSet": 45,
+  "instructions": [
+   "Grab an exercise band and stand on it with your toes making sure that the length of the band between the foot and the arms is the same for both sides.",
+   "While holding the handles of the band, raise the arms to the side of your head as if you were getting ready to perform a shoulder press. The palms should be facing forward with the elbows bent and to the sides. This movement will create tension on the band. This will be your starting position.",
+   "Keeping the hands by your shoulder, stand up on your toes as you exhale and contract the calves hard at the top of the movement.",
+   "After a one second contraction, slowly go back down to the starting position.",
+   "Repeat for the recommended amount of repetitions."
+  ],
+  "formCues": [
+   "Move slowly and with control",
+   "Stop a rep or two before your form fades"
+  ],
+  "feel": "The working muscles should feel challenged, not painful.",
+  "commonMistakes": [
+   "Rushing the movement",
+   "Holding your breath"
+  ],
+  "safetyNotes": "Stop if you feel sharp or increasing pain, numbness or tingling, and check with your physio before continuing.",
+  "tags": [
+   "calves",
+   "open library",
+   "strength"
+  ],
+  "images": [
+   "library/open-calf-raises-with-bands/0.webp",
+   "library/open-calf-raises-with-bands/1.webp"
+  ],
+  "sourceId": "Calf_Raises_-_With_Bands"
+ },
+ {
+  "slug": "open-calf-stretch-elbows-against-wall",
+  "name": "Calf Stretch Elbows Against Wall",
+  "summary": "A stretch for the calves.",
+  "bodyAreas": [
+   "ankle"
+  ],
+  "movementPatterns": [
+   "static",
+   "isolation"
+  ],
+  "categories": [
+   "stretch"
+  ],
+  "equipment": [
+   "none"
+  ],
+  "difficulty": 1,
+  "lateralitySupported": false,
+  "defaultDosage": {
+   "sets": 2,
+   "durationSec": 30
+  },
+  "secondsPerSet": 45,
+  "instructions": [
+   "Stand facing a wall from a couple feet away.",
+   "Lean against the wall, placing your weight on your forearms.",
+   "Attempt to keep your heels on the ground. Hold for 10-20 seconds. You may move further or closer the wall, making it more or less difficult, respectively."
+  ],
+  "formCues": [
+   "Breathe slowly and stay relaxed",
+   "Ease off if anything feels sharp"
+  ],
+  "feel": "A steady, comfortable stretch — never sharp pain.",
+  "commonMistakes": [
+   "Rushing the movement",
+   "Holding your breath"
+  ],
+  "safetyNotes": "Stop if you feel sharp or increasing pain, numbness or tingling, and check with your physio before continuing.",
+  "tags": [
+   "calves",
+   "open library",
+   "stretch"
+  ],
+  "images": [
+   "library/open-calf-stretch-elbows-against-wall/0.webp",
+   "library/open-calf-stretch-elbows-against-wall/1.webp"
+  ],
+  "sourceId": "Calf_Stretch_Elbows_Against_Wall"
+ },
+ {
+  "slug": "open-calf-stretch-hands-against-wall",
+  "name": "Calf Stretch Hands Against Wall",
+  "summary": "A stretch for the calves.",
+  "bodyAreas": [
+   "ankle"
+  ],
+  "movementPatterns": [
+   "static",
+   "isolation"
+  ],
+  "categories": [
+   "stretch"
+  ],
+  "equipment": [
+   "none"
+  ],
+  "difficulty": 1,
+  "lateralitySupported": false,
+  "defaultDosage": {
+   "sets": 2,
+   "durationSec": 30
+  },
+  "secondsPerSet": 45,
+  "instructions": [
+   "Stand facing a wall from several feet away. Stagger your stance, placing one foot forward.",
+   "Lean forward and rest your hands on the wall, keeping your heel, hip and head in a straight line.",
+   "Attempt to keep your heel on the ground. Hold for 10-20 seconds and then switch sides."
+  ],
+  "formCues": [
+   "Breathe slowly and stay relaxed",
+   "Ease off if anything feels sharp"
+  ],
+  "feel": "A steady, comfortable stretch — never sharp pain.",
+  "commonMistakes": [
+   "Rushing the movement",
+   "Holding your breath"
+  ],
+  "safetyNotes": "Stop if you feel sharp or increasing pain, numbness or tingling, and check with your physio before continuing.",
+  "tags": [
+   "calves",
+   "open library",
+   "stretch"
+  ],
+  "images": [
+   "library/open-calf-stretch-hands-against-wall/0.webp",
+   "library/open-calf-stretch-hands-against-wall/1.webp"
+  ],
+  "sourceId": "Calf_Stretch_Hands_Against_Wall"
+ },
+ {
+  "slug": "open-cat-stretch",
+  "name": "Cat Stretch",
+  "summary": "A stretch for the lower back.",
+  "bodyAreas": [
+   "lower-back"
+  ],
+  "movementPatterns": [
+   "static",
+   "isolation"
+  ],
+  "categories": [
+   "stretch"
+  ],
+  "equipment": [
+   "none"
+  ],
+  "difficulty": 1,
+  "lateralitySupported": false,
+  "defaultDosage": {
+   "sets": 2,
+   "durationSec": 30
+  },
+  "secondsPerSet": 45,
+  "instructions": [
+   "Position yourself on the floor on your hands and knees.",
+   "Pull your belly in and round your spine, lower back, shoulders, and neck, letting your head drop.",
+   "Hold for 15 seconds."
+  ],
+  "formCues": [
+   "Breathe slowly and stay relaxed",
+   "Ease off if anything feels sharp"
+  ],
+  "feel": "A steady, comfortable stretch — never sharp pain.",
+  "commonMistakes": [
+   "Rushing the movement",
+   "Holding your breath"
+  ],
+  "safetyNotes": "Stop if you feel sharp or increasing pain, numbness or tingling, and check with your physio before continuing.",
+  "tags": [
+   "lower back",
+   "open library",
+   "stretch"
+  ],
+  "images": [
+   "library/open-cat-stretch/0.webp",
+   "library/open-cat-stretch/1.webp"
+  ],
+  "sourceId": "Cat_Stretch"
+ },
+ {
+  "slug": "open-chair-leg-extended-stretch",
+  "name": "Chair Leg Extended Stretch",
+  "summary": "A stretch for the hamstrings.",
+  "bodyAreas": [
+   "hip",
+   "knee"
+  ],
+  "movementPatterns": [
+   "static",
+   "isolation"
+  ],
+  "categories": [
+   "stretch"
+  ],
+  "equipment": [
+   "none"
+  ],
+  "difficulty": 1,
+  "lateralitySupported": false,
+  "defaultDosage": {
+   "sets": 2,
+   "durationSec": 30
+  },
+  "secondsPerSet": 45,
+  "instructions": [
+   "Sit upright in a chair and grip the seat on the sides.",
+   "Raise one leg, extending the knee, flexing the ankle as you do so.",
+   "Slowly move that leg outward as far as you can, and then back to the center and down.",
+   "Repeat for your other leg."
+  ],
+  "formCues": [
+   "Breathe slowly and stay relaxed",
+   "Ease off if anything feels sharp"
+  ],
+  "feel": "A steady, comfortable stretch — never sharp pain.",
+  "commonMistakes": [
+   "Rushing the movement",
+   "Holding your breath"
+  ],
+  "safetyNotes": "Stop if you feel sharp or increasing pain, numbness or tingling, and check with your physio before continuing.",
+  "tags": [
+   "hamstrings",
+   "open library",
+   "stretch"
+  ],
+  "images": [
+   "library/open-chair-leg-extended-stretch/0.webp",
+   "library/open-chair-leg-extended-stretch/1.webp"
+  ],
+  "sourceId": "Chair_Leg_Extended_Stretch"
+ },
+ {
+  "slug": "open-chair-lower-back-stretch",
+  "name": "Chair Lower Back Stretch",
+  "summary": "A stretch for the lats.",
+  "bodyAreas": [
+   "upper-back"
+  ],
+  "movementPatterns": [
+   "static",
+   "isolation"
+  ],
+  "categories": [
+   "stretch"
+  ],
+  "equipment": [
+   "none"
+  ],
+  "difficulty": 1,
+  "lateralitySupported": false,
+  "defaultDosage": {
+   "sets": 2,
+   "durationSec": 30
+  },
+  "secondsPerSet": 45,
+  "instructions": [
+   "Sit upright on a chair.",
+   "Bend to one side with your arm over your head. You can hold onto the chair with your free hand.",
+   "Hold for 10 seconds, and repeat for your other side."
+  ],
+  "formCues": [
+   "Breathe slowly and stay relaxed",
+   "Ease off if anything feels sharp"
+  ],
+  "feel": "A steady, comfortable stretch — never sharp pain.",
+  "commonMistakes": [
+   "Rushing the movement",
+   "Holding your breath"
+  ],
+  "safetyNotes": "Stop if you feel sharp or increasing pain, numbness or tingling, and check with your physio before continuing.",
+  "tags": [
+   "lats",
+   "open library",
+   "stretch"
+  ],
+  "images": [
+   "library/open-chair-lower-back-stretch/0.webp",
+   "library/open-chair-lower-back-stretch/1.webp"
+  ],
+  "sourceId": "Chair_Lower_Back_Stretch"
+ },
+ {
+  "slug": "open-chair-upper-body-stretch",
+  "name": "Chair Upper Body Stretch",
+  "summary": "A stretch for the shoulders.",
+  "bodyAreas": [
+   "shoulder"
+  ],
+  "movementPatterns": [
+   "static",
+   "isolation"
+  ],
+  "categories": [
+   "stretch"
+  ],
+  "equipment": [
+   "none"
+  ],
+  "difficulty": 1,
+  "lateralitySupported": false,
+  "defaultDosage": {
+   "sets": 2,
+   "durationSec": 30
+  },
+  "secondsPerSet": 45,
+  "instructions": [
+   "Sit on the edge of a chair, gripping the back of it.",
+   "Straighten your arms, keeping your back straight, and pull your upper body forward so you feel a stretch. Hold for 20-30 seconds."
+  ],
+  "formCues": [
+   "Breathe slowly and stay relaxed",
+   "Ease off if anything feels sharp"
+  ],
+  "feel": "A steady, comfortable stretch — never sharp pain.",
+  "commonMistakes": [
+   "Rushing the movement",
+   "Holding your breath"
+  ],
+  "safetyNotes": "Stop if you feel sharp or increasing pain, numbness or tingling, and check with your physio before continuing.",
+  "tags": [
+   "open library",
+   "shoulders",
+   "stretch"
+  ],
+  "images": [
+   "library/open-chair-upper-body-stretch/0.webp",
+   "library/open-chair-upper-body-stretch/1.webp"
+  ],
+  "sourceId": "Chair_Upper_Body_Stretch"
+ },
+ {
+  "slug": "open-chest-and-front-of-shoulder-stretch",
+  "name": "Chest And Front Of Shoulder Stretch",
+  "summary": "A stretch for the chest.",
+  "bodyAreas": [
+   "shoulder"
+  ],
+  "movementPatterns": [
+   "static",
+   "isolation"
+  ],
+  "categories": [
+   "stretch"
+  ],
+  "equipment": [
+   "none"
+  ],
+  "difficulty": 1,
+  "lateralitySupported": false,
+  "defaultDosage": {
+   "sets": 2,
+   "durationSec": 30
+  },
+  "secondsPerSet": 45,
+  "instructions": [
+   "Start off by standing with your legs together, holding a bodybar or a broomstick.",
+   "Take a slightly wider than shoulder width grip on the pole and hold it in front of you with your palms facing down.",
+   "Carefully lift the pole up and behind your head."
+  ],
+  "formCues": [
+   "Breathe slowly and stay relaxed",
+   "Ease off if anything feels sharp"
+  ],
+  "feel": "A steady, comfortable stretch — never sharp pain.",
+  "commonMistakes": [
+   "Rushing the movement",
+   "Holding your breath"
+  ],
+  "safetyNotes": "Stop if you feel sharp or increasing pain, numbness or tingling, and check with your physio before continuing.",
+  "tags": [
+   "chest",
+   "open library",
+   "stretch"
+  ],
+  "images": [
+   "library/open-chest-and-front-of-shoulder-stretch/0.webp",
+   "library/open-chest-and-front-of-shoulder-stretch/1.webp"
+  ],
+  "sourceId": "Chest_And_Front_Of_Shoulder_Stretch"
+ },
+ {
+  "slug": "open-child-s-pose",
+  "name": "Child's Pose",
+  "summary": "A stretch for the lower back.",
+  "bodyAreas": [
+   "lower-back"
+  ],
+  "movementPatterns": [
+   "static",
+   "isolation"
+  ],
+  "categories": [
+   "stretch"
+  ],
+  "equipment": [
+   "none"
+  ],
+  "difficulty": 1,
+  "lateralitySupported": false,
+  "defaultDosage": {
+   "sets": 2,
+   "durationSec": 30
+  },
+  "secondsPerSet": 45,
+  "instructions": [
+   "Get on your hands and knees, walk your hands in front of you.",
+   "Lower your buttocks down to sit on your heels. Let your arms drag along the floor as you sit back to stretch your entire spine.",
+   "Once you settle onto your heels, bring your hands next to your feet and relax. \"breathe\" into your back. Rest your forehead on the floor. Avoid this position if you have knee problems."
+  ],
+  "formCues": [
+   "Breathe slowly and stay relaxed",
+   "Ease off if anything feels sharp"
+  ],
+  "feel": "A steady, comfortable stretch — never sharp pain.",
+  "commonMistakes": [
+   "Rushing the movement",
+   "Holding your breath"
+  ],
+  "safetyNotes": "Stop if you feel sharp or increasing pain, numbness or tingling, and check with your physio before continuing.",
+  "tags": [
+   "lower back",
+   "open library",
+   "stretch"
+  ],
+  "images": [
+   "library/open-child-s-pose/0.webp",
+   "library/open-child-s-pose/1.webp"
+  ],
+  "sourceId": "Childs_Pose"
+ },
+ {
+  "slug": "open-chin-to-chest-stretch",
+  "name": "Chin To Chest Stretch",
+  "summary": "A stretch for the neck.",
+  "bodyAreas": [
+   "neck"
+  ],
+  "movementPatterns": [
+   "static",
+   "isolation"
+  ],
+  "categories": [
+   "stretch"
+  ],
+  "equipment": [
+   "none"
+  ],
+  "difficulty": 1,
+  "lateralitySupported": false,
+  "defaultDosage": {
+   "sets": 2,
+   "durationSec": 30
+  },
+  "secondsPerSet": 45,
+  "instructions": [
+   "Get into a seated position on the floor.",
+   "Place both hands at the rear of your head, fingers interlocked, thumbs pointing down and elbows pointing straight ahead. Slowly pull your head down to your chest. Hold for 20-30 seconds."
+  ],
+  "formCues": [
+   "Breathe slowly and stay relaxed",
+   "Ease off if anything feels sharp"
+  ],
+  "feel": "A steady, comfortable stretch — never sharp pain.",
+  "commonMistakes": [
+   "Rushing the movement",
+   "Holding your breath"
+  ],
+  "safetyNotes": "Stop if you feel sharp or increasing pain, numbness or tingling, and check with your physio before continuing.",
+  "tags": [
+   "neck",
+   "open library",
+   "stretch"
+  ],
+  "images": [
+   "library/open-chin-to-chest-stretch/0.webp",
+   "library/open-chin-to-chest-stretch/1.webp"
+  ],
+  "sourceId": "Chin_To_Chest_Stretch"
+ },
+ {
+  "slug": "open-dynamic-back-stretch",
+  "name": "Dynamic Back Stretch",
+  "summary": "Gentle mobility for the lats.",
+  "bodyAreas": [
+   "upper-back"
+  ],
+  "movementPatterns": [
+   "pull",
+   "isolation"
+  ],
+  "categories": [
+   "mobility"
+  ],
+  "equipment": [
+   "none"
+  ],
+  "difficulty": 1,
+  "lateralitySupported": false,
+  "defaultDosage": {
+   "sets": 2,
+   "reps": 10
+  },
+  "secondsPerSet": 45,
+  "instructions": [
+   "Stand with your feet shoulder width apart. This will be your starting position.",
+   "Keeping your arms straight, swing them straight up in front of you 5-10 times, increasing the range of motion each time until your arms are above your head."
+  ],
+  "formCues": [
+   "Breathe slowly and stay relaxed",
+   "Ease off if anything feels sharp"
+  ],
+  "feel": "Easy, smooth movement through a comfortable range.",
+  "commonMistakes": [
+   "Rushing the movement",
+   "Holding your breath"
+  ],
+  "safetyNotes": "Stop if you feel sharp or increasing pain, numbness or tingling, and check with your physio before continuing.",
+  "tags": [
+   "lats",
+   "mobility",
+   "open library"
+  ],
+  "images": [
+   "library/open-dynamic-back-stretch/0.webp",
+   "library/open-dynamic-back-stretch/1.webp"
+  ],
+  "sourceId": "Dynamic_Back_Stretch"
+ },
+ {
+  "slug": "open-dynamic-chest-stretch",
+  "name": "Dynamic Chest Stretch",
+  "summary": "Gentle mobility for the chest.",
+  "bodyAreas": [
+   "shoulder"
+  ],
+  "movementPatterns": [
+   "pull",
+   "isolation"
+  ],
+  "categories": [
+   "mobility"
+  ],
+  "equipment": [
+   "none"
+  ],
+  "difficulty": 1,
+  "lateralitySupported": false,
+  "defaultDosage": {
+   "sets": 2,
+   "reps": 10
+  },
+  "secondsPerSet": 45,
+  "instructions": [
+   "Stand with your hands together, arms extended directly in front of you. This will be your starting position.",
+   "Keeping your arms straight, quickly move your arms back as far as possible and back in again, similar to an exaggerated clapping motion. Repeat 5-10 times, increasing speed as you do so."
+  ],
+  "formCues": [
+   "Breathe slowly and stay relaxed",
+   "Ease off if anything feels sharp"
+  ],
+  "feel": "Easy, smooth movement through a comfortable range.",
+  "commonMistakes": [
+   "Rushing the movement",
+   "Holding your breath"
+  ],
+  "safetyNotes": "Stop if you feel sharp or increasing pain, numbness or tingling, and check with your physio before continuing.",
+  "tags": [
+   "chest",
+   "mobility",
+   "open library"
+  ],
+  "images": [
+   "library/open-dynamic-chest-stretch/0.webp",
+   "library/open-dynamic-chest-stretch/1.webp"
+  ],
+  "sourceId": "Dynamic_Chest_Stretch"
+ },
+ {
+  "slug": "open-elbow-circles",
+  "name": "Elbow Circles",
+  "summary": "Gentle mobility for the shoulders.",
+  "bodyAreas": [
+   "shoulder"
+  ],
+  "movementPatterns": [
+   "pull",
+   "isolation"
+  ],
+  "categories": [
+   "mobility"
+  ],
+  "equipment": [
+   "none"
+  ],
+  "difficulty": 1,
+  "lateralitySupported": false,
+  "defaultDosage": {
+   "sets": 2,
+   "reps": 10
+  },
+  "secondsPerSet": 45,
+  "instructions": [
+   "Sit or stand with your feet slightly apart.",
+   "Place your hands on your shoulders with your elbows at shoulder level and pointing out.",
+   "Slowly make a circle with your elbows. Breathe out as you start the circle and breathe in as you complete the circle."
+  ],
+  "formCues": [
+   "Breathe slowly and stay relaxed",
+   "Ease off if anything feels sharp"
+  ],
+  "feel": "Easy, smooth movement through a comfortable range.",
+  "commonMistakes": [
+   "Rushing the movement",
+   "Holding your breath"
+  ],
+  "safetyNotes": "Stop if you feel sharp or increasing pain, numbness or tingling, and check with your physio before continuing.",
+  "tags": [
+   "mobility",
+   "open library",
+   "shoulders"
+  ],
+  "images": [
+   "library/open-elbow-circles/0.webp",
+   "library/open-elbow-circles/1.webp"
+  ],
+  "sourceId": "Elbow_Circles"
+ },
+ {
+  "slug": "open-elbows-back",
+  "name": "Elbows Back",
+  "summary": "A stretch for the chest.",
+  "bodyAreas": [
+   "shoulder"
+  ],
+  "movementPatterns": [
+   "static",
+   "isolation"
+  ],
+  "categories": [
+   "stretch"
+  ],
+  "equipment": [
+   "none"
+  ],
+  "difficulty": 1,
+  "lateralitySupported": false,
+  "defaultDosage": {
+   "sets": 2,
+   "durationSec": 30
+  },
+  "secondsPerSet": 45,
+  "instructions": [
+   "Stand up straight.",
+   "Place both hands on your lower back, fingers pointing downward and elbows out.",
+   "Then gently pull your elbows back aiming to touch them together."
+  ],
+  "formCues": [
+   "Breathe slowly and stay relaxed",
+   "Ease off if anything feels sharp"
+  ],
+  "feel": "A steady, comfortable stretch — never sharp pain.",
+  "commonMistakes": [
+   "Rushing the movement",
+   "Holding your breath"
+  ],
+  "safetyNotes": "Stop if you feel sharp or increasing pain, numbness or tingling, and check with your physio before continuing.",
+  "tags": [
+   "chest",
+   "open library",
+   "stretch"
+  ],
+  "images": [
+   "library/open-elbows-back/0.webp",
+   "library/open-elbows-back/1.webp"
+  ],
+  "sourceId": "Elbows_Back"
+ },
+ {
+  "slug": "open-external-rotation-with-band",
+  "name": "External Rotation with Band",
+  "summary": "Strength work for the shoulders.",
+  "bodyAreas": [
+   "shoulder"
+  ],
+  "movementPatterns": [
+   "pull",
+   "compound"
+  ],
+  "categories": [
+   "strength"
+  ],
+  "equipment": [
+   "band"
+  ],
+  "difficulty": 1,
+  "lateralitySupported": false,
+  "defaultDosage": {
+   "sets": 2,
+   "reps": 10
+  },
+  "secondsPerSet": 45,
+  "instructions": [
+   "Choke the band around a post. The band should be at the same height as your elbow. Stand with your left side to the band a couple of feet away.",
+   "Grasp the end of the band with your right hand, and keep your elbow pressed firmly to your side. We recommend you hold a pad or foam roll in place with your elbow to keep it firmly in position.",
+   "With your upper arm in position, your elbow should be flexed to 90 degrees with your hand reaching across the front of your torso. This will be your starting position.",
+   "Execute the movement by rotating your arm in a backhand motion, keeping your elbow in place.",
+   "Continue as far as you are able, pause, and then return to the starting position."
+  ],
+  "formCues": [
+   "Move slowly and with control",
+   "Stop a rep or two before your form fades"
+  ],
+  "feel": "The working muscles should feel challenged, not painful.",
+  "commonMistakes": [
+   "Rushing the movement",
+   "Holding your breath"
+  ],
+  "safetyNotes": "Stop if you feel sharp or increasing pain, numbness or tingling, and check with your physio before continuing.",
+  "tags": [
+   "open library",
+   "shoulders",
+   "strength"
+  ],
+  "images": [
+   "library/open-external-rotation-with-band/0.webp",
+   "library/open-external-rotation-with-band/1.webp"
+  ],
+  "sourceId": "External_Rotation_with_Band"
+ },
+ {
+  "slug": "open-glute-kickback",
+  "name": "Glute Kickback",
+  "summary": "Strength work for the glutes.",
+  "bodyAreas": [
+   "hip"
+  ],
+  "movementPatterns": [
+   "push",
+   "compound"
+  ],
+  "categories": [
+   "strength"
+  ],
+  "equipment": [
+   "none"
+  ],
+  "difficulty": 1,
+  "lateralitySupported": false,
+  "defaultDosage": {
+   "sets": 2,
+   "reps": 10
+  },
+  "secondsPerSet": 45,
+  "instructions": [
+   "Kneel on the floor or an exercise mat and bend at the waist with your arms extended in front of you (perpendicular to the torso) in order to get into a kneeling push-up position but with the arms spaced at shoulder width. Your head should be looking forward and the bend of the knees should create a 90-degree angle between the hamstrings and the calves. This will be your starting position.",
+   "As you exhale, lift up your right leg until the hamstrings are in line with the back while maintaining the 90-degree angle bend. Contract the glutes throughout this movement and hold the contraction at the top for a second. Tip: At the end of the movement the upper leg should be parallel to the floor while the calf should be perpendicular to it.",
+   "Go back to the initial position as you inhale and now repeat with the left leg.",
+   "Continue to alternate legs until all of the recommended repetitions have been performed."
+  ],
+  "formCues": [
+   "Move slowly and with control",
+   "Stop a rep or two before your form fades"
+  ],
+  "feel": "The working muscles should feel challenged, not painful.",
+  "commonMistakes": [
+   "Rushing the movement",
+   "Holding your breath"
+  ],
+  "safetyNotes": "Stop if you feel sharp or increasing pain, numbness or tingling, and check with your physio before continuing.",
+  "tags": [
+   "glutes",
+   "open library",
+   "strength"
+  ],
+  "images": [
+   "library/open-glute-kickback/0.webp",
+   "library/open-glute-kickback/1.webp"
+  ],
+  "sourceId": "Glute_Kickback"
+ },
+ {
+  "slug": "open-hamstring-stretch",
+  "name": "Hamstring Stretch",
+  "summary": "A stretch for the hamstrings.",
+  "bodyAreas": [
+   "hip",
+   "knee"
+  ],
+  "movementPatterns": [
+   "static",
+   "isolation"
+  ],
+  "categories": [
+   "stretch"
+  ],
+  "equipment": [
+   "none"
+  ],
+  "difficulty": 1,
+  "lateralitySupported": false,
+  "defaultDosage": {
+   "sets": 2,
+   "durationSec": 30
+  },
+  "secondsPerSet": 45,
+  "instructions": [
+   "Lie on your back with one leg extended above you, with the hip at ninety degrees. Keep the other leg flat on the floor.",
+   "Loop a belt, band, or rope over the ball of your foot. This will be your starting position.",
+   "Pull on the belt to create tension in the calves and hamstrings. Hold this stretch for 10-30 seconds, and repeat with the other leg."
+  ],
+  "formCues": [
+   "Breathe slowly and stay relaxed",
+   "Ease off if anything feels sharp"
+  ],
+  "feel": "A steady, comfortable stretch — never sharp pain.",
+  "commonMistakes": [
+   "Rushing the movement",
+   "Holding your breath"
+  ],
+  "safetyNotes": "Stop if you feel sharp or increasing pain, numbness or tingling, and check with your physio before continuing.",
+  "tags": [
+   "hamstrings",
+   "open library",
+   "stretch"
+  ],
+  "images": [
+   "library/open-hamstring-stretch/0.webp",
+   "library/open-hamstring-stretch/1.webp"
+  ],
+  "sourceId": "Hamstring_Stretch"
+ },
+ {
+  "slug": "open-hip-circles-prone",
+  "name": "Hip Circles (prone)",
+  "summary": "Gentle mobility for the abductors.",
+  "bodyAreas": [
+   "hip"
+  ],
+  "movementPatterns": [
+   "pull",
+   "isolation"
+  ],
+  "categories": [
+   "mobility"
+  ],
+  "equipment": [
+   "none"
+  ],
+  "difficulty": 1,
+  "lateralitySupported": false,
+  "defaultDosage": {
+   "sets": 2,
+   "reps": 10
+  },
+  "secondsPerSet": 45,
+  "instructions": [
+   "Position yourself on your hands and knees on the ground. Maintaining good posture, raise one bent knee off of the ground. This will be your starting position.",
+   "Keeping the knee in a bent position, rotate the femur in an arc, attempting to make a big circle with your knee.",
+   "Perform this slowly for a number of repetitions, and repeat on the other side."
+  ],
+  "formCues": [
+   "Breathe slowly and stay relaxed",
+   "Ease off if anything feels sharp"
+  ],
+  "feel": "Easy, smooth movement through a comfortable range.",
+  "commonMistakes": [
+   "Rushing the movement",
+   "Holding your breath"
+  ],
+  "safetyNotes": "Stop if you feel sharp or increasing pain, numbness or tingling, and check with your physio before continuing.",
+  "tags": [
+   "abductors",
+   "mobility",
+   "open library"
+  ],
+  "images": [
+   "library/open-hip-circles-prone/0.webp",
+   "library/open-hip-circles-prone/1.webp"
+  ],
+  "sourceId": "Hip_Circles_prone"
+ },
+ {
+  "slug": "open-hip-extension-with-bands",
+  "name": "Hip Extension with Bands",
+  "summary": "Strength work for the glutes.",
+  "bodyAreas": [
+   "hip"
+  ],
+  "movementPatterns": [
+   "push",
+   "compound"
+  ],
+  "categories": [
+   "strength"
+  ],
+  "equipment": [
+   "band"
+  ],
+  "difficulty": 1,
+  "lateralitySupported": false,
+  "defaultDosage": {
+   "sets": 2,
+   "reps": 10
+  },
+  "secondsPerSet": 45,
+  "instructions": [
+   "Secure one end of the band to the lower portion of a post and attach the other to one ankle.",
+   "Facing the attachment point of the band, hold on to the column to stabilize yourself.",
+   "Keeping your head and your chest up, move the resisted leg back as far as you can while keeping the knee straight.",
+   "Return the leg to the starting position."
+  ],
+  "formCues": [
+   "Move slowly and with control",
+   "Stop a rep or two before your form fades"
+  ],
+  "feel": "The working muscles should feel challenged, not painful.",
+  "commonMistakes": [
+   "Rushing the movement",
+   "Holding your breath"
+  ],
+  "safetyNotes": "Stop if you feel sharp or increasing pain, numbness or tingling, and check with your physio before continuing.",
+  "tags": [
+   "glutes",
+   "open library",
+   "strength"
+  ],
+  "images": [
+   "library/open-hip-extension-with-bands/0.webp",
+   "library/open-hip-extension-with-bands/1.webp"
+  ],
+  "sourceId": "Hip_Extension_with_Bands"
+ },
+ {
+  "slug": "open-hip-flexion-with-band",
+  "name": "Hip Flexion with Band",
+  "summary": "Strength work for the quadriceps.",
+  "bodyAreas": [
+   "knee"
+  ],
+  "movementPatterns": [
+   "pull",
+   "compound"
+  ],
+  "categories": [
+   "strength"
+  ],
+  "equipment": [
+   "band"
+  ],
+  "difficulty": 1,
+  "lateralitySupported": false,
+  "defaultDosage": {
+   "sets": 2,
+   "reps": 10
+  },
+  "secondsPerSet": 45,
+  "instructions": [
+   "Secure one end of the band to the lower portion of a post and attach the other to one ankle.",
+   "Face away from the attachment point of the band.",
+   "Keeping your head and your chest up, raise your knee up to 90 degrees and pause.",
+   "Return the leg to the starting position."
+  ],
+  "formCues": [
+   "Move slowly and with control",
+   "Stop a rep or two before your form fades"
+  ],
+  "feel": "The working muscles should feel challenged, not painful.",
+  "commonMistakes": [
+   "Rushing the movement",
+   "Holding your breath"
+  ],
+  "safetyNotes": "Stop if you feel sharp or increasing pain, numbness or tingling, and check with your physio before continuing.",
+  "tags": [
+   "open library",
+   "quadriceps",
+   "strength"
+  ],
+  "images": [
+   "library/open-hip-flexion-with-band/0.webp",
+   "library/open-hip-flexion-with-band/1.webp"
+  ],
+  "sourceId": "Hip_Flexion_with_Band"
+ },
+ {
+  "slug": "open-hug-a-ball",
+  "name": "Hug A Ball",
+  "summary": "A stretch for the lower back.",
+  "bodyAreas": [
+   "lower-back"
+  ],
+  "movementPatterns": [
+   "static",
+   "isolation"
+  ],
+  "categories": [
+   "stretch"
+  ],
+  "equipment": [
+   "ball"
+  ],
+  "difficulty": 1,
+  "lateralitySupported": false,
+  "defaultDosage": {
+   "sets": 2,
+   "durationSec": 30
+  },
+  "secondsPerSet": 45,
+  "instructions": [
+   "Seat yourself on the floor.",
+   "Straddle an exercise ball between both legs and lower your hips down toward the floor.",
+   "Hug your arms around the ball to support your body. Adjust your legs so that your feet are flat on the floor and your knees line up over your ankles. Keep a good grip on the ball so it doesn't roll away from you and send you back onto your buttocks."
+  ],
+  "formCues": [
+   "Breathe slowly and stay relaxed",
+   "Ease off if anything feels sharp"
+  ],
+  "feel": "A steady, comfortable stretch — never sharp pain.",
+  "commonMistakes": [
+   "Rushing the movement",
+   "Holding your breath"
+  ],
+  "safetyNotes": "Stop if you feel sharp or increasing pain, numbness or tingling, and check with your physio before continuing.",
+  "tags": [
+   "lower back",
+   "open library",
+   "stretch"
+  ],
+  "images": [
+   "library/open-hug-a-ball/0.webp",
+   "library/open-hug-a-ball/1.webp"
+  ],
+  "sourceId": "Hug_A_Ball"
+ },
+ {
+  "slug": "open-hug-knees-to-chest",
+  "name": "Hug Knees To Chest",
+  "summary": "A stretch for the lower back.",
+  "bodyAreas": [
+   "lower-back"
+  ],
+  "movementPatterns": [
+   "static",
+   "isolation"
+  ],
+  "categories": [
+   "stretch"
+  ],
+  "equipment": [
+   "none"
+  ],
+  "difficulty": 1,
+  "lateralitySupported": false,
+  "defaultDosage": {
+   "sets": 2,
+   "durationSec": 30
+  },
+  "secondsPerSet": 45,
+  "instructions": [
+   "Lie down on your back and pull both knees up to your chest.",
+   "Hold your arms under the knees, not over (that would put to much pressure on your knee joints).",
+   "Slowly pull the knees toward your shoulders. This also stretches your buttocks muscles."
+  ],
+  "formCues": [
+   "Breathe slowly and stay relaxed",
+   "Ease off if anything feels sharp"
+  ],
+  "feel": "A steady, comfortable stretch — never sharp pain.",
+  "commonMistakes": [
+   "Rushing the movement",
+   "Holding your breath"
+  ],
+  "safetyNotes": "Stop if you feel sharp or increasing pain, numbness or tingling, and check with your physio before continuing.",
+  "tags": [
+   "lower back",
+   "open library",
+   "stretch"
+  ],
+  "images": [
+   "library/open-hug-knees-to-chest/0.webp",
+   "library/open-hug-knees-to-chest/1.webp"
+  ],
+  "sourceId": "Hug_Knees_To_Chest"
+ },
+ {
+  "slug": "open-incline-push-up",
+  "name": "Incline Push-Up",
+  "summary": "Strength work for the chest.",
+  "bodyAreas": [
+   "shoulder"
+  ],
+  "movementPatterns": [
+   "push",
+   "compound"
+  ],
+  "categories": [
+   "strength"
+  ],
+  "equipment": [
+   "none"
+  ],
+  "difficulty": 1,
+  "lateralitySupported": false,
+  "defaultDosage": {
+   "sets": 2,
+   "reps": 10
+  },
+  "secondsPerSet": 45,
+  "instructions": [
+   "Stand facing bench or sturdy elevated platform. Place hands on edge of bench or platform, slightly wider than shoulder width.",
+   "Position forefoot back from bench or platform with arms and body straight. Arms should be perpendicular to body. Keeping body straight, lower chest to edge of box or platform by bending arms.",
+   "Push body up until arms are extended. Repeat."
+  ],
+  "formCues": [
+   "Move slowly and with control",
+   "Stop a rep or two before your form fades"
+  ],
+  "feel": "The working muscles should feel challenged, not painful.",
+  "commonMistakes": [
+   "Rushing the movement",
+   "Holding your breath"
+  ],
+  "safetyNotes": "Stop if you feel sharp or increasing pain, numbness or tingling, and check with your physio before continuing.",
+  "tags": [
+   "chest",
+   "open library",
+   "strength"
+  ],
+  "images": [
+   "library/open-incline-push-up/0.webp",
+   "library/open-incline-push-up/1.webp"
+  ],
+  "sourceId": "Incline_Push-Up"
+ },
+ {
+  "slug": "open-internal-rotation-with-band",
+  "name": "Internal Rotation with Band",
+  "summary": "Strength work for the shoulders.",
+  "bodyAreas": [
+   "shoulder"
+  ],
+  "movementPatterns": [
+   "static",
+   "isolation"
+  ],
+  "categories": [
+   "strength"
+  ],
+  "equipment": [
+   "band"
+  ],
+  "difficulty": 1,
+  "lateralitySupported": false,
+  "defaultDosage": {
+   "sets": 2,
+   "reps": 10
+  },
+  "secondsPerSet": 45,
+  "instructions": [
+   "Choke the band around a post. The band should be at the same height as your elbow. Stand with your right side to the band a couple of feet away.",
+   "Grasp the end of the band with your right hand, and keep your elbow pressed firmly to your side. We recommend you hold a pad or foam roll in place with your elbow to keep it firmly in position.",
+   "With your upper arm in position, your elbow should be flexed to 90 degrees with your hand reaching away from your torso. This will be your starting position.",
+   "Execute the movement by rotating your arm in a forehand motion, keeping your elbow in place.",
+   "Continue as far as you are able, pause, and then return to the starting position."
+  ],
+  "formCues": [
+   "Move slowly and with control",
+   "Stop a rep or two before your form fades"
+  ],
+  "feel": "The working muscles should feel challenged, not painful.",
+  "commonMistakes": [
+   "Rushing the movement",
+   "Holding your breath"
+  ],
+  "safetyNotes": "Stop if you feel sharp or increasing pain, numbness or tingling, and check with your physio before continuing.",
+  "tags": [
+   "open library",
+   "shoulders",
+   "strength"
+  ],
+  "images": [
+   "library/open-internal-rotation-with-band/0.webp",
+   "library/open-internal-rotation-with-band/1.webp"
+  ],
+  "sourceId": "Internal_Rotation_with_Band"
+ },
+ {
+  "slug": "open-isometric-neck-exercise-front-and-back",
+  "name": "Isometric Neck Exercise - Front And Back",
+  "summary": "Strength work for the neck.",
+  "bodyAreas": [
+   "neck"
+  ],
+  "movementPatterns": [
+   "static",
+   "isolation"
+  ],
+  "categories": [
+   "strength"
+  ],
+  "equipment": [
+   "none"
+  ],
+  "difficulty": 1,
+  "lateralitySupported": false,
+  "defaultDosage": {
+   "sets": 2,
+   "reps": 10
+  },
+  "secondsPerSet": 45,
+  "instructions": [
+   "With your head and neck in a neutral position (normal position with head erect facing forward), place both of your hands on the front side of your head.",
+   "Now gently push forward as you contract the neck muscles but resisting any movement of your head. Start with slow tension and increase slowly. Keep breathing normally as you execute this contraction.",
+   "Hold for the recommended number of seconds.",
+   "Now release the tension slowly.",
+   "Rest for the recommended amount of time and repeat with your hands placed on the back side of your head."
+  ],
+  "formCues": [
+   "Move slowly and with control",
+   "Stop a rep or two before your form fades"
+  ],
+  "feel": "The working muscles should feel challenged, not painful.",
+  "commonMistakes": [
+   "Rushing the movement",
+   "Holding your breath"
+  ],
+  "safetyNotes": "Stop if you feel sharp or increasing pain, numbness or tingling, and check with your physio before continuing.",
+  "tags": [
+   "neck",
+   "open library",
+   "strength"
+  ],
+  "images": [
+   "library/open-isometric-neck-exercise-front-and-back/0.webp",
+   "library/open-isometric-neck-exercise-front-and-back/1.webp"
+  ],
+  "sourceId": "Isometric_Neck_Exercise_-_Front_And_Back"
+ },
+ {
+  "slug": "open-isometric-neck-exercise-sides",
+  "name": "Isometric Neck Exercise - Sides",
+  "summary": "Strength work for the neck.",
+  "bodyAreas": [
+   "neck"
+  ],
+  "movementPatterns": [
+   "static",
+   "isolation"
+  ],
+  "categories": [
+   "strength"
+  ],
+  "equipment": [
+   "none"
+  ],
+  "difficulty": 1,
+  "lateralitySupported": true,
+  "defaultDosage": {
+   "sets": 2,
+   "reps": 10
+  },
+  "secondsPerSet": 45,
+  "instructions": [
+   "With your head and neck in a neutral position (normal position with head erect facing forward), place your left hand on the left side of your head.",
+   "Now gently push towards the left as you contract the left neck muscles but resisting any movement of your head. Start with slow tension and increase slowly. Keep breathing normally as you execute this contraction.",
+   "Hold for the recommended number of seconds.",
+   "Now release the tension slowly.",
+   "Rest for the recommended amount of time and repeat with your right hand placed on the right side of your head."
+  ],
+  "formCues": [
+   "Move slowly and with control",
+   "Stop a rep or two before your form fades"
+  ],
+  "feel": "The working muscles should feel challenged, not painful.",
+  "commonMistakes": [
+   "Rushing the movement",
+   "Holding your breath"
+  ],
+  "safetyNotes": "Stop if you feel sharp or increasing pain, numbness or tingling, and check with your physio before continuing.",
+  "tags": [
+   "neck",
+   "open library",
+   "strength"
+  ],
+  "images": [
+   "library/open-isometric-neck-exercise-sides/0.webp",
+   "library/open-isometric-neck-exercise-sides/1.webp"
+  ],
+  "sourceId": "Isometric_Neck_Exercise_-_Sides"
+ },
+ {
+  "slug": "open-knee-across-the-body",
+  "name": "Knee Across The Body",
+  "summary": "A stretch for the glutes.",
+  "bodyAreas": [
+   "hip"
+  ],
+  "movementPatterns": [
+   "static",
+   "isolation"
+  ],
+  "categories": [
+   "stretch"
+  ],
+  "equipment": [
+   "none"
+  ],
+  "difficulty": 1,
+  "lateralitySupported": true,
+  "defaultDosage": {
+   "sets": 2,
+   "durationSec": 30
+  },
+  "secondsPerSet": 45,
+  "instructions": [
+   "Lie down on the floor with your right leg straight. Bend your left leg and lower it across your body, holding the knee down toward the floor with your right hand. (The knee doesn't need to touch the floor if you're tight.)",
+   "Place your left arm comfortably beside you and turn your head to the left. Imagine you have a weight tied to your tailbone. let your tailbone fall back toward the floor as your chest reaches in the opposite direction to stretch your lower back. Switch sides."
+  ],
+  "formCues": [
+   "Breathe slowly and stay relaxed",
+   "Ease off if anything feels sharp"
+  ],
+  "feel": "A steady, comfortable stretch — never sharp pain.",
+  "commonMistakes": [
+   "Rushing the movement",
+   "Holding your breath"
+  ],
+  "safetyNotes": "Stop if you feel sharp or increasing pain, numbness or tingling, and check with your physio before continuing.",
+  "tags": [
+   "glutes",
+   "open library",
+   "stretch"
+  ],
+  "images": [
+   "library/open-knee-across-the-body/0.webp",
+   "library/open-knee-across-the-body/1.webp"
+  ],
+  "sourceId": "Knee_Across_The_Body"
+ },
+ {
+  "slug": "open-knee-circles",
+  "name": "Knee Circles",
+  "summary": "Gentle mobility for the calves.",
+  "bodyAreas": [
+   "ankle"
+  ],
+  "movementPatterns": [
+   "pull",
+   "compound"
+  ],
+  "categories": [
+   "mobility"
+  ],
+  "equipment": [
+   "none"
+  ],
+  "difficulty": 1,
+  "lateralitySupported": false,
+  "defaultDosage": {
+   "sets": 2,
+   "reps": 10
+  },
+  "secondsPerSet": 45,
+  "instructions": [
+   "Stand with your legs together and hands by your waist.",
+   "Now move your knees in a circular motion as you breathe normally.",
+   "Repeat for the recommended amount of repetitions."
+  ],
+  "formCues": [
+   "Breathe slowly and stay relaxed",
+   "Ease off if anything feels sharp"
+  ],
+  "feel": "Easy, smooth movement through a comfortable range.",
+  "commonMistakes": [
+   "Rushing the movement",
+   "Holding your breath"
+  ],
+  "safetyNotes": "Stop if you feel sharp or increasing pain, numbness or tingling, and check with your physio before continuing.",
+  "tags": [
+   "calves",
+   "mobility",
+   "open library"
+  ],
+  "images": [
+   "library/open-knee-circles/0.webp",
+   "library/open-knee-circles/1.webp"
+  ],
+  "sourceId": "Knee_Circles"
+ },
+ {
+  "slug": "open-kneeling-forearm-stretch",
+  "name": "Kneeling Forearm Stretch",
+  "summary": "A stretch for the forearms.",
+  "bodyAreas": [
+   "arm"
+  ],
+  "movementPatterns": [
+   "static",
+   "isolation"
+  ],
+  "categories": [
+   "stretch"
+  ],
+  "equipment": [
+   "none"
+  ],
+  "difficulty": 1,
+  "lateralitySupported": false,
+  "defaultDosage": {
+   "sets": 2,
+   "durationSec": 30
+  },
+  "secondsPerSet": 45,
+  "instructions": [
+   "Start by kneeling on a mat with your palms flat and your fingers pointing back toward your knees.",
+   "Slowly lean back keeping your palms flat on the floor until you feel a stretch in your wrists and forearms. Hold for 20-30 seconds."
+  ],
+  "formCues": [
+   "Breathe slowly and stay relaxed",
+   "Ease off if anything feels sharp"
+  ],
+  "feel": "A steady, comfortable stretch — never sharp pain.",
+  "commonMistakes": [
+   "Rushing the movement",
+   "Holding your breath"
+  ],
+  "safetyNotes": "Stop if you feel sharp or increasing pain, numbness or tingling, and check with your physio before continuing.",
+  "tags": [
+   "forearms",
+   "open library",
+   "stretch"
+  ],
+  "images": [
+   "library/open-kneeling-forearm-stretch/0.webp",
+   "library/open-kneeling-forearm-stretch/1.webp"
+  ],
+  "sourceId": "Kneeling_Forearm_Stretch"
+ },
+ {
+  "slug": "open-kneeling-hip-flexor",
+  "name": "Kneeling Hip Flexor",
+  "summary": "A stretch for the quadriceps.",
+  "bodyAreas": [
+   "knee"
+  ],
+  "movementPatterns": [
+   "static",
+   "isolation"
+  ],
+  "categories": [
+   "stretch"
+  ],
+  "equipment": [
+   "none"
+  ],
+  "difficulty": 1,
+  "lateralitySupported": false,
+  "defaultDosage": {
+   "sets": 2,
+   "durationSec": 30
+  },
+  "secondsPerSet": 45,
+  "instructions": [
+   "Kneel on a mat and bring your right knee up so the bottom of your foot is on the floor and extend your left leg out behind you so the top of your foot is on the floor.",
+   "Shift your weight forward until you feel a stretch in your hip. Hold for 15 seconds, then repeat for your other side."
+  ],
+  "formCues": [
+   "Breathe slowly and stay relaxed",
+   "Ease off if anything feels sharp"
+  ],
+  "feel": "A steady, comfortable stretch — never sharp pain.",
+  "commonMistakes": [
+   "Rushing the movement",
+   "Holding your breath"
+  ],
+  "safetyNotes": "Stop if you feel sharp or increasing pain, numbness or tingling, and check with your physio before continuing.",
+  "tags": [
+   "open library",
+   "quadriceps",
+   "stretch"
+  ],
+  "images": [
+   "library/open-kneeling-hip-flexor/0.webp",
+   "library/open-kneeling-hip-flexor/1.webp"
+  ],
+  "sourceId": "Kneeling_Hip_Flexor"
+ },
+ {
+  "slug": "open-lateral-raise-with-bands",
+  "name": "Lateral Raise with Band",
+  "summary": "Strength work for the shoulders.",
+  "bodyAreas": [
+   "shoulder"
+  ],
+  "movementPatterns": [
+   "push",
+   "isolation"
+  ],
+  "categories": [
+   "strength"
+  ],
+  "equipment": [
+   "band"
+  ],
+  "difficulty": 1,
+  "lateralitySupported": false,
+  "defaultDosage": {
+   "sets": 2,
+   "reps": 10
+  },
+  "secondsPerSet": 45,
+  "instructions": [
+   "To begin, stand on an exercise band so that tension begins at arm's length. Grasp the handles using a pronated (palms facing your thighs) grip that is slightly less than shoulder width. The handles should be resting on the sides of your thighs. Your arms should be extended with a slight bend at the elbows and your back should be straight. This will be your starting position.",
+   "Use your side shoulders to lift the handles to the sides as you exhale. Continue to lift the handles until they are slightly above parallel. Tip: As you lift the handles, slightly tilt the hand as if you were pouring water and keep your arms extended. Also, keep your torso stationary and pause for a second at the top of the movement.",
+   "Lower the handles back down slowly to the starting position. Inhale as you perform this portion of the movement.",
+   "Repeat for the recommended amount of repetitions."
+  ],
+  "formCues": [
+   "Move slowly and with control",
+   "Stop a rep or two before your form fades"
+  ],
+  "feel": "The working muscles should feel challenged, not painful.",
+  "commonMistakes": [
+   "Rushing the movement",
+   "Holding your breath"
+  ],
+  "safetyNotes": "Stop if you feel sharp or increasing pain, numbness or tingling, and check with your physio before continuing.",
+  "tags": [
+   "open library",
+   "shoulders",
+   "strength"
+  ],
+  "images": [
+   "library/open-lateral-raise-with-bands/0.webp",
+   "library/open-lateral-raise-with-bands/1.webp"
+  ],
+  "sourceId": "Lateral_Raise_-_With_Bands"
+ },
+ {
+  "slug": "open-leg-up-hamstring-stretch",
+  "name": "Leg-Up Hamstring Stretch",
+  "summary": "A stretch for the hamstrings.",
+  "bodyAreas": [
+   "hip",
+   "knee"
+  ],
+  "movementPatterns": [
+   "push",
+   "isolation"
+  ],
+  "categories": [
+   "stretch"
+  ],
+  "equipment": [
+   "none"
+  ],
+  "difficulty": 1,
+  "lateralitySupported": false,
+  "defaultDosage": {
+   "sets": 2,
+   "durationSec": 30
+  },
+  "secondsPerSet": 45,
+  "instructions": [
+   "Lie flat on your back, bend one knee, and put that foot flat on the floor to stabilize your spine.",
+   "Extend the other leg in the air. If you're tight, you wont be able to straighten it. That's okay. Extend the knee so that the sole of the lifted foot faces the ceiling (or as close as you can get it).",
+   "Slowly straighten the legs as much as possible and then pull the leg toward your nose. Switch sides."
+  ],
+  "formCues": [
+   "Breathe slowly and stay relaxed",
+   "Ease off if anything feels sharp"
+  ],
+  "feel": "A steady, comfortable stretch — never sharp pain.",
+  "commonMistakes": [
+   "Rushing the movement",
+   "Holding your breath"
+  ],
+  "safetyNotes": "Stop if you feel sharp or increasing pain, numbness or tingling, and check with your physio before continuing.",
+  "tags": [
+   "hamstrings",
+   "open library",
+   "stretch"
+  ],
+  "images": [
+   "library/open-leg-up-hamstring-stretch/0.webp",
+   "library/open-leg-up-hamstring-stretch/1.webp"
+  ],
+  "sourceId": "Leg-Up_Hamstring_Stretch"
+ },
+ {
+  "slug": "open-looking-at-ceiling",
+  "name": "Looking At Ceiling",
+  "summary": "A stretch for the quadriceps.",
+  "bodyAreas": [
+   "knee"
+  ],
+  "movementPatterns": [
+   "static",
+   "isolation"
+  ],
+  "categories": [
+   "stretch"
+  ],
+  "equipment": [
+   "none"
+  ],
+  "difficulty": 1,
+  "lateralitySupported": false,
+  "defaultDosage": {
+   "sets": 2,
+   "durationSec": 30
+  },
+  "secondsPerSet": 45,
+  "instructions": [
+   "Kneel on the floor, holding your heels with both hands.",
+   "Lift your buttocks up and forward while bringing your head back to look up at the ceiling, to give an arch in your back."
+  ],
+  "formCues": [
+   "Breathe slowly and stay relaxed",
+   "Ease off if anything feels sharp"
+  ],
+  "feel": "A steady, comfortable stretch — never sharp pain.",
+  "commonMistakes": [
+   "Rushing the movement",
+   "Holding your breath"
+  ],
+  "safetyNotes": "Stop if you feel sharp or increasing pain, numbness or tingling, and check with your physio before continuing.",
+  "tags": [
+   "open library",
+   "quadriceps",
+   "stretch"
+  ],
+  "images": [
+   "library/open-looking-at-ceiling/0.webp",
+   "library/open-looking-at-ceiling/1.webp"
+  ],
+  "sourceId": "Looking_At_Ceiling"
+ },
+ {
+  "slug": "open-lower-back-curl",
+  "name": "Lower Back Curl",
+  "summary": "A stretch for the abdominals.",
+  "bodyAreas": [
+   "core"
+  ],
+  "movementPatterns": [
+   "static",
+   "isolation"
+  ],
+  "categories": [
+   "stretch"
+  ],
+  "equipment": [
+   "none"
+  ],
+  "difficulty": 1,
+  "lateralitySupported": false,
+  "defaultDosage": {
+   "sets": 2,
+   "durationSec": 30
+  },
+  "secondsPerSet": 45,
+  "instructions": [
+   "Lie on your stomach with your arms out to your sides. This will be your starting position.",
+   "Using your lower back muscles, extend your spine lifting your chest off of the ground. Do not use your arms to push yourself up. Keep your head up during the movement. Repeat for 10-20 repetitions."
+  ],
+  "formCues": [
+   "Breathe slowly and stay relaxed",
+   "Ease off if anything feels sharp"
+  ],
+  "feel": "A steady, comfortable stretch — never sharp pain.",
+  "commonMistakes": [
+   "Rushing the movement",
+   "Holding your breath"
+  ],
+  "safetyNotes": "Stop if you feel sharp or increasing pain, numbness or tingling, and check with your physio before continuing.",
+  "tags": [
+   "abdominals",
+   "open library",
+   "stretch"
+  ],
+  "images": [
+   "library/open-lower-back-curl/0.webp",
+   "library/open-lower-back-curl/1.webp"
+  ],
+  "sourceId": "Lower_Back_Curl"
+ },
+ {
+  "slug": "open-middle-back-stretch",
+  "name": "Middle Back Stretch",
+  "summary": "A stretch for the middle back.",
+  "bodyAreas": [
+   "upper-back"
+  ],
+  "movementPatterns": [
+   "static",
+   "isolation"
+  ],
+  "categories": [
+   "stretch"
+  ],
+  "equipment": [
+   "none"
+  ],
+  "difficulty": 1,
+  "lateralitySupported": false,
+  "defaultDosage": {
+   "sets": 2,
+   "durationSec": 30
+  },
+  "secondsPerSet": 45,
+  "instructions": [
+   "Stand so your feet are shoulder width apart and your hands are on your hips.",
+   "Twist at your waist until you feel a stretch. Hold for 10 to 15 seconds, then twist to the other side."
+  ],
+  "formCues": [
+   "Breathe slowly and stay relaxed",
+   "Ease off if anything feels sharp"
+  ],
+  "feel": "A steady, comfortable stretch — never sharp pain.",
+  "commonMistakes": [
+   "Rushing the movement",
+   "Holding your breath"
+  ],
+  "safetyNotes": "Stop if you feel sharp or increasing pain, numbness or tingling, and check with your physio before continuing.",
+  "tags": [
+   "middle back",
+   "open library",
+   "stretch"
+  ],
+  "images": [
+   "library/open-middle-back-stretch/0.webp",
+   "library/open-middle-back-stretch/1.webp"
+  ],
+  "sourceId": "Middle_Back_Stretch"
+ },
+ {
+  "slug": "open-monster-walk",
+  "name": "Monster Walk",
+  "summary": "Strength work for the abductors.",
+  "bodyAreas": [
+   "hip"
+  ],
+  "movementPatterns": [
+   "pull",
+   "compound"
+  ],
+  "categories": [
+   "strength"
+  ],
+  "equipment": [
+   "band"
+  ],
+  "difficulty": 1,
+  "lateralitySupported": false,
+  "defaultDosage": {
+   "sets": 2,
+   "reps": 10
+  },
+  "secondsPerSet": 45,
+  "instructions": [
+   "Place a band around both ankles and another around both knees. There should be enough tension that they are tight when your feet are shoulder width apart.",
+   "To begin, take short steps forward alternating your left and right foot.",
+   "After several steps, do just the opposite and walk backward to where you started."
+  ],
+  "formCues": [
+   "Move slowly and with control",
+   "Stop a rep or two before your form fades"
+  ],
+  "feel": "The working muscles should feel challenged, not painful.",
+  "commonMistakes": [
+   "Rushing the movement",
+   "Holding your breath"
+  ],
+  "safetyNotes": "Stop if you feel sharp or increasing pain, numbness or tingling, and check with your physio before continuing.",
+  "tags": [
+   "abductors",
+   "open library",
+   "strength"
+  ],
+  "images": [
+   "library/open-monster-walk/0.webp",
+   "library/open-monster-walk/1.webp"
+  ],
+  "sourceId": "Monster_Walk"
+ },
+ {
+  "slug": "open-on-your-back-quad-stretch",
+  "name": "On-Your-Back Quad Stretch",
+  "summary": "A stretch for the quadriceps.",
+  "bodyAreas": [
+   "knee"
+  ],
+  "movementPatterns": [
+   "static",
+   "isolation"
+  ],
+  "categories": [
+   "stretch"
+  ],
+  "equipment": [
+   "none"
+  ],
+  "difficulty": 1,
+  "lateralitySupported": false,
+  "defaultDosage": {
+   "sets": 2,
+   "durationSec": 30
+  },
+  "secondsPerSet": 45,
+  "instructions": [
+   "Lie on a flat bench or step, and hang one leg and arm over the side.",
+   "Bend the knee and hold the top of the foot. As you do this, be careful not to arch your lower back.",
+   "Pull the belly button to the spine to stay in neutral. Press your foot down and into your hand. To add the hip stretch, lift the hip of the leg you're holding up toward the ceiling.",
+   "Switch sides."
+  ],
+  "formCues": [
+   "Breathe slowly and stay relaxed",
+   "Ease off if anything feels sharp"
+  ],
+  "feel": "A steady, comfortable stretch — never sharp pain.",
+  "commonMistakes": [
+   "Rushing the movement",
+   "Holding your breath"
+  ],
+  "safetyNotes": "Stop if you feel sharp or increasing pain, numbness or tingling, and check with your physio before continuing.",
+  "tags": [
+   "open library",
+   "quadriceps",
+   "stretch"
+  ],
+  "images": [
+   "library/open-on-your-back-quad-stretch/0.webp",
+   "library/open-on-your-back-quad-stretch/1.webp"
+  ],
+  "sourceId": "On-Your-Back_Quad_Stretch"
+ },
+ {
+  "slug": "open-on-your-side-quad-stretch",
+  "name": "On Your Side Quad Stretch",
+  "summary": "A stretch for the quadriceps.",
+  "bodyAreas": [
+   "knee"
+  ],
+  "movementPatterns": [
+   "static",
+   "isolation"
+  ],
+  "categories": [
+   "stretch"
+  ],
+  "equipment": [
+   "none"
+  ],
+  "difficulty": 1,
+  "lateralitySupported": true,
+  "defaultDosage": {
+   "sets": 2,
+   "durationSec": 30
+  },
+  "secondsPerSet": 45,
+  "instructions": [
+   "Start off by lying on your right side, with your right knee bent at a 90-degree angle resting on the floor in front of you (this stabilizes the torso).",
+   "Bend your left knee behind you and hold your left foot with your left hand. To stretch your hip flexor, press your left hip forward as you push your left foot back into your hand. Switch sides."
+  ],
+  "formCues": [
+   "Breathe slowly and stay relaxed",
+   "Ease off if anything feels sharp"
+  ],
+  "feel": "A steady, comfortable stretch — never sharp pain.",
+  "commonMistakes": [
+   "Rushing the movement",
+   "Holding your breath"
+  ],
+  "safetyNotes": "Stop if you feel sharp or increasing pain, numbness or tingling, and check with your physio before continuing.",
+  "tags": [
+   "open library",
+   "quadriceps",
+   "stretch"
+  ],
+  "images": [
+   "library/open-on-your-side-quad-stretch/0.webp",
+   "library/open-on-your-side-quad-stretch/1.webp"
+  ],
+  "sourceId": "On_Your_Side_Quad_Stretch"
+ },
+ {
+  "slug": "open-one-half-locust",
+  "name": "One Half Locust",
+  "summary": "A stretch for the quadriceps.",
+  "bodyAreas": [
+   "knee"
+  ],
+  "movementPatterns": [
+   "static",
+   "isolation"
+  ],
+  "categories": [
+   "stretch"
+  ],
+  "equipment": [
+   "none"
+  ],
+  "difficulty": 1,
+  "lateralitySupported": true,
+  "defaultDosage": {
+   "sets": 2,
+   "durationSec": 30
+  },
+  "secondsPerSet": 45,
+  "instructions": [
+   "Lie facedown on the floor.",
+   "Put your left hand under your left hipbone to pad your hip and pubic bone.",
+   "Bend your right knee so you can hold the foot in your right hand.",
+   "Lift the foot in the air and simultaneously lift your shoulders off the floor. This also stretches the right hip flexor and the chest and shoulders. Switch sides. If it doesn't bother your back, you can try it with both arms and legs at the same time."
+  ],
+  "formCues": [
+   "Breathe slowly and stay relaxed",
+   "Ease off if anything feels sharp"
+  ],
+  "feel": "A steady, comfortable stretch — never sharp pain.",
+  "commonMistakes": [
+   "Rushing the movement",
+   "Holding your breath"
+  ],
+  "safetyNotes": "Stop if you feel sharp or increasing pain, numbness or tingling, and check with your physio before continuing.",
+  "tags": [
+   "open library",
+   "quadriceps",
+   "stretch"
+  ],
+  "images": [
+   "library/open-one-half-locust/0.webp",
+   "library/open-one-half-locust/1.webp"
+  ],
+  "sourceId": "One_Half_Locust"
+ },
+ {
+  "slug": "open-one-knee-to-chest",
+  "name": "One Knee To Chest",
+  "summary": "A stretch for the glutes.",
+  "bodyAreas": [
+   "hip"
+  ],
+  "movementPatterns": [
+   "static",
+   "compound"
+  ],
+  "categories": [
+   "stretch"
+  ],
+  "equipment": [
+   "none"
+  ],
+  "difficulty": 1,
+  "lateralitySupported": true,
+  "defaultDosage": {
+   "sets": 2,
+   "durationSec": 30
+  },
+  "secondsPerSet": 45,
+  "instructions": [
+   "Start off by lying on the floor.",
+   "Extend one leg straight and pull the other knee to your chest. Hold under the knee joint to protect the kneecap.",
+   "Gently tug that knee toward your nose.",
+   "Switch sides. This stretches the buttocks and lower back of the bent leg and the hip flexor of the straight leg."
+  ],
+  "formCues": [
+   "Breathe slowly and stay relaxed",
+   "Ease off if anything feels sharp"
+  ],
+  "feel": "A steady, comfortable stretch — never sharp pain.",
+  "commonMistakes": [
+   "Rushing the movement",
+   "Holding your breath"
+  ],
+  "safetyNotes": "Stop if you feel sharp or increasing pain, numbness or tingling, and check with your physio before continuing.",
+  "tags": [
+   "glutes",
+   "open library",
+   "stretch"
+  ],
+  "images": [
+   "library/open-one-knee-to-chest/0.webp",
+   "library/open-one-knee-to-chest/1.webp"
+  ],
+  "sourceId": "One_Knee_To_Chest"
+ },
+ {
+  "slug": "open-overhead-stretch",
+  "name": "Overhead Stretch",
+  "summary": "A stretch for the abdominals.",
+  "bodyAreas": [
+   "core"
+  ],
+  "movementPatterns": [
+   "static",
+   "compound"
+  ],
+  "categories": [
+   "stretch"
+  ],
+  "equipment": [
+   "none"
+  ],
+  "difficulty": 1,
+  "lateralitySupported": false,
+  "defaultDosage": {
+   "sets": 2,
+   "durationSec": 30
+  },
+  "secondsPerSet": 45,
+  "instructions": [
+   "Standing straight up, lace your fingers together and open your palms to the ceiling. Keep your shoulders down as you extend your arms up.",
+   "To create a full torso stretch, pull your tailbone down and stabilize your torso as you do this. Stretch the muscles on both the front and the back of the torso."
+  ],
+  "formCues": [
+   "Breathe slowly and stay relaxed",
+   "Ease off if anything feels sharp"
+  ],
+  "feel": "A steady, comfortable stretch — never sharp pain.",
+  "commonMistakes": [
+   "Rushing the movement",
+   "Holding your breath"
+  ],
+  "safetyNotes": "Stop if you feel sharp or increasing pain, numbness or tingling, and check with your physio before continuing.",
+  "tags": [
+   "abdominals",
+   "open library",
+   "stretch"
+  ],
+  "images": [
+   "library/open-overhead-stretch/0.webp",
+   "library/open-overhead-stretch/1.webp"
+  ],
+  "sourceId": "Overhead_Stretch"
+ },
+ {
+  "slug": "open-physioball-hip-bridge",
+  "name": "Physioball Hip Bridge",
+  "summary": "Strength work for the glutes.",
+  "bodyAreas": [
+   "hip"
+  ],
+  "movementPatterns": [
+   "push",
+   "compound"
+  ],
+  "categories": [
+   "strength"
+  ],
+  "equipment": [
+   "ball"
+  ],
+  "difficulty": 1,
+  "lateralitySupported": false,
+  "defaultDosage": {
+   "sets": 2,
+   "reps": 10
+  },
+  "secondsPerSet": 45,
+  "instructions": [
+   "Lay on a ball so that your upper back is on the ball with your hips unsupported. Both feet should be flat on the floor, hip width apart or wider. This will be your starting position.",
+   "Begin by extending the hips using your glutes and hamstrings, raising your hips upward as you bridge.",
+   "Pause at the top of the motion and return to the starting position."
+  ],
+  "formCues": [
+   "Move slowly and with control",
+   "Stop a rep or two before your form fades"
+  ],
+  "feel": "The working muscles should feel challenged, not painful.",
+  "commonMistakes": [
+   "Rushing the movement",
+   "Holding your breath"
+  ],
+  "safetyNotes": "Stop if you feel sharp or increasing pain, numbness or tingling, and check with your physio before continuing.",
+  "tags": [
+   "glutes",
+   "open library",
+   "strength"
+  ],
+  "images": [
+   "library/open-physioball-hip-bridge/0.webp",
+   "library/open-physioball-hip-bridge/1.webp"
+  ],
+  "sourceId": "Physioball_Hip_Bridge"
+ },
+ {
+  "slug": "open-plank",
+  "name": "Plank",
+  "summary": "Strength work for the abdominals.",
+  "bodyAreas": [
+   "core"
+  ],
+  "movementPatterns": [
+   "static",
+   "isolation"
+  ],
+  "categories": [
+   "strength"
+  ],
+  "equipment": [
+   "none"
+  ],
+  "difficulty": 1,
+  "lateralitySupported": false,
+  "defaultDosage": {
+   "sets": 2,
+   "reps": 10
+  },
+  "secondsPerSet": 45,
+  "instructions": [
+   "Get into a prone position on the floor, supporting your weight on your toes and your forearms. Your arms are bent and directly below the shoulder.",
+   "Keep your body straight at all times, and hold this position as long as possible. To increase difficulty, an arm or leg can be raised."
+  ],
+  "formCues": [
+   "Move slowly and with control",
+   "Stop a rep or two before your form fades"
+  ],
+  "feel": "The working muscles should feel challenged, not painful.",
+  "commonMistakes": [
+   "Rushing the movement",
+   "Holding your breath"
+  ],
+  "safetyNotes": "Stop if you feel sharp or increasing pain, numbness or tingling, and check with your physio before continuing.",
+  "tags": [
+   "abdominals",
+   "open library",
+   "strength"
+  ],
+  "images": [
+   "library/open-plank/0.webp",
+   "library/open-plank/1.webp"
+  ],
+  "sourceId": "Plank"
+ },
+ {
+  "slug": "open-round-the-world-shoulder-stretch",
+  "name": "Round The World Shoulder Stretch",
+  "summary": "A stretch for the shoulders.",
+  "bodyAreas": [
+   "shoulder"
+  ],
+  "movementPatterns": [
+   "static",
+   "isolation"
+  ],
+  "categories": [
+   "stretch"
+  ],
+  "equipment": [
+   "none"
+  ],
+  "difficulty": 1,
+  "lateralitySupported": false,
+  "defaultDosage": {
+   "sets": 2,
+   "durationSec": 30
+  },
+  "secondsPerSet": 45,
+  "instructions": [
+   "Stand up straight with your legs together, holding a bodybar or broomstick.",
+   "Hold the pole behind your hips with a wider than shoulder width grip. Your palms should be down and your thumbs facing out.",
+   "Slowly lift your arms up behind your head. Don't force it if it gets hard to lift further."
+  ],
+  "formCues": [
+   "Breathe slowly and stay relaxed",
+   "Ease off if anything feels sharp"
+  ],
+  "feel": "A steady, comfortable stretch — never sharp pain.",
+  "commonMistakes": [
+   "Rushing the movement",
+   "Holding your breath"
+  ],
+  "safetyNotes": "Stop if you feel sharp or increasing pain, numbness or tingling, and check with your physio before continuing.",
+  "tags": [
+   "open library",
+   "shoulders",
+   "stretch"
+  ],
+  "images": [
+   "library/open-round-the-world-shoulder-stretch/0.webp",
+   "library/open-round-the-world-shoulder-stretch/1.webp"
+  ],
+  "sourceId": "Round_The_World_Shoulder_Stretch"
+ },
+ {
+  "slug": "open-runner-s-stretch",
+  "name": "Runner's Stretch",
+  "summary": "A stretch for the hamstrings.",
+  "bodyAreas": [
+   "hip",
+   "knee"
+  ],
+  "movementPatterns": [
+   "static",
+   "isolation"
+  ],
+  "categories": [
+   "stretch"
+  ],
+  "equipment": [
+   "none"
+  ],
+  "difficulty": 1,
+  "lateralitySupported": false,
+  "defaultDosage": {
+   "sets": 2,
+   "durationSec": 30
+  },
+  "secondsPerSet": 45,
+  "instructions": [
+   "It's easiest to get into this stretch if you start standing up, put one leg behind you, and slowly lower your torso down to the floor.",
+   "Keep the front heel on the floor (if it lifts up, scoot your other leg further back).",
+   "Place your hands on either side of your front leg. To get more out of this stretch, push your butt up toward the ceiling, and then gradually lower it back toward the floor. You'll Stretch the hip flexor of the back leg and the hamstring and buttocks of the front."
+  ],
+  "formCues": [
+   "Breathe slowly and stay relaxed",
+   "Ease off if anything feels sharp"
+  ],
+  "feel": "A steady, comfortable stretch — never sharp pain.",
+  "commonMistakes": [
+   "Rushing the movement",
+   "Holding your breath"
+  ],
+  "safetyNotes": "Stop if you feel sharp or increasing pain, numbness or tingling, and check with your physio before continuing.",
+  "tags": [
+   "hamstrings",
+   "open library",
+   "stretch"
+  ],
+  "images": [
+   "library/open-runner-s-stretch/0.webp",
+   "library/open-runner-s-stretch/1.webp"
+  ],
+  "sourceId": "Runners_Stretch"
+ },
+ {
+  "slug": "open-seated-calf-stretch",
+  "name": "Seated Calf Stretch",
+  "summary": "A stretch for the calves.",
+  "bodyAreas": [
+   "ankle"
+  ],
+  "movementPatterns": [
+   "static",
+   "isolation"
+  ],
+  "categories": [
+   "stretch"
+  ],
+  "equipment": [
+   "none"
+  ],
+  "difficulty": 1,
+  "lateralitySupported": false,
+  "defaultDosage": {
+   "sets": 2,
+   "durationSec": 30
+  },
+  "secondsPerSet": 45,
+  "instructions": [
+   "Sit up straight on an exercise mat.",
+   "Bend one knee and put that foot on the floor to stabilize the torso.",
+   "Straighten your other leg and flex your ankle.",
+   "Using a band, towel, or your hand if you can reach, pull the toes toward you. Hold for 10 to 20 seconds, then switch sides."
+  ],
+  "formCues": [
+   "Breathe slowly and stay relaxed",
+   "Ease off if anything feels sharp"
+  ],
+  "feel": "A steady, comfortable stretch — never sharp pain.",
+  "commonMistakes": [
+   "Rushing the movement",
+   "Holding your breath"
+  ],
+  "safetyNotes": "Stop if you feel sharp or increasing pain, numbness or tingling, and check with your physio before continuing.",
+  "tags": [
+   "calves",
+   "open library",
+   "stretch"
+  ],
+  "images": [
+   "library/open-seated-calf-stretch/0.webp",
+   "library/open-seated-calf-stretch/1.webp"
+  ],
+  "sourceId": "Seated_Calf_Stretch"
+ },
+ {
+  "slug": "open-seated-floor-hamstring-stretch",
+  "name": "Seated Floor Hamstring Stretch",
+  "summary": "A stretch for the hamstrings.",
+  "bodyAreas": [
+   "hip",
+   "knee"
+  ],
+  "movementPatterns": [
+   "static",
+   "isolation"
+  ],
+  "categories": [
+   "stretch"
+  ],
+  "equipment": [
+   "none"
+  ],
+  "difficulty": 1,
+  "lateralitySupported": false,
+  "defaultDosage": {
+   "sets": 2,
+   "durationSec": 30
+  },
+  "secondsPerSet": 45,
+  "instructions": [
+   "Sit on a mat with your right leg extended in front of you and your left leg bent with your foot against your right inner thigh.",
+   "Lean forward from your hips and reach for your ankle until you feel a stretch in your hamstring. Hold for 15 seconds, then repeat for your other side."
+  ],
+  "formCues": [
+   "Breathe slowly and stay relaxed",
+   "Ease off if anything feels sharp"
+  ],
+  "feel": "A steady, comfortable stretch — never sharp pain.",
+  "commonMistakes": [
+   "Rushing the movement",
+   "Holding your breath"
+  ],
+  "safetyNotes": "Stop if you feel sharp or increasing pain, numbness or tingling, and check with your physio before continuing.",
+  "tags": [
+   "hamstrings",
+   "open library",
+   "stretch"
+  ],
+  "images": [
+   "library/open-seated-floor-hamstring-stretch/0.webp",
+   "library/open-seated-floor-hamstring-stretch/1.webp"
+  ],
+  "sourceId": "Seated_Floor_Hamstring_Stretch"
+ },
+ {
+  "slug": "open-shoulder-circles",
+  "name": "Shoulder Circles",
+  "summary": "Gentle mobility for the shoulders.",
+  "bodyAreas": [
+   "shoulder"
+  ],
+  "movementPatterns": [
+   "pull",
+   "isolation"
+  ],
+  "categories": [
+   "mobility"
+  ],
+  "equipment": [
+   "none"
+  ],
+  "difficulty": 1,
+  "lateralitySupported": false,
+  "defaultDosage": {
+   "sets": 2,
+   "reps": 10
+  },
+  "secondsPerSet": 45,
+  "instructions": [
+   "With shoulders relaxed and arms resting loosely at your sides (or in your lap if you're seated), gently roll your shoulders forward, up, back, and down.",
+   "Reverse direction. You can do this exercise alternating shoulders or both at the same time."
+  ],
+  "formCues": [
+   "Breathe slowly and stay relaxed",
+   "Ease off if anything feels sharp"
+  ],
+  "feel": "Easy, smooth movement through a comfortable range.",
+  "commonMistakes": [
+   "Rushing the movement",
+   "Holding your breath"
+  ],
+  "safetyNotes": "Stop if you feel sharp or increasing pain, numbness or tingling, and check with your physio before continuing.",
+  "tags": [
+   "mobility",
+   "open library",
+   "shoulders"
+  ],
+  "images": [
+   "library/open-shoulder-circles/0.webp",
+   "library/open-shoulder-circles/1.webp"
+  ],
+  "sourceId": "Shoulder_Circles"
+ },
+ {
+  "slug": "open-shoulder-raise",
+  "name": "Shoulder Raise",
+  "summary": "A stretch for the shoulders.",
+  "bodyAreas": [
+   "shoulder"
+  ],
+  "movementPatterns": [
+   "pull",
+   "isolation"
+  ],
+  "categories": [
+   "stretch"
+  ],
+  "equipment": [
+   "none"
+  ],
+  "difficulty": 1,
+  "lateralitySupported": false,
+  "defaultDosage": {
+   "sets": 2,
+   "durationSec": 30
+  },
+  "secondsPerSet": 45,
+  "instructions": [
+   "Relax your arms to your sides and raise your shoulders up toward your ears, then back down."
+  ],
+  "formCues": [
+   "Breathe slowly and stay relaxed",
+   "Ease off if anything feels sharp"
+  ],
+  "feel": "A steady, comfortable stretch — never sharp pain.",
+  "commonMistakes": [
+   "Rushing the movement",
+   "Holding your breath"
+  ],
+  "safetyNotes": "Stop if you feel sharp or increasing pain, numbness or tingling, and check with your physio before continuing.",
+  "tags": [
+   "open library",
+   "shoulders",
+   "stretch"
+  ],
+  "images": [
+   "library/open-shoulder-raise/0.webp",
+   "library/open-shoulder-raise/1.webp"
+  ],
+  "sourceId": "Shoulder_Raise"
+ },
+ {
+  "slug": "open-shoulder-stretch",
+  "name": "Shoulder Stretch",
+  "summary": "A stretch for the shoulders.",
+  "bodyAreas": [
+   "shoulder"
+  ],
+  "movementPatterns": [
+   "pull",
+   "isolation"
+  ],
+  "categories": [
+   "stretch"
+  ],
+  "equipment": [
+   "none"
+  ],
+  "difficulty": 1,
+  "lateralitySupported": false,
+  "defaultDosage": {
+   "sets": 2,
+   "durationSec": 30
+  },
+  "secondsPerSet": 45,
+  "instructions": [
+   "Reach your left arm across your body and hold it straight."
+  ],
+  "formCues": [
+   "Breathe slowly and stay relaxed",
+   "Ease off if anything feels sharp"
+  ],
+  "feel": "A steady, comfortable stretch — never sharp pain.",
+  "commonMistakes": [
+   "Rushing the movement",
+   "Holding your breath"
+  ],
+  "safetyNotes": "Stop if you feel sharp or increasing pain, numbness or tingling, and check with your physio before continuing.",
+  "tags": [
+   "open library",
+   "shoulders",
+   "stretch"
+  ],
+  "images": [
+   "library/open-shoulder-stretch/0.webp",
+   "library/open-shoulder-stretch/1.webp"
+  ],
+  "sourceId": "Shoulder_Stretch"
+ },
+ {
+  "slug": "open-side-lying-floor-stretch",
+  "name": "Side-Lying Floor Stretch",
+  "summary": "A stretch for the lats.",
+  "bodyAreas": [
+   "upper-back"
+  ],
+  "movementPatterns": [
+   "static",
+   "isolation"
+  ],
+  "categories": [
+   "stretch"
+  ],
+  "equipment": [
+   "none"
+  ],
+  "difficulty": 1,
+  "lateralitySupported": true,
+  "defaultDosage": {
+   "sets": 2,
+   "durationSec": 30
+  },
+  "secondsPerSet": 45,
+  "instructions": [
+   "First lie on your left side, bending your left knee in front of you to stabilize your torso (use your abdominal muscles as well to hold you upright).",
+   "Straighten your right leg and rest the right foot on the floor behind your left. Straighten your right arm over your head and gently pull on your right wrist to stretch the entire right side of the body. Switch sides."
+  ],
+  "formCues": [
+   "Breathe slowly and stay relaxed",
+   "Ease off if anything feels sharp"
+  ],
+  "feel": "A steady, comfortable stretch — never sharp pain.",
+  "commonMistakes": [
+   "Rushing the movement",
+   "Holding your breath"
+  ],
+  "safetyNotes": "Stop if you feel sharp or increasing pain, numbness or tingling, and check with your physio before continuing.",
+  "tags": [
+   "lats",
+   "open library",
+   "stretch"
+  ],
+  "images": [
+   "library/open-side-lying-floor-stretch/0.webp",
+   "library/open-side-lying-floor-stretch/1.webp"
+  ],
+  "sourceId": "Side-Lying_Floor_Stretch"
+ },
+ {
+  "slug": "open-side-bridge",
+  "name": "Side Bridge",
+  "summary": "Strength work for the abdominals.",
+  "bodyAreas": [
+   "core"
+  ],
+  "movementPatterns": [
+   "static",
+   "isolation"
+  ],
+  "categories": [
+   "strength"
+  ],
+  "equipment": [
+   "none"
+  ],
+  "difficulty": 1,
+  "lateralitySupported": true,
+  "defaultDosage": {
+   "sets": 2,
+   "reps": 10
+  },
+  "secondsPerSet": 45,
+  "instructions": [],
+  "formCues": [
+   "Move slowly and with control",
+   "Stop a rep or two before your form fades"
+  ],
+  "feel": "The working muscles should feel challenged, not painful.",
+  "commonMistakes": [
+   "Rushing the movement",
+   "Holding your breath"
+  ],
+  "safetyNotes": "Stop if you feel sharp or increasing pain, numbness or tingling, and check with your physio before continuing.",
+  "tags": [
+   "abdominals",
+   "open library",
+   "strength"
+  ],
+  "images": [
+   "library/open-side-bridge/0.webp",
+   "library/open-side-bridge/1.webp"
+  ],
+  "sourceId": "Side_Bridge"
+ },
+ {
+  "slug": "open-side-leg-raises",
+  "name": "Side Leg Raises",
+  "summary": "A stretch for the adductors.",
+  "bodyAreas": [
+   "hip"
+  ],
+  "movementPatterns": [
+   "pull",
+   "isolation"
+  ],
+  "categories": [
+   "stretch"
+  ],
+  "equipment": [
+   "none"
+  ],
+  "difficulty": 1,
+  "lateralitySupported": true,
+  "defaultDosage": {
+   "sets": 2,
+   "durationSec": 30
+  },
+  "secondsPerSet": 45,
+  "instructions": [
+   "Stand next to a chair, which you may hold onto as a support. Stand on one leg. This will be your starting position.",
+   "Keeping your leg straight, raise it as far out to the side as possible, and swing it back down, allowing it to cross the opposite leg.",
+   "Repeat this swinging motion 5-10 times, increasing the range of motion as you do so."
+  ],
+  "formCues": [
+   "Breathe slowly and stay relaxed",
+   "Ease off if anything feels sharp"
+  ],
+  "feel": "A steady, comfortable stretch — never sharp pain.",
+  "commonMistakes": [
+   "Rushing the movement",
+   "Holding your breath"
+  ],
+  "safetyNotes": "Stop if you feel sharp or increasing pain, numbness or tingling, and check with your physio before continuing.",
+  "tags": [
+   "adductors",
+   "open library",
+   "stretch"
+  ],
+  "images": [
+   "library/open-side-leg-raises/0.webp",
+   "library/open-side-leg-raises/1.webp"
+  ],
+  "sourceId": "Side_Leg_Raises"
+ },
+ {
+  "slug": "open-side-lying-groin-stretch",
+  "name": "Side Lying Groin Stretch",
+  "summary": "A stretch for the adductors.",
+  "bodyAreas": [
+   "hip"
+  ],
+  "movementPatterns": [
+   "static",
+   "isolation"
+  ],
+  "categories": [
+   "stretch"
+  ],
+  "equipment": [
+   "none"
+  ],
+  "difficulty": 1,
+  "lateralitySupported": true,
+  "defaultDosage": {
+   "sets": 2,
+   "durationSec": 30
+  },
+  "secondsPerSet": 45,
+  "instructions": [
+   "Start off by lying on your right side and bend your right knee in front of you to stabilize the torso.",
+   "Rest your head on your right hand or shoulder. Lift your left leg upward and hold it by the back of the knee (easier) or the foot (harder).",
+   "Pull your left knee in toward your left shoulder and simultaneously press your foot or knee down to the floor. To intensify this stretch, straighten your left leg. Switch sides."
+  ],
+  "formCues": [
+   "Breathe slowly and stay relaxed",
+   "Ease off if anything feels sharp"
+  ],
+  "feel": "A steady, comfortable stretch — never sharp pain.",
+  "commonMistakes": [
+   "Rushing the movement",
+   "Holding your breath"
+  ],
+  "safetyNotes": "Stop if you feel sharp or increasing pain, numbness or tingling, and check with your physio before continuing.",
+  "tags": [
+   "adductors",
+   "open library",
+   "stretch"
+  ],
+  "images": [
+   "library/open-side-lying-groin-stretch/0.webp",
+   "library/open-side-lying-groin-stretch/1.webp"
+  ],
+  "sourceId": "Side_Lying_Groin_Stretch"
+ },
+ {
+  "slug": "open-side-neck-stretch",
+  "name": "Side Neck Stretch",
+  "summary": "A stretch for the neck.",
+  "bodyAreas": [
+   "neck"
+  ],
+  "movementPatterns": [
+   "static",
+   "isolation"
+  ],
+  "categories": [
+   "stretch"
+  ],
+  "equipment": [
+   "none"
+  ],
+  "difficulty": 1,
+  "lateralitySupported": true,
+  "defaultDosage": {
+   "sets": 2,
+   "durationSec": 30
+  },
+  "secondsPerSet": 45,
+  "instructions": [
+   "Start with your shoulders relaxed, gently tilt your head towards your shoulder.",
+   "Assist stretch with a gentle pull on the side of the head."
+  ],
+  "formCues": [
+   "Breathe slowly and stay relaxed",
+   "Ease off if anything feels sharp"
+  ],
+  "feel": "A steady, comfortable stretch — never sharp pain.",
+  "commonMistakes": [
+   "Rushing the movement",
+   "Holding your breath"
+  ],
+  "safetyNotes": "Stop if you feel sharp or increasing pain, numbness or tingling, and check with your physio before continuing.",
+  "tags": [
+   "neck",
+   "open library",
+   "stretch"
+  ],
+  "images": [
+   "library/open-side-neck-stretch/0.webp",
+   "library/open-side-neck-stretch/1.webp"
+  ],
+  "sourceId": "Side_Neck_Stretch"
+ },
+ {
+  "slug": "open-side-wrist-pull",
+  "name": "Side Wrist Pull",
+  "summary": "A stretch for the shoulders.",
+  "bodyAreas": [
+   "shoulder"
+  ],
+  "movementPatterns": [
+   "static",
+   "isolation"
+  ],
+  "categories": [
+   "stretch"
+  ],
+  "equipment": [
+   "none"
+  ],
+  "difficulty": 1,
+  "lateralitySupported": true,
+  "defaultDosage": {
+   "sets": 2,
+   "durationSec": 30
+  },
+  "secondsPerSet": 45,
+  "instructions": [
+   "This stretch works best standing. Cross your left arm over the midline of your body and hold the left wrist in your right hand down at the level of your hips. Start the stretch with a bent left arm.",
+   "Slowly straighten, pull, and lift it up to shoulder height, as pictured. Feel this stretch originate in your back, not your shoulders, and don't pull too hard on the shoulders joint. Switch sides."
+  ],
+  "formCues": [
+   "Breathe slowly and stay relaxed",
+   "Ease off if anything feels sharp"
+  ],
+  "feel": "A steady, comfortable stretch — never sharp pain.",
+  "commonMistakes": [
+   "Rushing the movement",
+   "Holding your breath"
+  ],
+  "safetyNotes": "Stop if you feel sharp or increasing pain, numbness or tingling, and check with your physio before continuing.",
+  "tags": [
+   "open library",
+   "shoulders",
+   "stretch"
+  ],
+  "images": [
+   "library/open-side-wrist-pull/0.webp",
+   "library/open-side-wrist-pull/1.webp"
+  ],
+  "sourceId": "Side_Wrist_Pull"
+ },
+ {
+  "slug": "open-single-leg-glute-bridge",
+  "name": "Single Leg Glute Bridge",
+  "summary": "Strength work for the glutes.",
+  "bodyAreas": [
+   "hip"
+  ],
+  "movementPatterns": [
+   "push",
+   "isolation"
+  ],
+  "categories": [
+   "strength"
+  ],
+  "equipment": [
+   "none"
+  ],
+  "difficulty": 1,
+  "lateralitySupported": true,
+  "defaultDosage": {
+   "sets": 2,
+   "reps": 10
+  },
+  "secondsPerSet": 45,
+  "instructions": [
+   "Lay on the floor with your feet flat and knees bent.",
+   "Raise one leg off of the ground, pulling the knee to your chest. This will be your starting position.",
+   "Execute the movement by driving through the heel, extending your hip upward and raising your glutes off of the ground.",
+   "Extend as far as possible, pause and then return to the starting position."
+  ],
+  "formCues": [
+   "Move slowly and with control",
+   "Stop a rep or two before your form fades"
+  ],
+  "feel": "The working muscles should feel challenged, not painful.",
+  "commonMistakes": [
+   "Rushing the movement",
+   "Holding your breath"
+  ],
+  "safetyNotes": "Stop if you feel sharp or increasing pain, numbness or tingling, and check with your physio before continuing.",
+  "tags": [
+   "glutes",
+   "open library",
+   "strength"
+  ],
+  "images": [
+   "library/open-single-leg-glute-bridge/0.webp",
+   "library/open-single-leg-glute-bridge/1.webp"
+  ],
+  "sourceId": "Single_Leg_Glute_Bridge"
+ },
+ {
+  "slug": "open-spinal-stretch",
+  "name": "Spinal Stretch",
+  "summary": "A stretch for the middle back.",
+  "bodyAreas": [
+   "upper-back"
+  ],
+  "movementPatterns": [
+   "static",
+   "isolation"
+  ],
+  "categories": [
+   "stretch"
+  ],
+  "equipment": [
+   "none"
+  ],
+  "difficulty": 1,
+  "lateralitySupported": false,
+  "defaultDosage": {
+   "sets": 2,
+   "durationSec": 30
+  },
+  "secondsPerSet": 45,
+  "instructions": [
+   "Sit in a chair so your back is straight and your feet planted on the floor.",
+   "Interlace your fingers behind your head, elbows out and your chin down.",
+   "Twist your upper body to one side about 3 times as far as you can. Then lean forward and twist your torso to reach your elbow to the floor on the inside of your knee.",
+   "Return to upright position and then repeat for your other side."
+  ],
+  "formCues": [
+   "Breathe slowly and stay relaxed",
+   "Ease off if anything feels sharp"
+  ],
+  "feel": "A steady, comfortable stretch — never sharp pain.",
+  "commonMistakes": [
+   "Rushing the movement",
+   "Holding your breath"
+  ],
+  "safetyNotes": "Stop if you feel sharp or increasing pain, numbness or tingling, and check with your physio before continuing.",
+  "tags": [
+   "middle back",
+   "open library",
+   "stretch"
+  ],
+  "images": [
+   "library/open-spinal-stretch/0.webp",
+   "library/open-spinal-stretch/1.webp"
+  ],
+  "sourceId": "Spinal_Stretch"
+ },
+ {
+  "slug": "open-squats-with-bands",
+  "name": "Squats with Band",
+  "summary": "Strength work for the quadriceps.",
+  "bodyAreas": [
+   "knee"
+  ],
+  "movementPatterns": [
+   "push",
+   "compound"
+  ],
+  "categories": [
+   "strength"
+  ],
+  "equipment": [
+   "band"
+  ],
+  "difficulty": 1,
+  "lateralitySupported": false,
+  "defaultDosage": {
+   "sets": 2,
+   "reps": 10
+  },
+  "secondsPerSet": 45,
+  "instructions": [
+   "To start out, make sure that the exercise band is at an even split between both the left and right side of the body. To do this, use your hands to grab both sides of the band and place both feet in the middle of the band. Your feet should be shoulder width apart from each other.",
+   "When holding the bands, they should be the same height on each side. You should be using a pronated grip (palms facing forward) and have the handles of the bands next to your face for this exercise. This is the starting position.",
+   "Slowly start to bend the knees and lower the legs so that your thighs are parallel to the floor while exhaling.",
+   "Use the heel of your feet to push your body up to the starting position as you exhale.",
+   "Repeat for the recommended amount of repetitions."
+  ],
+  "formCues": [
+   "Move slowly and with control",
+   "Stop a rep or two before your form fades"
+  ],
+  "feel": "The working muscles should feel challenged, not painful.",
+  "commonMistakes": [
+   "Rushing the movement",
+   "Holding your breath"
+  ],
+  "safetyNotes": "Stop if you feel sharp or increasing pain, numbness or tingling, and check with your physio before continuing.",
+  "tags": [
+   "open library",
+   "quadriceps",
+   "strength"
+  ],
+  "images": [
+   "library/open-squats-with-bands/0.webp",
+   "library/open-squats-with-bands/1.webp"
+  ],
+  "sourceId": "Squats_-_With_Bands"
+ },
+ {
+  "slug": "open-standing-biceps-stretch",
+  "name": "Standing Biceps Stretch",
+  "summary": "A stretch for the biceps.",
+  "bodyAreas": [
+   "arm"
+  ],
+  "movementPatterns": [
+   "static",
+   "isolation"
+  ],
+  "categories": [
+   "stretch"
+  ],
+  "equipment": [
+   "none"
+  ],
+  "difficulty": 1,
+  "lateralitySupported": false,
+  "defaultDosage": {
+   "sets": 2,
+   "durationSec": 30
+  },
+  "secondsPerSet": 45,
+  "instructions": [
+   "Clasp your hands behind your back with your palms together, straighten arms and then rotate them so your palms face downward.",
+   "Raise your arms up and hold until you feel a stretch in your biceps."
+  ],
+  "formCues": [
+   "Breathe slowly and stay relaxed",
+   "Ease off if anything feels sharp"
+  ],
+  "feel": "A steady, comfortable stretch — never sharp pain.",
+  "commonMistakes": [
+   "Rushing the movement",
+   "Holding your breath"
+  ],
+  "safetyNotes": "Stop if you feel sharp or increasing pain, numbness or tingling, and check with your physio before continuing.",
+  "tags": [
+   "biceps",
+   "open library",
+   "stretch"
+  ],
+  "images": [
+   "library/open-standing-biceps-stretch/0.webp",
+   "library/open-standing-biceps-stretch/1.webp"
+  ],
+  "sourceId": "Standing_Biceps_Stretch"
+ },
+ {
+  "slug": "open-standing-elevated-quad-stretch",
+  "name": "Standing Elevated Quad Stretch",
+  "summary": "A stretch for the quadriceps.",
+  "bodyAreas": [
+   "knee"
+  ],
+  "movementPatterns": [
+   "static",
+   "isolation"
+  ],
+  "categories": [
+   "stretch"
+  ],
+  "equipment": [
+   "none"
+  ],
+  "difficulty": 1,
+  "lateralitySupported": false,
+  "defaultDosage": {
+   "sets": 2,
+   "durationSec": 30
+  },
+  "secondsPerSet": 45,
+  "instructions": [
+   "Start by standing with your back about two to three feet away from a bench or step.",
+   "Lift one leg behind you and rest your foot on the step,either on your instep or the ball of your foot, whichever you find most comfortable.",
+   "Keep your supporting knee slightly bent and avoid letting that knee extend out beyond your toes. Switch sides."
+  ],
+  "formCues": [
+   "Breathe slowly and stay relaxed",
+   "Ease off if anything feels sharp"
+  ],
+  "feel": "A steady, comfortable stretch — never sharp pain.",
+  "commonMistakes": [
+   "Rushing the movement",
+   "Holding your breath"
+  ],
+  "safetyNotes": "Stop if you feel sharp or increasing pain, numbness or tingling, and check with your physio before continuing.",
+  "tags": [
+   "open library",
+   "quadriceps",
+   "stretch"
+  ],
+  "images": [
+   "library/open-standing-elevated-quad-stretch/0.webp",
+   "library/open-standing-elevated-quad-stretch/1.webp"
+  ],
+  "sourceId": "Standing_Elevated_Quad_Stretch"
+ },
+ {
+  "slug": "open-standing-gastrocnemius-calf-stretch",
+  "name": "Standing Gastrocnemius Calf Stretch",
+  "summary": "A stretch for the calves.",
+  "bodyAreas": [
+   "ankle"
+  ],
+  "movementPatterns": [
+   "static",
+   "isolation"
+  ],
+  "categories": [
+   "stretch"
+  ],
+  "equipment": [
+   "none"
+  ],
+  "difficulty": 1,
+  "lateralitySupported": false,
+  "defaultDosage": {
+   "sets": 2,
+   "durationSec": 30
+  },
+  "secondsPerSet": 45,
+  "instructions": [
+   "Place your right heel on a step with your knee extended and lean forward to grab your right toe with your right hand. Your left knee should be slightly bent and your back should be straight.",
+   "Support your weight on your left leg and place your left hand on your left thigh.",
+   "Pull your right toes toward your knee until you feel a stretch in your calf."
+  ],
+  "formCues": [
+   "Breathe slowly and stay relaxed",
+   "Ease off if anything feels sharp"
+  ],
+  "feel": "A steady, comfortable stretch — never sharp pain.",
+  "commonMistakes": [
+   "Rushing the movement",
+   "Holding your breath"
+  ],
+  "safetyNotes": "Stop if you feel sharp or increasing pain, numbness or tingling, and check with your physio before continuing.",
+  "tags": [
+   "calves",
+   "open library",
+   "stretch"
+  ],
+  "images": [
+   "library/open-standing-gastrocnemius-calf-stretch/0.webp",
+   "library/open-standing-gastrocnemius-calf-stretch/1.webp"
+  ],
+  "sourceId": "Standing_Gastrocnemius_Calf_Stretch"
+ },
+ {
+  "slug": "open-standing-hamstring-and-calf-stretch",
+  "name": "Standing Hamstring and Calf Stretch",
+  "summary": "A stretch for the hamstrings.",
+  "bodyAreas": [
+   "hip",
+   "knee"
+  ],
+  "movementPatterns": [
+   "static",
+   "isolation"
+  ],
+  "categories": [
+   "stretch"
+  ],
+  "equipment": [
+   "none"
+  ],
+  "difficulty": 1,
+  "lateralitySupported": false,
+  "defaultDosage": {
+   "sets": 2,
+   "durationSec": 30
+  },
+  "secondsPerSet": 45,
+  "instructions": [
+   "Being by looping a belt, band, or rope around one foot. While standing, place that foot forward.",
+   "Bend your back leg, while keeping the front one straight. Now raise the toes of your front foot off of the ground and lean forward.",
+   "Using the belt, pull on the top of the foot to increase the stretch in the calf. Hold for 10-20 seconds and repeat with the other foot."
+  ],
+  "formCues": [
+   "Breathe slowly and stay relaxed",
+   "Ease off if anything feels sharp"
+  ],
+  "feel": "A steady, comfortable stretch — never sharp pain.",
+  "commonMistakes": [
+   "Rushing the movement",
+   "Holding your breath"
+  ],
+  "safetyNotes": "Stop if you feel sharp or increasing pain, numbness or tingling, and check with your physio before continuing.",
+  "tags": [
+   "hamstrings",
+   "open library",
+   "stretch"
+  ],
+  "images": [
+   "library/open-standing-hamstring-and-calf-stretch/0.webp",
+   "library/open-standing-hamstring-and-calf-stretch/1.webp"
+  ],
+  "sourceId": "Standing_Hamstring_and_Calf_Stretch"
+ },
+ {
+  "slug": "open-standing-hip-circles",
+  "name": "Standing Hip Circles",
+  "summary": "Gentle mobility for the abductors.",
+  "bodyAreas": [
+   "hip"
+  ],
+  "movementPatterns": [
+   "pull",
+   "isolation"
+  ],
+  "categories": [
+   "mobility"
+  ],
+  "equipment": [
+   "none"
+  ],
+  "difficulty": 1,
+  "lateralitySupported": false,
+  "defaultDosage": {
+   "sets": 2,
+   "reps": 10
+  },
+  "secondsPerSet": 45,
+  "instructions": [
+   "Begin standing on one leg, holding to a vertical support.",
+   "Raise the unsupported knee to 90 degrees. This will be your starting position.",
+   "Open the hip as far as possible, attempting to make a big circle with your knee.",
+   "Perform this movement slowly for a number of repetitions, and repeat on the other side."
+  ],
+  "formCues": [
+   "Breathe slowly and stay relaxed",
+   "Ease off if anything feels sharp"
+  ],
+  "feel": "Easy, smooth movement through a comfortable range.",
+  "commonMistakes": [
+   "Rushing the movement",
+   "Holding your breath"
+  ],
+  "safetyNotes": "Stop if you feel sharp or increasing pain, numbness or tingling, and check with your physio before continuing.",
+  "tags": [
+   "abductors",
+   "mobility",
+   "open library"
+  ],
+  "images": [
+   "library/open-standing-hip-circles/0.webp",
+   "library/open-standing-hip-circles/1.webp"
+  ],
+  "sourceId": "Standing_Hip_Circles"
+ },
+ {
+  "slug": "open-standing-hip-flexors",
+  "name": "Standing Hip Flexors",
+  "summary": "A stretch for the quadriceps.",
+  "bodyAreas": [
+   "knee"
+  ],
+  "movementPatterns": [
+   "static",
+   "isolation"
+  ],
+  "categories": [
+   "stretch"
+  ],
+  "equipment": [
+   "none"
+  ],
+  "difficulty": 1,
+  "lateralitySupported": false,
+  "defaultDosage": {
+   "sets": 2,
+   "durationSec": 30
+  },
+  "secondsPerSet": 45,
+  "instructions": [
+   "Stand up straight with the spine vertical, the left foot slightly in front of the right.",
+   "Bend both knees and lift the back heel off the floor as you press the right hip forward. You can't get a thorough, deep stretch in this position, however, because it's hard to relax the hip flexor and stand on it at the same time. Switch sides."
+  ],
+  "formCues": [
+   "Breathe slowly and stay relaxed",
+   "Ease off if anything feels sharp"
+  ],
+  "feel": "A steady, comfortable stretch — never sharp pain.",
+  "commonMistakes": [
+   "Rushing the movement",
+   "Holding your breath"
+  ],
+  "safetyNotes": "Stop if you feel sharp or increasing pain, numbness or tingling, and check with your physio before continuing.",
+  "tags": [
+   "open library",
+   "quadriceps",
+   "stretch"
+  ],
+  "images": [
+   "library/open-standing-hip-flexors/0.webp",
+   "library/open-standing-hip-flexors/1.webp"
+  ],
+  "sourceId": "Standing_Hip_Flexors"
+ },
+ {
+  "slug": "open-standing-lateral-stretch",
+  "name": "Standing Lateral Stretch",
+  "summary": "A stretch for the abdominals.",
+  "bodyAreas": [
+   "core"
+  ],
+  "movementPatterns": [
+   "static",
+   "isolation"
+  ],
+  "categories": [
+   "stretch"
+  ],
+  "equipment": [
+   "none"
+  ],
+  "difficulty": 1,
+  "lateralitySupported": false,
+  "defaultDosage": {
+   "sets": 2,
+   "durationSec": 30
+  },
+  "secondsPerSet": 45,
+  "instructions": [
+   "Take a slightly wider than hip distance stance with your knees slightly bent.",
+   "Place your right hand on your right hip to support the spine.",
+   "Raise your left arm in a vertical line and place your left hand behind your head. Keep it there as you incline your torso to the right.",
+   "Keep your weight evenly distributed between both legs (don't lean into your left hip). Switch sides."
+  ],
+  "formCues": [
+   "Breathe slowly and stay relaxed",
+   "Ease off if anything feels sharp"
+  ],
+  "feel": "A steady, comfortable stretch — never sharp pain.",
+  "commonMistakes": [
+   "Rushing the movement",
+   "Holding your breath"
+  ],
+  "safetyNotes": "Stop if you feel sharp or increasing pain, numbness or tingling, and check with your physio before continuing.",
+  "tags": [
+   "abdominals",
+   "open library",
+   "stretch"
+  ],
+  "images": [
+   "library/open-standing-lateral-stretch/0.webp",
+   "library/open-standing-lateral-stretch/1.webp"
+  ],
+  "sourceId": "Standing_Lateral_Stretch"
+ },
+ {
+  "slug": "open-standing-pelvic-tilt",
+  "name": "Standing Pelvic Tilt",
+  "summary": "A stretch for the lower back.",
+  "bodyAreas": [
+   "lower-back"
+  ],
+  "movementPatterns": [
+   "static",
+   "isolation"
+  ],
+  "categories": [
+   "stretch"
+  ],
+  "equipment": [
+   "none"
+  ],
+  "difficulty": 1,
+  "lateralitySupported": false,
+  "defaultDosage": {
+   "sets": 2,
+   "durationSec": 30
+  },
+  "secondsPerSet": 45,
+  "instructions": [
+   "Start off with your feet hip-distance apart.",
+   "Bend your knees slightly to keep them soft and springy.",
+   "You may want to move your pelvis forward and backward and back few times before holding the tailbone forward in this stretch."
+  ],
+  "formCues": [
+   "Breathe slowly and stay relaxed",
+   "Ease off if anything feels sharp"
+  ],
+  "feel": "A steady, comfortable stretch — never sharp pain.",
+  "commonMistakes": [
+   "Rushing the movement",
+   "Holding your breath"
+  ],
+  "safetyNotes": "Stop if you feel sharp or increasing pain, numbness or tingling, and check with your physio before continuing.",
+  "tags": [
+   "lower back",
+   "open library",
+   "stretch"
+  ],
+  "images": [
+   "library/open-standing-pelvic-tilt/0.webp",
+   "library/open-standing-pelvic-tilt/1.webp"
+  ],
+  "sourceId": "Standing_Pelvic_Tilt"
+ },
+ {
+  "slug": "open-standing-soleus-and-achilles-stretch",
+  "name": "Standing Soleus And Achilles Stretch",
+  "summary": "A stretch for the calves.",
+  "bodyAreas": [
+   "ankle"
+  ],
+  "movementPatterns": [
+   "static",
+   "isolation"
+  ],
+  "categories": [
+   "stretch"
+  ],
+  "equipment": [
+   "none"
+  ],
+  "difficulty": 1,
+  "lateralitySupported": false,
+  "defaultDosage": {
+   "sets": 2,
+   "durationSec": 30
+  },
+  "secondsPerSet": 45,
+  "instructions": [
+   "Stand with your feet hip-distance apart, one foot slightly in front of the other.",
+   "Bend both knees, keeping your back heel on the floor. Switch sides."
+  ],
+  "formCues": [
+   "Breathe slowly and stay relaxed",
+   "Ease off if anything feels sharp"
+  ],
+  "feel": "A steady, comfortable stretch — never sharp pain.",
+  "commonMistakes": [
+   "Rushing the movement",
+   "Holding your breath"
+  ],
+  "safetyNotes": "Stop if you feel sharp or increasing pain, numbness or tingling, and check with your physio before continuing.",
+  "tags": [
+   "calves",
+   "open library",
+   "stretch"
+  ],
+  "images": [
+   "library/open-standing-soleus-and-achilles-stretch/0.webp",
+   "library/open-standing-soleus-and-achilles-stretch/1.webp"
+  ],
+  "sourceId": "Standing_Soleus_And_Achilles_Stretch"
+ },
+ {
+  "slug": "open-superman",
+  "name": "Superman",
+  "summary": "A stretch for the lower back.",
+  "bodyAreas": [
+   "lower-back"
+  ],
+  "movementPatterns": [
+   "static",
+   "compound"
+  ],
+  "categories": [
+   "stretch"
+  ],
+  "equipment": [
+   "none"
+  ],
+  "difficulty": 1,
+  "lateralitySupported": false,
+  "defaultDosage": {
+   "sets": 2,
+   "durationSec": 30
+  },
+  "secondsPerSet": 45,
+  "instructions": [
+   "To begin, lie straight and face down on the floor or exercise mat. Your arms should be fully extended in front of you. This is the starting position.",
+   "Simultaneously raise your arms, legs, and chest off of the floor and hold this contraction for 2 seconds. Tip: Squeeze your lower back to get the best results from this exercise. Remember to exhale during this movement. Note: When holding the contracted position, you should look like superman when he is flying.",
+   "Slowly begin to lower your arms, legs and chest back down to the starting position while inhaling.",
+   "Repeat for the recommended amount of repetitions prescribed in your program."
+  ],
+  "formCues": [
+   "Breathe slowly and stay relaxed",
+   "Ease off if anything feels sharp"
+  ],
+  "feel": "A steady, comfortable stretch — never sharp pain.",
+  "commonMistakes": [
+   "Rushing the movement",
+   "Holding your breath"
+  ],
+  "safetyNotes": "Stop if you feel sharp or increasing pain, numbness or tingling, and check with your physio before continuing.",
+  "tags": [
+   "lower back",
+   "open library",
+   "stretch"
+  ],
+  "images": [
+   "library/open-superman/0.webp",
+   "library/open-superman/1.webp"
+  ],
+  "sourceId": "Superman"
+ },
+ {
+  "slug": "open-torso-rotation",
+  "name": "Torso Rotation",
+  "summary": "Gentle mobility for the abdominals.",
+  "bodyAreas": [
+   "core"
+  ],
+  "movementPatterns": [
+   "pull",
+   "isolation"
+  ],
+  "categories": [
+   "mobility"
+  ],
+  "equipment": [
+   "ball"
+  ],
+  "difficulty": 1,
+  "lateralitySupported": false,
+  "defaultDosage": {
+   "sets": 2,
+   "reps": 10
+  },
+  "secondsPerSet": 45,
+  "instructions": [
+   "Stand upright holding an exercise ball with both hands. Extend your arms so the ball is straight out in front of you. This will be your starting position.",
+   "Rotate your torso to one side, keeping your eyes on the ball as you move. Now, rotate back to the opposite direction. Repeat for 10-20 repetitions."
+  ],
+  "formCues": [
+   "Breathe slowly and stay relaxed",
+   "Ease off if anything feels sharp"
+  ],
+  "feel": "Easy, smooth movement through a comfortable range.",
+  "commonMistakes": [
+   "Rushing the movement",
+   "Holding your breath"
+  ],
+  "safetyNotes": "Stop if you feel sharp or increasing pain, numbness or tingling, and check with your physio before continuing.",
+  "tags": [
+   "abdominals",
+   "mobility",
+   "open library"
+  ],
+  "images": [
+   "library/open-torso-rotation/0.webp",
+   "library/open-torso-rotation/1.webp"
+  ],
+  "sourceId": "Torso_Rotation"
+ },
+ {
+  "slug": "open-triceps-stretch",
+  "name": "Triceps Stretch",
+  "summary": "A stretch for the triceps.",
+  "bodyAreas": [
+   "arm"
+  ],
+  "movementPatterns": [
+   "static",
+   "isolation"
+  ],
+  "categories": [
+   "stretch"
+  ],
+  "equipment": [
+   "none"
+  ],
+  "difficulty": 1,
+  "lateralitySupported": false,
+  "defaultDosage": {
+   "sets": 2,
+   "durationSec": 30
+  },
+  "secondsPerSet": 45,
+  "instructions": [
+   "Reach your hand behind your head, grasp your elbow and gently pull. Hold for 10 to 20 seconds, then switch sides."
+  ],
+  "formCues": [
+   "Breathe slowly and stay relaxed",
+   "Ease off if anything feels sharp"
+  ],
+  "feel": "A steady, comfortable stretch — never sharp pain.",
+  "commonMistakes": [
+   "Rushing the movement",
+   "Holding your breath"
+  ],
+  "safetyNotes": "Stop if you feel sharp or increasing pain, numbness or tingling, and check with your physio before continuing.",
+  "tags": [
+   "open library",
+   "stretch",
+   "triceps"
+  ],
+  "images": [
+   "library/open-triceps-stretch/0.webp",
+   "library/open-triceps-stretch/1.webp"
+  ],
+  "sourceId": "Triceps_Stretch"
+ },
+ {
+  "slug": "open-upper-back-leg-grab",
+  "name": "Upper Back-Leg Grab",
+  "summary": "A stretch for the hamstrings.",
+  "bodyAreas": [
+   "hip",
+   "knee"
+  ],
+  "movementPatterns": [
+   "static",
+   "isolation"
+  ],
+  "categories": [
+   "stretch"
+  ],
+  "equipment": [
+   "none"
+  ],
+  "difficulty": 1,
+  "lateralitySupported": false,
+  "defaultDosage": {
+   "sets": 2,
+   "durationSec": 30
+  },
+  "secondsPerSet": 45,
+  "instructions": [
+   "While seated, bend forward to hug your thighs from underneath with both arms.",
+   "Keep your knees together and your legs extended out as you bring your chest down to your knees. You can also stretch your middle back by pulling your back away from your knees as your hugging them."
+  ],
+  "formCues": [
+   "Breathe slowly and stay relaxed",
+   "Ease off if anything feels sharp"
+  ],
+  "feel": "A steady, comfortable stretch — never sharp pain.",
+  "commonMistakes": [
+   "Rushing the movement",
+   "Holding your breath"
+  ],
+  "safetyNotes": "Stop if you feel sharp or increasing pain, numbness or tingling, and check with your physio before continuing.",
+  "tags": [
+   "hamstrings",
+   "open library",
+   "stretch"
+  ],
+  "images": [
+   "library/open-upper-back-leg-grab/0.webp",
+   "library/open-upper-back-leg-grab/1.webp"
+  ],
+  "sourceId": "Upper_Back-Leg_Grab"
+ },
+ {
+  "slug": "open-upper-back-stretch",
+  "name": "Upper Back Stretch",
+  "summary": "A stretch for the middle back.",
+  "bodyAreas": [
+   "upper-back"
+  ],
+  "movementPatterns": [
+   "static",
+   "isolation"
+  ],
+  "categories": [
+   "stretch"
+  ],
+  "equipment": [
+   "none"
+  ],
+  "difficulty": 1,
+  "lateralitySupported": false,
+  "defaultDosage": {
+   "sets": 2,
+   "durationSec": 30
+  },
+  "secondsPerSet": 45,
+  "instructions": [
+   "Clasp fingers together with your thumbs pointing down, round your shoulders as you reach your hands forward."
+  ],
+  "formCues": [
+   "Breathe slowly and stay relaxed",
+   "Ease off if anything feels sharp"
+  ],
+  "feel": "A steady, comfortable stretch — never sharp pain.",
+  "commonMistakes": [
+   "Rushing the movement",
+   "Holding your breath"
+  ],
+  "safetyNotes": "Stop if you feel sharp or increasing pain, numbness or tingling, and check with your physio before continuing.",
+  "tags": [
+   "middle back",
+   "open library",
+   "stretch"
+  ],
+  "images": [
+   "library/open-upper-back-stretch/0.webp",
+   "library/open-upper-back-stretch/1.webp"
+  ],
+  "sourceId": "Upper_Back_Stretch"
+ },
+ {
+  "slug": "open-upward-stretch",
+  "name": "Upward Stretch",
+  "summary": "A stretch for the shoulders.",
+  "bodyAreas": [
+   "shoulder"
+  ],
+  "movementPatterns": [
+   "static",
+   "isolation"
+  ],
+  "categories": [
+   "stretch"
+  ],
+  "equipment": [
+   "none"
+  ],
+  "difficulty": 1,
+  "lateralitySupported": false,
+  "defaultDosage": {
+   "sets": 2,
+   "durationSec": 30
+  },
+  "secondsPerSet": 45,
+  "instructions": [
+   "Extend both hands straight above your head, palms touching.",
+   "Slowly push your hands up and back, keeping your back straight."
+  ],
+  "formCues": [
+   "Breathe slowly and stay relaxed",
+   "Ease off if anything feels sharp"
+  ],
+  "feel": "A steady, comfortable stretch — never sharp pain.",
+  "commonMistakes": [
+   "Rushing the movement",
+   "Holding your breath"
+  ],
+  "safetyNotes": "Stop if you feel sharp or increasing pain, numbness or tingling, and check with your physio before continuing.",
+  "tags": [
+   "open library",
+   "shoulders",
+   "stretch"
+  ],
+  "images": [
+   "library/open-upward-stretch/0.webp",
+   "library/open-upward-stretch/1.webp"
+  ],
+  "sourceId": "Upward_Stretch"
+ },
+ {
+  "slug": "open-wrist-circles",
+  "name": "Wrist Circles",
+  "summary": "Gentle mobility for the forearms.",
+  "bodyAreas": [
+   "arm"
+  ],
+  "movementPatterns": [
+   "pull",
+   "isolation"
+  ],
+  "categories": [
+   "mobility"
+  ],
+  "equipment": [
+   "none"
+  ],
+  "difficulty": 1,
+  "lateralitySupported": false,
+  "defaultDosage": {
+   "sets": 2,
+   "reps": 10
+  },
+  "secondsPerSet": 45,
+  "instructions": [
+   "Start by standing straight with your feet being shoulder width apart from each other. Elevate your arms to the side of you until they are fully extended and parallel to the floor at a height that is evenly aligned with your shoulders. Tip: Your torso and arms should form the letter \"T: Your palms should be facing down. This is the starting position.",
+   "Keeping your entire body stationary except for the wrists, begin to rotate both wrists forward in a circular motion. Tip: Pretend that you are trying to draw circles by using your hands as the brush. Breathe normally as you perform this exercise.",
+   "Repeat for the recommended amount of repetitions."
+  ],
+  "formCues": [
+   "Breathe slowly and stay relaxed",
+   "Ease off if anything feels sharp"
+  ],
+  "feel": "Easy, smooth movement through a comfortable range.",
+  "commonMistakes": [
+   "Rushing the movement",
+   "Holding your breath"
+  ],
+  "safetyNotes": "Stop if you feel sharp or increasing pain, numbness or tingling, and check with your physio before continuing.",
+  "tags": [
+   "forearms",
+   "mobility",
+   "open library"
+  ],
+  "images": [
+   "library/open-wrist-circles/0.webp",
+   "library/open-wrist-circles/1.webp"
+  ],
+  "sourceId": "Wrist_Circles"
+ },
+ {
+  "slug": "open-step-up-with-knee-raise",
+  "name": "Step-up with Knee Raise",
+  "summary": "Strength work for the glutes.",
+  "bodyAreas": [
+   "hip"
+  ],
+  "movementPatterns": [
+   "push",
+   "compound"
+  ],
+  "categories": [
+   "strength"
+  ],
+  "equipment": [
+   "none"
+  ],
+  "difficulty": 1,
+  "lateralitySupported": false,
+  "defaultDosage": {
+   "sets": 2,
+   "reps": 10
+  },
+  "secondsPerSet": 45,
+  "instructions": [
+   "Stand facing a box or bench of an appropriate height with your feet together. This will be your starting position.",
+   "Begin the movement by stepping up, putting your left foot on the top of the bench. Extend through the hip and knee of your front leg to stand up on the box. As you stand on the box with your left leg, flex your right knee and hip, bringing your knee as high as you can.",
+   "Reverse this motion to step down off the box, and then repeat the sequence on the opposite leg."
+  ],
+  "formCues": [
+   "Move slowly and with control",
+   "Stop a rep or two before your form fades"
+  ],
+  "feel": "The working muscles should feel challenged, not painful.",
+  "commonMistakes": [
+   "Rushing the movement",
+   "Holding your breath"
+  ],
+  "safetyNotes": "Stop if you feel sharp or increasing pain, numbness or tingling, and check with your physio before continuing.",
+  "tags": [
+   "glutes",
+   "open library",
+   "strength"
+  ],
+  "images": [
+   "library/open-step-up-with-knee-raise/0.webp",
+   "library/open-step-up-with-knee-raise/1.webp"
+  ],
+  "sourceId": "Step-up_with_Knee_Raise"
+ }
+]

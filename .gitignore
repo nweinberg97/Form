@@ -8,3 +8,6 @@ next-env.d.ts
 .DS_Store
 .data
 coverage
+
+dist-demo
+ci-out

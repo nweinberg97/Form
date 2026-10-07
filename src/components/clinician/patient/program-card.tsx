@@ -76,7 +76,7 @@ export function ProgramCard({ program, patientId }: { program: PatientDetail["pr
         {program.items.map((item, index) => (
           <li key={item.programExerciseId} className="flex items-center gap-4 px-5 py-3">
             <span className="kicker w-5 shrink-0 text-muted tabular">{String(index + 1).padStart(2, "0")}</span>
-            <span className="hidden w-16 shrink-0 sm:block"><DemoThumb demo={item.exercise.demo} label={`${item.exercise.name} movement guide`} className="w-full" /></span>
+            <span className="hidden w-16 shrink-0 sm:block"><DemoThumb demo={item.exercise.demo} images={item.exercise.images} label={`${item.exercise.name} movement guide`} className="w-full" /></span>
             <div className="min-w-0 flex-1">
               <p className="flex flex-wrap items-center gap-2">
                 <span className="font-semibold tracking-[-0.01em]">{item.exercise.name}</span>
