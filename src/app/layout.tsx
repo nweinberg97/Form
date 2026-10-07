@@ -9,6 +9,14 @@ export const metadata: Metadata = {
   description: "A modern movement brand for better rehabilitation. Your physio's plan, made obvious.",
   applicationName: "FORM",
   robots: { index: true, follow: true },
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/favicon.svg", type: "image/svg+xml" },
+    ],
+    apple: "/apple-touch-icon.png",
+  },
+  manifest: "/site.webmanifest",
 };
 
 export const viewport: Viewport = {

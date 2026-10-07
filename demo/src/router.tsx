@@ -112,10 +112,43 @@ function match(routes: RouteDef[], pathname: string) {
 const digestOf = (error: unknown) =>
   error && typeof error === "object" && "digest" in error ? String((error as { digest: unknown }).digest) : "";
 
+type TitleMeta = string | { absolute?: string; default?: string; template?: string } | undefined;
+type MetaModule = {
+  metadata?: { title?: TitleMeta };
+  generateMetadata?: (props: unknown) => Promise<{ title?: TitleMeta }>;
+};
+
+/** Resolves the tab title the way Next.js does: nearest layout template, page title, absolute overrides. */
+async function resolveTitle(route: RouteDef, props: unknown) {
+  let template = "%s · FORM";
+  let fallback = "FORM — Move better";
+  for (const load of route.layouts ?? []) {
+    const title = ((await load()) as MetaModule).metadata?.title;
+    if (title && typeof title === "object") {
+      if (title.default) fallback = template.replace("%s", title.default);
+      if (title.template) template = title.template;
+    }
+  }
+  const page = (await route.page()) as MetaModule;
+  let title: TitleMeta;
+  try {
+    title = page.generateMetadata ? (await page.generateMetadata(props)).title : page.metadata?.title;
+  } catch {
+    title = undefined;
+  }
+  if (typeof title === "string") return template.replace("%s", title);
+  if (title?.absolute) return title.absolute;
+  if (title?.default) return template.replace("%s", title.default);
+  return fallback;
+}
+
 async function renderRoute(route: RouteDef, params: Record<string, string>, loc: Loc): Promise<ReactNode> {
   const props = { params: Promise.resolve(params), searchParams: Promise.resolve(Object.fromEntries(loc.searchParams)) };
   const page = (await route.page()).default as (p: unknown) => unknown;
   let element = (await page(props)) as ReactNode;
+  resolveTitle(route, props).then((title) => {
+    document.title = title;
+  });
   for (const loadLayout of [...(route.layouts ?? [])].reverse()) {
     const layout = (await loadLayout()).default as (p: unknown) => unknown;
     element = (await layout({ children: element, params: props.params })) as ReactNode;
@@ -148,6 +181,7 @@ export function Router({ routes, notFound, error: rootError }: { routes: RouteDe
     (async () => {
       if (!found) {
         const NotFound = (await notFound()).default as ComponentType;
+        document.title = "Not found · FORM";
         if (!cancelled) setState({ kind: "notFound", element: <NotFound /> });
         return;
       }

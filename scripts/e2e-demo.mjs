@@ -49,6 +49,17 @@ await step("landing page renders", async () => {
   await snap("landing");
 });
 
+await step("favicon and tab title", async () => {
+  const icons = await page.$$eval('link[rel~="icon"]', (els) => els.map((e) => e.href));
+  if (!icons.some((h) => h.endsWith("favicon.svg"))) throw new Error(`favicon link missing: ${icons.join(", ")}`);
+  for (const href of icons) {
+    const res = await page.request.get(href);
+    if (!res.ok()) throw new Error(`${href} → ${res.status()}`);
+  }
+  const title = await page.title();
+  if (!/FORM/.test(title)) throw new Error(`unexpected title: ${title}`);
+});
+
 await step("demo chooser", async () => {
   await go("/demo");
   await page.getByRole("button", { name: /See the patient app/i }).waitFor();
@@ -59,6 +70,9 @@ await step("start demo as patient → Today", async () => {
   await page.getByRole("button", { name: /See the patient app/i }).click();
   await page.waitForURL(/#\/app/, { timeout: 90000 });
   await text("Start today").waitFor({ timeout: 60000 });
+  await page.waitForFunction(() => document.title === "Today · FORM", null, { timeout: 5000 }).catch(async () => {
+    throw new Error(`tab title on Today was "${await page.title()}"`);
+  });
   await snap("patient-today");
 });
 
