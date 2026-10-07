@@ -1,0 +1,99 @@
+name: Verify
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: verify
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_USER: form
+          POSTGRES_PASSWORD: form
+          POSTGRES_DB: form
+        ports: ["5432:5432"]
+        options: >-
+          --health-cmd "pg_isready -U form" --health-interval 5s --health-timeout 5s --health-retries 10
+    env:
+      DATABASE_URL: postgres://form:form@localhost:5432/form
+      NEXT_TELEMETRY_DISABLED: "1"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Prepare results folder
+        run: mkdir -p ci-out/logs ci-out/screens
+      - name: Install
+        id: install
+        continue-on-error: true
+        run: |
+          if [ -f package-lock.json ]; then npm ci 2>&1 | tee ci-out/logs/install.txt; else npm install 2>&1 | tee ci-out/logs/install.txt; fi
+          exit ${PIPESTATUS[0]}
+      - name: Generate migrations
+        id: generate
+        continue-on-error: true
+        run: |
+          npx drizzle-kit generate 2>&1 | tee ci-out/logs/generate.txt
+          exit ${PIPESTATUS[0]}
+      - name: Typecheck
+        id: typecheck
+        continue-on-error: true
+        run: |
+          npx tsc --noEmit -p . 2>&1 | tee ci-out/logs/typecheck.txt
+          exit ${PIPESTATUS[0]}
+      - name: Migrate + seed library
+        id: migrate
+        continue-on-error: true
+        run: |
+          npm run db:migrate 2>&1 | tee ci-out/logs/migrate.txt
+          exit ${PIPESTATUS[0]}
+      - name: Build
+        id: build
+        continue-on-error: true
+        run: |
+          npm run build 2>&1 | tee ci-out/logs/build.txt
+          exit ${PIPESTATUS[0]}
+      - name: End-to-end
+        id: e2e
+        if: steps.build.outcome == 'success'
+        continue-on-error: true
+        run: |
+          npx playwright install --with-deps chromium > ci-out/logs/playwright-install.txt 2>&1
+          (npm run start > ci-out/logs/server.txt 2>&1 &)
+          npx wait-on -t 90000 http://localhost:3000 || true
+          node scripts/e2e.mjs 2>&1 | tee ci-out/logs/e2e.txt
+          exit ${PIPESTATUS[0]}
+      - name: Publish results to ci-results branch
+        if: always()
+        run: |
+          cat > ci-out/SUMMARY.txt <<SUM
+          commit: ${{ github.sha }}
+          install: ${{ steps.install.outcome }}
+          generate: ${{ steps.generate.outcome }}
+          typecheck: ${{ steps.typecheck.outcome }}
+          migrate: ${{ steps.migrate.outcome }}
+          build: ${{ steps.build.outcome }}
+          e2e: ${{ steps.e2e.outcome }}
+          SUM
+          cp package-lock.json ci-out/ 2>/dev/null || true
+          cp -r drizzle ci-out/drizzle 2>/dev/null || true
+          cd ci-out
+          git init -q -b ci-results
+          git config user.name "ci"
+          git config user.email "ci@users.noreply.github.com"
+          git add -A
+          git commit -qm "CI results for ${{ github.sha }}"
+          git push -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" ci-results
