@@ -1,0 +1,13 @@
+services:
+  db:
+    image: postgres:16
+    environment:
+      POSTGRES_USER: form
+      POSTGRES_PASSWORD: form
+      POSTGRES_DB: form
+    ports:
+      - "5432:5432"
+    volumes:
+      - form-db:/var/lib/postgresql/data
+volumes:
+  form-db:

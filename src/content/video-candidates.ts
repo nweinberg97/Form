@@ -1,0 +1,46 @@
+/**
+ * Candidate YouTube demonstrations found by searching for clinical sources.
+ * NOT yet verified (title, channel, embeddability). Run `npm run videos:verify`
+ * to check each through YouTube's oEmbed endpoint and write the ones that pass
+ * into src/content/videos.ts — only verified videos ever reach patients.
+ */
+export const VIDEO_CANDIDATES: { slug: string; youtubeId: string; expectedTitle: string }[] = [
+  { slug: "chin-tuck", youtubeId: "7rnlAVhAK-8", expectedTitle: "Chin Tucks Sitting" },
+  { slug: "cervical-rotation", youtubeId: "PruXF-NE2zI", expectedTitle: "Cervical Rotation" },
+  { slug: "levator-scapulae-stretch", youtubeId: "qm_8JBo7kF0", expectedTitle: "Levator Scapulae Stretch" },
+  { slug: "upper-trapezius-stretch", youtubeId: "2uI_adZ1png", expectedTitle: "Upper Trapezius Stretch" },
+  { slug: "wall-angels", youtubeId: "kcca7_JGsVk", expectedTitle: "Wall Angels" },
+  { slug: "band-external-rotation", youtubeId: "_UvmPNGtlPM", expectedTitle: "Shoulder External Rotation with Resistive Band" },
+  { slug: "scapular-retraction", youtubeId: "hlIUur5zRNs", expectedTitle: "Scapular retractions with resistance band" },
+  { slug: "thoracic-rotation", youtubeId: "rDviWORCWEw", expectedTitle: "Open Books (Sidelying Thoracic Rotation)" },
+  { slug: "pendulum", youtubeId: "QF_ubbr_RUE", expectedTitle: "Codman Pendulum Circles" },
+  { slug: "wall-slide", youtubeId: "uBPwoxG6aVQ", expectedTitle: "Wall Slides for Shoulder and Upper Back" },
+  { slug: "doorway-pec-stretch", youtubeId: "069o76BafTk", expectedTitle: "Doorway Pec Stretch" },
+  { slug: "band-pull-apart", youtubeId: "mHWlgqPvyxI", expectedTitle: "Band Pull Aparts" },
+  { slug: "cat-cow", youtubeId: "EUvPS8QFHqU", expectedTitle: "Cat-Cow Exercise for Spinal Mobility" },
+  { slug: "pelvic-tilt", youtubeId: "ivwzYxrck6M", expectedTitle: "Pelvic Tilts" },
+  { slug: "prone-press-up", youtubeId: "UqSP7ZrHxRE", expectedTitle: "Prone Press Ups" },
+  { slug: "dead-bug", youtubeId: "pmNW8eWQfbA", expectedTitle: "Dead Bug" },
+  { slug: "bird-dog", youtubeId: "SlNTXO1fD9c", expectedTitle: "Bird Dog" },
+  { slug: "pallof-press", youtubeId: "n8ZZG9gElhs", expectedTitle: "Pallof Press" },
+  { slug: "side-plank-modified", youtubeId: "p2MufgCIW_4", expectedTitle: "Side Plank (modified)" },
+  { slug: "glute-bridge", youtubeId: "wehNaIGWQ3w", expectedTitle: "Bridge Exercise" },
+  { slug: "hip-flexor-stretch", youtubeId: "F55tzqJggAY", expectedTitle: "Half Kneeling Hip Flexor Stretch" },
+  { slug: "clamshell", youtubeId: "K9Fpq4OkvPg", expectedTitle: "Clam Shell Exercise" },
+  { slug: "side-lying-hip-abduction", youtubeId: "g9FtnmsIYgI", expectedTitle: "Side Lying Hip Abduction" },
+  { slug: "hip-hinge", youtubeId: "9Qwob4CWalw", expectedTitle: "Hip Hinge" },
+  { slug: "lateral-band-walk", youtubeId: "MZ1HbVflLUI", expectedTitle: "Lateral Band Walks" },
+  { slug: "quad-set", youtubeId: "IF5eDfb8afM", expectedTitle: "Quad Sets" },
+  { slug: "sit-to-stand", youtubeId: "y6NUWq_AEvI", expectedTitle: "Sit to Stand Exercise" },
+  { slug: "straight-leg-raise", youtubeId: "ie-tyGqon0w", expectedTitle: "Straight Leg Raise" },
+  { slug: "heel-slide", youtubeId: "EKVZ9TIJc-U", expectedTitle: "Heel slides" },
+  { slug: "terminal-knee-extension", youtubeId: "7xG3MeoLjC0", expectedTitle: "Terminal Knee Extension" },
+  { slug: "step-up", youtubeId: "j_FG0quhQMQ", expectedTitle: "Step Ups" },
+  { slug: "wall-sit", youtubeId: "lqGcco-k7oE", expectedTitle: "Isometric Wall Squat" },
+  { slug: "mini-squat", youtubeId: "J7S5B36c6oM", expectedTitle: "Mini Squats" },
+  { slug: "calf-raise", youtubeId: "4YaAq5YB68w", expectedTitle: "Calf raise" },
+  { slug: "ankle-dorsiflexion", youtubeId: "pSMPd12mrg0", expectedTitle: "Knee to Wall Dorsiflexion" },
+  { slug: "single-leg-balance", youtubeId: "Dtgh2_LFkBQ", expectedTitle: "Single Leg Balance" },
+  { slug: "towel-calf-stretch", youtubeId: "7BCyxMadYpQ", expectedTitle: "Calf Stretch with Towel" },
+  { slug: "seated-ankle-pump", youtubeId: "6EPNA9owQJw", expectedTitle: "Ankle Pumps" },
+];

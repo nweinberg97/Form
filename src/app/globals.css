@@ -1,0 +1,186 @@
+@import "tailwindcss";
+
+/*
+ * FORM design tokens.
+ * Performance outside. Clarity inside. Intelligence underneath.
+ * Every color, radius, shadow and easing in the product comes from here.
+ */
+@theme {
+  --color-*: initial;
+
+  /* Brand */
+  --color-ink: #111111; /* Form Black */
+  --color-ink-soft: #2b2a27;
+  --color-paper: #f4f2ed; /* Form Off-White */
+  --color-white: #ffffff; /* Form White (utility) */
+  --color-signal: #ff4d2e; /* Form Signal */
+  --color-signal-deep: #e23a1c;
+  --color-signal-soft: #ffe4dd;
+  --color-blue: #3d5afe; /* Secondary — used sparingly */
+  --color-blue-soft: #e3e7ff;
+
+  /* Neutrals (light) */
+  --color-surface: #fbfaf7;
+  --color-sunken: #ebe8e1;
+  --color-line: #e0dcd3;
+  --color-line-strong: #c9c4b9;
+  --color-muted: #625e57;
+  --color-faint: #8f8a80;
+
+  /* Neutrals (dark) */
+  --color-night: #111111;
+  --color-night-raised: #1c1b19;
+  --color-night-line: #2f2d2a;
+  --color-night-muted: #a8a399;
+
+  /* Functional — clinical/system state, never brand */
+  --color-success: #247a52;
+  --color-success-soft: #dcefe4;
+  --color-warning: #d98a00;
+  --color-warning-ink: #855400;
+  --color-warning-soft: #fbefd5;
+  --color-danger: #c83a3a;
+  --color-danger-soft: #f8e1df;
+
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
+
+  --text-display: clamp(3.5rem, 11vw, 10rem);
+  --text-display--line-height: 0.86;
+  --text-display--letter-spacing: -0.045em;
+  --text-headline: clamp(2.25rem, 5vw, 3.75rem);
+  --text-headline--line-height: 0.95;
+  --text-headline--letter-spacing: -0.035em;
+
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 20px;
+
+  --shadow-lift: 0 1px 0 rgb(17 17 17 / 0.04), 0 10px 30px -14px rgb(17 17 17 / 0.22);
+  --shadow-sheet: 0 -12px 40px -16px rgb(17 17 17 / 0.3);
+
+  --ease-form: cubic-bezier(0.2, 0.7, 0.1, 1);
+  --animate-rise: rise 420ms var(--ease-form) both;
+  --animate-slide-in: slide-in 360ms var(--ease-form) both;
+  --animate-fade: fade 240ms ease-out both;
+
+  --breakpoint-xs: 26rem;
+
+  @keyframes rise {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+  @keyframes slide-in {
+    from {
+      opacity: 0;
+      transform: translateX(24px);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+  @keyframes fade {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}
+
+@layer base {
+  :root {
+    --z-nav: 30;
+    --z-sticky: 40;
+    --z-sheet: 50;
+    --z-toast: 60;
+    color-scheme: light;
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    background: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-feature-settings: "ss01", "tnum" 0;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  ::selection {
+    background: var(--color-signal);
+    color: var(--color-ink);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-ink);
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+
+  .on-dark :focus-visible,
+  [data-theme="dark"] :focus-visible {
+    outline-color: var(--color-paper);
+  }
+
+  dialog::backdrop {
+    background: rgb(17 17 17 / 0.45);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 1ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 1ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+@layer utilities {
+  .tabular {
+    font-variant-numeric: tabular-nums;
+  }
+  .kicker {
+    font-family: var(--font-mono);
+    font-size: 0.6875rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  .safe-bottom {
+    padding-bottom: max(env(safe-area-inset-bottom), 0px);
+  }
+  .no-scrollbar {
+    scrollbar-width: none;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  /* The FORM grid motif: a quiet coordinate field for brand surfaces. */
+  .form-grid {
+    background-image:
+      linear-gradient(to right, rgb(244 242 237 / 0.06) 1px, transparent 1px),
+      linear-gradient(to bottom, rgb(244 242 237 / 0.06) 1px, transparent 1px);
+    background-size: 64px 64px;
+  }
+  .form-grid-light {
+    background-image:
+      linear-gradient(to right, rgb(17 17 17 / 0.05) 1px, transparent 1px),
+      linear-gradient(to bottom, rgb(17 17 17 / 0.05) 1px, transparent 1px);
+    background-size: 48px 48px;
+  }
+}
