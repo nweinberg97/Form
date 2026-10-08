@@ -1,0 +1,59 @@
+name: Portfolio site check
+on:
+  push:
+    branches: [portfolio-check]
+permissions:
+  contents: write
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+      - run: |
+          npm init -y > /dev/null
+          npm install playwright@1 > /dev/null 2>&1
+          npx playwright install --with-deps chromium > /dev/null 2>&1
+      - name: Visit every repo's site
+        run: |
+          mkdir -p out
+          cat > check.mjs <<'JS'
+          import { chromium } from "playwright";
+          import { writeFileSync } from "node:fs";
+          const repos = "Form Drift Base VanRadar Pace Search-for-the-Good Kitside Circles memo CoursePack Sogo Tender Chicken-Little sedi Magic-Paste Bucketlist NomNoms JumpIn Collab Chaotic-Mischief LifeOS8.0 LifeOS6.0 taskly Boardly Timely Brainly".split(" ");
+          const browser = await chromium.launch();
+          const lines = [];
+          for (const repo of repos) {
+            const url = `https://nweinberg97.github.io/${repo}/`;
+            const ctx = await browser.newContext({ viewport: { width: 1280, height: 800 } });
+            const page = await ctx.newPage();
+            const errors = [];
+            page.on("pageerror", (e) => errors.push(e.message.slice(0, 120)));
+            let status = 0, title = "";
+            try {
+              const res = await page.goto(url, { waitUntil: "load", timeout: 30000 });
+              status = res?.status() ?? 0;
+              await page.waitForTimeout(3500);
+              title = await page.title();
+              await page.screenshot({ path: `out/${repo}-desktop.png` });
+              await page.setViewportSize({ width: 390, height: 844 });
+              await page.waitForTimeout(800);
+              await page.screenshot({ path: `out/${repo}-mobile.png` });
+            } catch (e) { errors.push(String(e.message).slice(0, 120)); }
+            lines.push([repo, status, JSON.stringify(title), url, errors.length ? "ERRORS: " + errors.slice(0,3).join(" | ") : ""].join("\t"));
+            await ctx.close();
+          }
+          await browser.close();
+          writeFileSync("out/sites.tsv", lines.join("\n") + "\n");
+          JS
+          node check.mjs
+          cat out/sites.tsv
+      - name: Publish
+        if: always()
+        run: |
+          cd out
+          git init -q -b portfolio-results
+          git config user.name ci && git config user.email ci@users.noreply.github.com
+          git add -A && git commit -qm "Portfolio site check"
+          git push -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" portfolio-results
